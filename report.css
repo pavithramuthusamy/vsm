@@ -1,0 +1,125 @@
+body, html {
+   
+  }
+  
+  .siteTitle {
+    display: block;
+    font-weight: 900;
+    font-size: 30px;
+    margin: 20px 0;
+  }
+  @media (min-width: 768px) {
+    .siteTitle {
+      font-size: 60px;
+    }
+  }
+  
+  header,
+  main {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  
+  .card {
+    height: 400px;
+    position: relative;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-end;
+    text-decoration: none;
+    border: 50px solid #ffffff;
+    margin-bottom: 20px;
+   
+    background-size: cover;
+   
+    margin: 3rem 1rem;
+  }
+  @media (min-width: 768px) {
+    .card {
+      height: 500px;
+    }
+  }
+  
+  .inner {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    box-sizing: border-box;
+    padding: 40px;
+  }
+  @media (min-width: 768px) {
+    .inner {
+      width: 65%;
+      height: 100%;
+    }
+  }
+  
+  .title {
+    font-size: 24px;
+    color: black;
+    text-align: center;
+    font-weight: 700;
+    color: #181818;
+   
+    position: relative;
+    margin: 0 0 20px 0;
+  }
+
+  .title_p{
+    color: #181818;
+    text-align: center;
+  }
+  @media (min-width: 768px) {
+    .title {
+      font-size: 30px;
+    }
+  }
+  
+  .subtitle {
+    color: #b0215e;
+    text-align: center;
+  }
+  
+  .card2 {
+    background-image: url("https://images.unsplash.com/photo-1496317556649-f930d733eea3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
+  }
+  
+  .card3 {
+    background-image: url("https://images.unsplash.com/photo-1557576842-3bc6093a5085?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
+  }
+
+  .report-img{
+    filter: hue-rotate(45deg);
+    height: 300px;
+  }
+
+  .inner_add{
+    display: flex;
+  }
+  
+ 
+
+  .report-container {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    width: 80%;
+    margin: auto;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 1023px){
+.re-port{
+  width: 45% !important;
+}
+}
+
+@media (min-width: 320px) and (max-width: 1024px){
+.ticket-sub-container {
+    width: 100% !important;
+}
+}
