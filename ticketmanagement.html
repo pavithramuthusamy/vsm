@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="ticketmanage.css" />
   </head>
   <body>
-    <nav role="navigation" class="navbar" aria-label="menu">
+    <!-- <nav role="navigation" class="navbar" aria-label="menu">
       <a class="logo" href="index.html">
         <img class="logo" src="./assets/innvocore_logo.png" alt="" />
       </a>
@@ -65,12 +65,53 @@
         <li><a href="./solutions.html">Solutions</a></li>
         <li style="margin: auto; padding: 0 1rem">
           <button class="button button-primary-outlined rounded">
-            Get Demo
+            <a class="main__a" href="./assets/White Paper - innvoDesk.pdf" download="InnvoDesk">Get Demo</a>
           </button>
         </li>
       </ul>
-    </nav>
-    
+    </nav> -->
+    <nav>
+      <a class="logo" href="index.html">
+        <img class="logo" src="./assets/innvocore_logo.png" alt="" />
+      </a>
+      <label for="drop" class="toggle">Menu</label>
+      <input type="checkbox" id="drop" />
+          <ul class="menu">
+              
+              <li>
+                  <!-- First Tier Drop Down -->
+                  <label for="drop-1" class="toggle">Features +</label>
+                  <a href="#">Features</a>
+                  <input type="checkbox" id="drop-1"/>
+                  <ul>
+                    <li><a href="./ticketmanagement.html">Ticket Management</a></li>
+                    <li><a href="CRM.html">CRM</a></li>
+                    <li><a href="changemanagement.html">Change Management</a></li>
+                    <li><a href="incident.html">SLA Management</a></li>
+                    <li><a href="report.html">Reporting & Analytics</a></li>
+                     <li><a href="itsm.html">IT Service Management</a></li>
+                    
+                    </ul> 
+
+              </li>
+              <li>
+
+              <!-- First Tier Drop Down -->
+              <label for="drop-2" class="toggle">Products  +</label>
+              <a href="#">Products  </a>
+              <input type="checkbox" id="drop-2"/>
+              <ul>
+                <li><a href="./knowledge.html">Knowledge Management</a></li>
+                  
+              </ul>
+              </li>
+              <li><a href="./pricing.html">Pricing</a></li>
+        <li><a href="./solutions.html">Solutions</a></li>
+        <li style="    margin: auto;padding: 0 1rem"><button class="button button-primary-outlined rounded" ><a class="main__a" href="./assets/White Paper - innvoDesk.pdf" download="InnvoDesk">Get Demo</a></button></li>
+      </ul>
+      </nav>
+
+
     <section class="main">
       <div class="main__desc info">
         <h1>Ticket Management</h1>
