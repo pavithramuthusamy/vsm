@@ -388,16 +388,16 @@ li > a:only-child:after { content: ''; }
 	/* Stylinf the toggle lable */
 	.toggle {
 		display: block;
-		background-color: #254441;
+		background-color: #ffffff;
 		padding:14px 20px;	
-		color:#FFF;
+		color:rgb(0, 0, 0);
 		font-size:17px;
 		text-decoration:none;
 		border:none;
 	}
 
 	.toggle:hover {
-		background-color: #000000;
+		background-color: var(--lighter-purple);
 	}
 
 	/* Display Dropdown when clicked on Parent Lable */
@@ -422,28 +422,28 @@ li > a:only-child:after { content: ''; }
 
 	nav a:hover,
  	nav ul ul ul a {
-		background-color: #000000;
+		background-color: var(--lighter-purple);
 	}
   
 	nav ul li ul li .toggle,
 	nav ul ul a,
   nav ul ul ul a{
 		padding:14px 20px;	
-		color:#FFF;
+		color:rgb(0, 0, 0);
 		font-size:17px; 
 	}
   
   
 	nav ul li ul li .toggle,
 	nav ul ul a {
-		background-color: #212121; 
+		background-color: var(--lighter-purple); 
 	}
 
 	/* Hide Dropdowns by Default */
 	nav ul ul {
 		float: none;
 		position:static;
-		color: #ffffff;
+		color: #000000;
 		/* has to be the same number as the "line-height" of "nav a" */
 	}
 		
@@ -467,6 +467,20 @@ li > a:only-child:after { content: ''; }
 
 }
 
+.nav_logo{
+  height: 70px;
+    padding: 0;
+    margin: 0;
+}
+.nav_logo:hover {
+  background: white;
+}
+
+.header_sticky{
+  position: sticky;
+    top: 0;
+    z-index: 999;
+}
 @media all and (max-width : 330px) {
 
 	nav ul li {

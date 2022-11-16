@@ -14,67 +14,46 @@
   </head>
 
   <body style="overflow-x: hidden">
-    <nav role="navigation" class="navbar" aria-label="menu">
-      <a class="logo" href="index.html">
+    <nav class="header_sticky">
+      <div id="logo"><a class="logo nav_logo" href="index.html">
         <img class="logo" src="./assets/innvocore_logo.png" alt="" />
-      </a>
-      <ul class="menu">
-        <li class="dropdown">
-          <a href="#">
-            Features
-
-            <svg
-              class="icon"
-              width="14"
-              height="16"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 320 512"
-            >
-              <path
-                d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z"
-              />
-            </svg>
-          </a>
-
-          <ul class="dropdown-nav">
-            <li><a href="./ticketmanagement.html">Ticket Management</a></li>
-            <li><a href="CRM.html">CRM</a></li>
-            <li><a href="changemanagement.html">Change Management</a></li>
-            <li><a href="incident.html">SLA Management</a></li>
-            <li><a href="report.html">Reporting & Analytics</a></li>
-            <li><a href="itsm.html">IT Service Management</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="#">
-            Products
-
-            <svg
-              class="icon"
-              width="14"
-              height="16"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 320 512"
-            >
-              <path
-                d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z"
-              />
-            </svg>
-          </a>
-
-          <ul class="dropdown-nav">
-            <li><a href="./knowledge.html">Knowledge Management</a></li>
-          </ul>
-        </li>
-        <li><a href="./pricing.html">Pricing</a></li>
+      </a> </div>
+      <label for="drop" class="toggle">Menu</label>
+      <input type="checkbox" id="drop" />
+          <ul class="menu">
+              
+              <li>
+                 
+                  <label for="drop-1" class="toggle">Features +</label>
+                  <a href="#">Features</a>
+                  <input type="checkbox" id="drop-1"/>
+                  <ul>
+                    <li><a href="./ticketmanagement.html">Ticket Management</a></li>
+                    <li><a href="CRM.html">CRM</a></li>
+                    <li><a href="changemanagement.html">Change Management</a></li>
+                    <li><a href="incident.html">SLA Management</a></li>
+                    <li><a href="report.html">Reporting & Analytics</a></li>
+                     <li><a href="itsm.html">IT Service Management</a></li>
+                    
+                    </ul> 
+  
+              </li>
+              <li>
+  
+              
+              <label for="drop-2" class="toggle">Products  +</label>
+              <a href="#">Products  </a>
+              <input type="checkbox" id="drop-2"/>
+              <ul>
+                <li><a href="./knowledge.html">Knowledge Management</a></li>
+                  
+              </ul>
+              </li>
+              <li><a href="./pricing.html">Pricing</a></li>
         <li><a href="./solutions.html">Solutions</a></li>
-        <li style="margin: auto; padding: 0 1rem">
-          <button class="button button-primary-outlined rounded">
-            <a class="main__a" href="./assets/White Paper - innvoDesk.pdf" download="InnvoDesk">Get Demo</a>
-          </button>
-        </li>
+        <li style="    margin: auto;padding: 0 1rem"><button class="button button-primary-outlined rounded" ><a class="main__a" href="./assets/White Paper - innvoDesk.pdf" download="InnvoDesk">Get Demo</a></button></li>
       </ul>
-    </nav>
+      </nav>
 
     <div class="container">
       <h1 style="text-align: center; margin: 2rem">Pricing Details</h1>
