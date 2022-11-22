@@ -6,7 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>InnvoDesk</title>
-  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="ticketmanage.css">
   <link rel="stylesheet" href="report.css">
   <link rel="stylesheet" href="changemanagement.css">
   <link rel="stylesheet" href="crm.css">
@@ -28,11 +29,10 @@
                 <input type="checkbox" id="drop-1"/>
                 <ul>
                   <li><a href="./ticketmanagement.html">Ticket Management</a></li>
-                  <li><a href="CRM.html">CRM</a></li>
                   <li><a href="changemanagement.html">Change Management</a></li>
                   <li><a href="incident.html">SLA Management</a></li>
-                  <li><a href="report.html">Reporting & Analytics</a></li>
-                   <li><a href="itsm.html">IT Service Management</a></li>
+                  <li><a href="CRM.html">CRM</a></li>
+
                   
                   </ul> 
 
@@ -41,23 +41,35 @@
 
             
             <label for="drop-2" class="toggle">Products  +</label>
-            <a href="#">Products  </a>
+<a href="#">Products  </a>
             <input type="checkbox" id="drop-2"/>
             <ul>
+              <li><a href="itsm.html">IT Service Management</a></li>
               <li><a href="./knowledge.html">Knowledge Management</a></li>
+              <li><a href="report.html">Reporting & Analytics</a></li>
                 
             </ul>
             </li>
-            <li><a href="./pricing.html">Pricing</a></li>
-      <li><a href="./solutions.html">Solutions</a></li>
-      <li style="    margin: auto;padding: 0 1rem"><button class="button button-primary-outlined rounded" ><a class="main__a" href="./assets/White Paper - innvoDesk.pdf" download="InnvoDesk">Get Demo</a></button></li>
+            
+            <li>
+        <label for="drop-2" class="toggle">Solutions  +</label>
+        <a href="solutions.html">Solutions  </a>
+        <input type="checkbox" id="drop-3"/>
+        <ul>
+          <li><a href="solutions.html#solution-industry">By Industry</a></li>
+          <li><a href="./solutions.html#solution-size">By Size</a></li>
+        </ul>
+      </li>
+      <li><a href="./pricing.html">Pricing</a></li>
+      <li><a href="./pricing.html#sign-up">Contact Us</a></li>
+      <li style="    margin: auto;padding: 0 1rem"><button class="button button-primary rounded purple-button" ><a class="main__a purple-button-content" href="./assets/White Paper - innvoDesk.pdf" download="InnvoDesk">Download Free</a></button></li>
     </ul>
     </nav>
   <section class="main main_dummy">
-    <div class="report__background"></div>
-    <div class="main__desc report__home">
+    <div class="all-p report__background"></div>
+    <div class="all-p main__desc report__home">
       <h1>Reporting and Analytics</h1>
-      <p style="color: #3b3a3e;">InnvoDesk Reports modules provide a variety of built-in data reports and analysis reports to guide you in making informed decisions.</p>
+      <p class="all-p" style="color: #3b3a3e;">InnvoDesk Reports modules provide a variety of built-in data reports and analysis reports to guide you in making informed decisions.</p>
       <button class="button button-primary rounded"><a class="trial" href="#sign-up">Start free trial</a></button>
     </div>
     
@@ -68,51 +80,17 @@
     <h2>The Effective Features of Reporting and Analytics
     </h2>
     <div>
-        <p class="excellence__desc report-container">Have you ever been looking to improve operational efficiency, staff productivity, and customer experience? 
+        <p class="all-p excellence__desc report-container">Have you ever been looking to improve operational efficiency, staff productivity, and customer experience? 
         </p>
-        <p class="excellence__desc report-container">Evaluate and find the company's metrics, employee performance, ticketing reports, and customer service helpdesk reports with the InnvoDesk Reporting and Analytics tool.</p>
-        <p class="excellence__desc report-container">InnvoDesk Reports modules provide a variety of built-in data reports and analysis reports to guide you in making informed decisions.
+        <p class="all-p excellence__desc report-container">Evaluate and find the company's metrics, employee performance, ticketing reports, and customer service helpdesk reports with the InnvoDesk Reporting and Analytics tool.</p>
+        <p class="all-p excellence__desc report-container">InnvoDesk Reports modules provide a variety of built-in data reports and analysis reports to guide you in making informed decisions.
             </p>
     </div>
     </div>
   </section>
-
-  <section class="engineering-team">
-    <img src="./assets/reportpreview1.jpg"
-        class="engineering-team__image engineering-team__img__container ticket-container ticket-sub-container re-port">
-    <div class="engineering-team__desc" style="padding-top: 2rem">
-        
-        <h2>Check Representative Performance</h2>
-        <p class="p__black">This software tool will help you to inspect the performance of representatives depending on the parameters such as customer satisfaction, average response time, expertise, and ticket traffic. 
-        </p>
-        <br>
-        <p class="p__black">It examines your support executive’s performance and finds your team development areas.
-        </p>
-  
-    </div>
-  </section>
   <section class="trusted_by_customers">
-    <img src="./assets/reportpreview2.jpg"
-        class="trusted_by_customers__image">
-    <div class="trusted_by_customers__desc">
-        
-        <h2>Customer Ratings and Satisfaction
-        </h2>
-        <p class="p__black">This reporting feature lets you gather customer feedback after giving resolutions to them. </p>
-        <br>
-        <p class="p__black">It will ensure customer scores and satisfaction.
-  
-        </p>
-        <br>
-        <p class="p__black">It maximizes the customer service helpdesk report data to decide how your customers and representatives feel about your service and support professionals.
-  
-        </p>
-        
-    </div>
-  </section>
-  <section class="trusted_by_customers">
-    <div class="carousel">
-      <div class="carousel__img-container">
+    <div class="all-p carousel">
+      <div class="all-p carousel__img-container">
         
           
           <div  class="carousel__image">
@@ -122,7 +100,7 @@
           </div>
       </div>
       <blockquote class="testimonial">
-          <p class="testimonial__text" id="testimonial">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint iste, voluptate quam ipsum aliquam, corporis dicta distinctio, ea omnis quo quae non nulla facere rerum aperiam."</p>
+          <p class="all-p testimonial__text" id="testimonial">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint iste, voluptate quam ipsum aliquam, corporis dicta distinctio, ea omnis quo quae non nulla facere rerum aperiam."</p>
           
       </blockquote>
       <button class="carousel__btn carousel__btn--left">
@@ -133,87 +111,107 @@
       </button>
   </div>
   </section>
+  <section class="engineering-team">
+    <img src="./assets/reportpreview1.jpg"
+        class="engineering-team__image engineering-team__img__container ticket-container ticket-sub-container re-port">
+    <div class="all-p engineering-team__desc" style="padding-top: 2rem">
+        
+        <h2>Check Representative Performance</h2>
+        <p class="all-p p__black">This software tool will help you to inspect the performance of representatives depending on the parameters such as customer satisfaction, average response time, expertise, and ticket traffic. 
+        </p>
+        <br>
+        <p class="all-p p__black">It examines your support executive’s performance and finds your team development areas.
+        </p>
+  
+    </div>
+  </section>
+  <section class="trusted_by_customers">
+    <img src="./assets/reportpreview2.jpg"
+        class="trusted_by_customers__image">
+    <div class="all-p trusted_by_customers__desc">
+        
+        <h2>Customer Ratings and Satisfaction
+        </h2>
+        <p class="all-p p__black">This reporting feature lets you gather customer feedback after giving resolutions to them. </p>
+        <br>
+        <p class="all-p p__black">It will ensure customer scores and satisfaction.
+  
+        </p>
+        <br>
+        <p class="all-p p__black">It maximizes the customer service helpdesk report data to decide how your customers and representatives feel about your service and support professionals.
+  
+        </p>
+        
+    </div>
+  </section>
+
     
    
-
   <footer class="footer">
     <div class="flex flex-columns">
       <img class="logo" src="./assets/innvocore.svg" alt="">
-      <small class="mb-6">An web-based Enterprise Help Desk with CRM & IT Service Desk software, which can fit into any
-        IT
+      <div class="">An web-based Enterprise Help Desk with CRM & IT Service Desk software, which can fit into any IT
         & non-IT organisations to manage their customer communication problems and provide faster solutions
-        by improving customer satisfaction & revenue.</small>
-
+        by improving customer satisfaction & revenue.</div>
+      
     </div>
     <div class="flex flex-columns">
-      <p>ABOUT</p>
+      <p class="footer-p"> ABOUT</p>
       <a href="https://innvocoretech.com/company-overview/" target="_blank" rel="noopener noreferrer">Company Overview
       </a>
       <a href="https://innvocoretech.com/contact-us/" target="_blank" rel="noopener noreferrer">Contact Us
       </a>
     </div>
     <div class="flex flex-columns">
-      <p> SERVICES
+      <p class="footer-p"> SERVICES 
       </p>
-      <a href="https://innvocoretech.com/application-services/" target="_blank" rel="noopener noreferrer">Application
-        Services
+      <a href="https://innvocoretech.com/application-services/" target="_blank" rel="noopener noreferrer">Application Services
       </a>
-      <a href="https://innvocoretech.com/human-capital-augmentation/" target="_blank" rel="noopener noreferrer">Human
-        Capital Augmentation
-
+      <a href="https://innvocoretech.com/human-capital-augmentation/" target="_blank" rel="noopener noreferrer">Human Capital Augmentation
+  
       </a>
-      <a href="https://innvocoretech.com/process-consultancy/" target="_blank" rel="noopener noreferrer">Process
-        Consultancy
-
+      <a href="https://innvocoretech.com/process-consultancy/" target="_blank" rel="noopener noreferrer">Process Consultancy
+  
       </a>
       <a href="https://innvocoretech.com/re-engineering/" target="_blank" rel="noopener noreferrer">Re-engineering
-
+  
       </a>
       <a href="https://innvocoretech.com/technologies/" target="_blank" rel="noopener noreferrer">Technologies
-
+  
       </a>
     </div>
     <div class="flex flex-columns">
-      <p> SOLUTIONS
+      <p class="footer-p"> SOLUTIONS 
       </p>
-      <a href="https://innvocoretech.com/automation-digitization/" target="_blank" rel="noopener noreferrer">Automation
-        & Digitization</a>
-
-      <a href="https://innvocoretech.com/business-analytics/" target="_blank" rel="noopener noreferrer">Business
-        Analytics</a>
-
-      <a href="https://innvocoretech.com/cloud-technology/" target="_blank" rel="noopener noreferrer">Cloud
-        Technology</a>
-
-      <a href="https://innvocoretech.com/helpdesk-services/" target="_blank" rel="noopener noreferrer">Helpdesk
-        Services</a>
-
+      <a href="https://innvocoretech.com/automation-digitization/" target="_blank" rel="noopener noreferrer">Automation & Digitization</a>
+  
+      <a href="https://innvocoretech.com/business-analytics/" target="_blank" rel="noopener noreferrer">Business Analytics</a>
+  
+      <a href="https://innvocoretech.com/cloud-technology/" target="_blank" rel="noopener noreferrer">Cloud Technology</a>
+  
+      <a href="https://innvocoretech.com/helpdesk-services/" target="_blank" rel="noopener noreferrer">Helpdesk Services</a>
+  
       <a href="https://innvocoretech.com/mobility/" target="_blank" rel="noopener noreferrer">Mobility</a>
-
-      <a href="https://innvocoretech.com/automation-digitization/" target="_blank" rel="noopener noreferrer">Robotic
-        Process Automation (RPA)</a>
-
-      <a href="https://innvocoretech.com/workflow-solutions/" target="_blank" rel="noopener noreferrer">Workflow
-        Solutions</a>
-
+  
+      <a href="https://innvocoretech.com/automation-digitization/" target="_blank" rel="noopener noreferrer">Robotic Process Automation (RPA)</a>
+  
+      <a href="https://innvocoretech.com/workflow-solutions/" target="_blank" rel="noopener noreferrer">Workflow Solutions</a>
+  
     </div>
     <div class="flex flex-columns">
-      <p> INDUSTRY
+      <p class="footer-p"> INDUSTRY 
       </p>
-      <a href="https://innvocoretech.com/finance-insurance/" target="_blank" rel="noopener noreferrer">Finance &
-        Insurance
+      <a href="https://innvocoretech.com/finance-insurance/" target="_blank" rel="noopener noreferrer">Finance & Insurance
       </a>
-
-      <a href="https://innvocoretech.com/manufacturing-logistics/" target="_blank" rel="noopener noreferrer">Finance &
-        Insurance
+  
+      <a href="https://innvocoretech.com/manufacturing-logistics/" target="_blank" rel="noopener noreferrer">Finance & Insurance
       </a>
-
-      <a href="https://innvocoretech.com/retail-ecommerce/" target="_blank" rel="noopener noreferrer">Retail &
-        eCommerce</a>
-
+  
+      <a href="https://innvocoretech.com/retail-ecommerce/" target="_blank" rel="noopener noreferrer">Retail & eCommerce</a>
+  
     </div>
     <div class="flex flex-columns">
-      <p> CAREERS
+      <p class="footer-p"> CAREERS 
       </p>
       <a href="https://innvocoretech.com/careers/" target="_blank" rel="noopener noreferrer">Current Openings
       </a>

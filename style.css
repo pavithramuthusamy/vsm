@@ -6,6 +6,7 @@
   --gray-purple: #8989A2;
   --white: #FFFFFF;
   --black: #000000;
+  --light-black: #3b3a3e;
   --light-green: #F6FFED;
   --light-red: #FFF1F0;
   --light-blue: #E6F7FF;
@@ -21,7 +22,7 @@
 body,
 button,
 input {
-  font-family: 'Metropolis', sans-serif;
+  font-family:  "Avenir next", Helvetica, sans-serif;
   ;
 }
 
@@ -43,7 +44,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.3125rem;
+  font-size: 1.4rem;
   line-height: 1.28;
 }
 
@@ -53,6 +54,20 @@ p {
   color: var(--gray-purple);
 }
 
+.all-p{
+  font-size: 1.3rem !important;
+  font-weight: 500 !important;
+  color: var(--light-black) !important;
+  text-align: justify !important;
+  text-justify: inter-word !important;
+}
+
+.footer-p{
+  font-size: 1.3rem !important;
+  font-weight: 500 !important;
+  color: var(--light-black) !important;
+}
+
 small {
   font-size: 0.75rem;
   color: var(--dark-purple);
@@ -60,7 +75,7 @@ small {
 }
 
 a {
-  font-size: 0.75rem;
+  font-size: 1rem;
   color: var(--dark-purple);
   margin: 0.65rem 0;
 }
@@ -87,7 +102,12 @@ a {
   color: var(--purple);
   width: fit-content;
 }
-
+.purple-button{
+  border-radius: 100px !important;
+}
+.purple-button-content{
+  color: #fff;
+}
 .button {
   color: var(--black);
   background-color: var(--white);
@@ -183,7 +203,7 @@ a {
 }
 
 .flex-columns {
-  flex-direction: column;
+  flex-direction: column; 
 }
 
 .input {
@@ -191,6 +211,8 @@ a {
   border: 1px solid var(--gray-purple);
   border-radius: 4px;
   margin-bottom: 1rem;
+  background: white !important;
+  border: 1px solid #000000 !important;
 }
 
 .mb-6 {
@@ -200,13 +222,13 @@ a {
 .trial{
   text-decoration: none;
   color: white;
-  font-size: 0.84rem;
+  font-size: 1rem;
 }
 
 .services-list{
-  color: #160637;
+  color: var(--light-black);
   margin: 10px;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .nav {
@@ -299,7 +321,7 @@ a {
   background-size: 100% 100%;
   background-repeat: no-repeat;
  
-  background-size: 65% auto;
+  background-size: 69% auto;
  
  
   padding: 15px;
@@ -379,10 +401,10 @@ a {
 
 .knowledge__background {
  
-  background: #ffffff url(./assets/knowmanag.jpg) no-repeat right top;
+  background: #ffffff url(./assets/knw2.png) no-repeat right top;
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  background-size: 69% auto;
+  background-size: 60% auto;
   padding: 15px;
   height: calc( 100vh - 70px);
   padding: 0rem !important;
@@ -598,7 +620,7 @@ a {
 }
 
 .sign-up__desc {
-  text-align: center;
+  text-align: center !important;
   margin: auto;
   position: relative;
   margin-bottom: 2rem;
@@ -681,7 +703,7 @@ a {
 
 
 .footer {
-  background-color: var(--lighter-blue);
+  background-color: var(--lighter-purple);
   padding: 2rem;
   display: flex;
   flex-wrap: wrap;
@@ -809,10 +831,12 @@ a {
     max-height: 436px;
   }
   .engineering-team__image {
-      margin-left: 2rem;
-      width: 100%;
+      margin-left: 0;
+      width: 50%;
       object-fit: contain;
       order: 1;
+      right: 20%;
+      transform: scale(0.8) translate(35%, 0%) !important;
   }
 
   .trusted_by_customers__image,
@@ -824,6 +848,8 @@ a {
 
   .engineering-team__desc {
       order: 0;
+      /* padding-left: 0rem; */
+      transform: translate(10%, 0%) !important;
   }
 
   .trusted_by_customers__desc .tag,
@@ -960,8 +986,20 @@ body {
   fill: #38A169;
 }
 
-a {
- 
+.learn_more {
+  color: var(--purple);
+  font-size: 1.2rem;
+  text-decoration: unset;
+}
+
+.footer-links {
+  color: var(--light-black);
+  font-size: 1rem;
+  text-decoration: unset;
+}
+
+.learn-more-circle {
+  font-size: 1.2rem;
 }
 
 .menu {
@@ -977,14 +1015,13 @@ a {
   padding: 1.5rem 1rem;
   text-decoration: none;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 1.1rem;
   transition: 0.2s;
   width: max-content;
   margin: 0;
 }
-.menu a:hover {
- 
- 
+.button a:hover {
+  background: #722ED1;
 }
 .menu a:hover .icon {
   fill: #fff;
@@ -1475,6 +1512,23 @@ a {
     box-shadow: -10px 10px 25px rgba(0, 0, 0, 0.2);
    }
 }
+@media (max-width:  476px) {
+  .circle--slider .animate-wrapper {
+    
+    width: 108% !important;
+    height: 40% !important;
+    position: absolute;
+    top: 140vh;
+    left: 10;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    transform: translate(30%, -60%) !important;
+
+
+   }
+}
 @media (min-width:  476px) and (max-width: 767px){
   .circle--rotate {
     border-radius: 50%;
@@ -1522,7 +1576,7 @@ a {
 
    .circle--slider .animate-wrapper {
     width: 50%;
-    height: 43%;
+    height: 43% !important;
     position: absolute;
     top: 140vh;
     left: 10;
@@ -1530,7 +1584,8 @@ a {
     right: 0;
     bottom: 0;
     margin: auto;
-   
+    transform: translate(30%, -45%) !important;
+
    }
 
    .circle--slider .animate-img .animate-img__in {
@@ -1617,7 +1672,7 @@ a {
     right: 0;
     bottom: 0;
     margin: auto;
-   
+    transform: translate(40%, -45%) !important;
    }
 
    .circle--slider .animate-img .animate-img__in {
@@ -1701,7 +1756,8 @@ a {
     right: 0;
     bottom: 0;
     margin: auto;
-   
+    transform: translate(10%,-10%);
+
    }
 
    .circle--slider .animate-img .animate-img__in {
@@ -1813,8 +1869,9 @@ a {
 }
 
 .knowledge__background {
- 
-  background: #ffffff url(./assets/knowmanag.jpg) no-repeat right top;
+  background: #ffffff url(./assets/knw2.png) no-repeat right top;
+
+  /* background: #ffffff url(./assets/knowmanag.jpg) no-repeat right top; */
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-size: 100% auto;
@@ -1927,7 +1984,7 @@ a {
   }
 }
 
-@media (min-width: 320px) and (max-width: 1024px){
+@media (min-width: 320px) and (max-width: 1023px){
   .engineering-team, .trusted_by_customers{
    display: table;
   }
@@ -1939,8 +1996,30 @@ a {
   }
   .circle--slider .animate-wrapper {
     width: 50%;
+    margin: 0 !important;
+
   }
   .report__home {
     position: relative;
   }
+}
+@media (min-width: 320px) and (max-width: 768px){
+.multi-channel {
+    display: flex !important;
+}
+.multi-channel-container{
+  text-align: left !important;
+}
+}
+
+
+
+::-webkit-scrollbar {
+  width: 6px;
+} 
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+} 
+::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
 }

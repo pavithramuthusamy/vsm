@@ -1,73 +1,188 @@
 
 .li-element {
-    color: #000;;
-    list-style:none;
-    position: relative;
-    padding-left:50px;
-    line-height: 2;
-    font-size:25px;
-  }
+  color: #000;;
+  list-style:none;
+  position: relative;
+  padding-left:50px;
+  line-height: 2;
+  /* font-size:25px; */
   
-  .li-element:before {
-    font-family:FontAwesome;
-    position: absolute;
-    left: 0;
-    color:#722ED1;
-    font-size:25px;
-  }
-  
-  li.one:before {
-     content:"\f111"; 
-  }
+  font-size: 1.3rem !important;
+  font-weight: 500 !important;
+  color: var(--light-black) !important;
+}
 
-  li:hover:before {
-    color:#DEC9FA;
-  }
+.li-element:before {
+  font-family:FontAwesome;
+  position: absolute;
+  left: 0;
+  color:#722ED1;
+  font-size: 1.3rem !important;
 
-  
+}
+
+li.one:before {
+   content:"\f111"; 
+}
+
+li:hover:before {
+  color:#DEC9FA;
+}
+
+
 
 article {
-    font-size:20px;
-    background-color:#fff;
-    width: 35em;
-    margin: 2.375em auto;
-    padding: 4em;
-    border: .25em solid #191919;
-    color:black;
-  }
-  
-  .articleh1 {
-    font-size: 2em;
-    margin: 0 0 .5em;
-    margin-bottom: 2rem;
+  font-size:20px;
+  background-color:#fff;
+  width: 35em;
+  margin: 2.375em auto;
+  padding: 4em;
+  border: .25em solid #191919;
+  color:black;
+}
 
-  }
-  
-  .articlep {
-    font-size: 1em;
-    margin: 0;
-    line-height: 1.5em;
-    margin-bottom: 2rem;
+.articleh1 {
+  font-size: 3rem;
+  margin: 0 0 .5em;
+  margin-bottom: 2rem;
+  text-align: start;
 
+}
+
+.articlep {
+  font-size: 1em;
+  margin: 0;
+  line-height: 1.5em;
+  margin-bottom: 2rem;
+
+}
+
+@media screen and (max-width:740px){
+  article{
+    font-size:12px;
+    color:blue;
   }
-  
-  @media screen and (max-width:740px){
-    article{
-      font-size:12px;
-      color:blue;
-    }
-  }
+}
+
+.main-title {
+ 
+ 
+}
+@media (min-width: 1024px) and (max-width: 1300px){
 
   .main-title {
    
+    transform:translate(0%, 25%);
+
    
   }
-  @media (min-width: 1024px) and (max-width: 1300px){
+}
 
-    .main-title {
-     
-      transform:translate(0%, 25%);
 
-     
-    }
-  }
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;600&display=swap");
+* {
+margin: 0;
+}
+
+.image-card-component {
+/* max-width: 1100px; */
+margin: 0 auto;
+display: flex;
+background-color: #fff;
+border-radius: 8px;
+box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.1);
+transition: all 0.5s ease;
+}
+.image-card-component .image1 {
+width: 45%;
+background: url("./assets/knw1.png");
+/* background: url("./assets/knw3.mp4") no-repeat; */
+background-size: cover;
+background-position: center;
+border-radius: 8px 0 0 8px;
+}
+.image-card-component .image2 {
+width: 45%;
+background: url("./assets/knw6.png");
+/* background: url("./assets/knw3.mp4") no-repeat; */
+background-size: cover;
+background-position: center;
+border-radius: 8px 0 0 8px;
+}
+.image-card-component .content {
+display: flex;
+align-items: center;
+padding: 3rem;
+flex: 1;
+box-sizing: border-box;
+/* font-family: "Raleway", sans-serif; */
+background: #FBFCFF;
+}
+.image-card-component .content .cta {
+margin-left: auto;
+margin-right: 20px;
+min-width: 120px;
+background: #00897b;
+padding: 10px;
+text-align: center;
+border-radius: 3px;
+color: #FFF;
+text-decoration: none;
+font-weight: 700;
+transition: all 0.5s ease;
+}
+.image-card-component .content .cta:hover {
+background: #00695c;
+box-shadow: 0px 0px 6px 0px #4db6ac;
+}
+.image-card-component .content .content-text {
+/* margin-right: 60px; */
+}
+.image-card-component .content h4 {
+margin: 0 0 15px;
+font-size: 30px;
+line-height: 34px;
+font-weight: 700;
+color: #111;
+transition: all 0.5s ease;
+}
+.image-card-component .content p {
+margin: 0;
+font-size: 1.2rem;
+/* line-height: 20px; */
+color: var(--gray-purple);
+transition: all 0.5s ease;
+padding-bottom: 2rem;
+}
+
+@media screen and (max-width: 991px) {
+.image-card-component {
+  flex-direction: column;
+  margin: 0 16px;
+}
+.image-card-component .image1 {
+  height: 140px;
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+}
+.image-card-component .image2 {
+  height: 140px;
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+}
+.image-card-component .content {
+  flex-direction: column;
+}
+.image-card-component .content .content-text {
+  margin: auto;
+  text-align: center;
+}
+.image-card-component .content .cta {
+  margin: 25px auto 0;
+  width: 60%;
+}
+.image-card-component .content h4 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+}

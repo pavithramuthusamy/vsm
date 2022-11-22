@@ -7,7 +7,8 @@
   <title>InnvoDesk</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
-  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="ticketmanage.css">
   <link rel="stylesheet" href="itsm.css">
 </head>
 <body style="overflow-x: hidden;">
@@ -26,11 +27,10 @@
                 <input type="checkbox" id="drop-1"/>
                 <ul>
                   <li><a href="./ticketmanagement.html">Ticket Management</a></li>
-                  <li><a href="CRM.html">CRM</a></li>
                   <li><a href="changemanagement.html">Change Management</a></li>
                   <li><a href="incident.html">SLA Management</a></li>
-                  <li><a href="report.html">Reporting & Analytics</a></li>
-                   <li><a href="itsm.html">IT Service Management</a></li>
+                  <li><a href="CRM.html">CRM</a></li>
+
                   
                   </ul> 
 
@@ -39,26 +39,38 @@
 
             
             <label for="drop-2" class="toggle">Products  +</label>
-            <a href="#">Products  </a>
+<a href="#">Products  </a>
             <input type="checkbox" id="drop-2"/>
             <ul>
+              <li><a href="itsm.html">IT Service Management</a></li>
               <li><a href="./knowledge.html">Knowledge Management</a></li>
+              <li><a href="report.html">Reporting & Analytics</a></li>
                 
             </ul>
             </li>
-            <li><a href="./pricing.html">Pricing</a></li>
-      <li><a href="./solutions.html">Solutions</a></li>
-      <li style="    margin: auto;padding: 0 1rem"><button class="button button-primary-outlined rounded" ><a class="main__a" href="./assets/White Paper - innvoDesk.pdf" download="InnvoDesk">Get Demo</a></button></li>
+            
+            <li>
+        <label for="drop-2" class="toggle">Solutions  +</label>
+        <a href="solutions.html">Solutions  </a>
+        <input type="checkbox" id="drop-3"/>
+        <ul>
+          <li><a href="solutions.html#solution-industry">By Industry</a></li>
+          <li><a href="./solutions.html#solution-size">By Size</a></li>
+        </ul>
+      </li>
+      <li><a href="./pricing.html">Pricing</a></li>
+      <li><a href="./pricing.html#sign-up">Contact Us</a></li>
+      <li style="    margin: auto;padding: 0 1rem"><button class="button button-primary rounded purple-button" ><a class="main__a purple-button-content" href="./assets/White Paper - innvoDesk.pdf" download="InnvoDesk">Download Free</a></button></li>
     </ul>
     </nav>
   
   <section class="main main_dummy">
-    <div class="itsm__background"></div>
+    <div class="all-p itsm__background"></div>
     
-    <div class="main__desc itsm__home">
+    <div class="all-p main__desc itsm__home">
       <h1>IT Service Management </h1>
       
-      <p style="color: var(--dark-purple);">Are you want to remove all obstacles and barriers to employee support services for your business? InnvoDesk ITSM software will enable your IT team to get an effective ITIL-aligned service quickly.</p>
+      <p class="all-p" style="color: var(--dark-purple);">Do you want to remove all obstacles and barriers to employee support services for your business? InnvoDesk ITSM software will enable your IT team to get an effective ITIL-aligned service quickly.</p>
       <button class="button button-primary rounded"><a class="trial" href="#sign-up">Start free trial</a></button>
       
     </div>
@@ -70,69 +82,73 @@
   </section>
 
   <section class="excellence">
+    <p class="all-p tag rounded">
+      InnvoDesk for ITSM 
+    </p>
     <h2 class="itsm-h2-example">Everything you want for IT Support 
     </h2>
     <div>
-        <p class="excellence__desc report-container itsm-p">InnvoDesk IT Service Management (ITSM) is a set of practices and policies for delivering, implementing, and handling IT services for the end users in a way that fulfills the stated goals of the business, and the stated requirements of end users. 
+        <p class="all-p excellence__desc report-container itsm-p">InnvoDesk IT Service Management (ITSM) is a set of practices and policies for delivering, implementing, and handling IT services for the end users in a way that fulfills the stated goals of the business, and the stated requirements of end users. 
         </p>
-        <p class="excellence__desc report-container itsm-p">This ITSM software will convert your present ways of working into up-to-the-minute workflows, and intuitive workflows. 
+        <p class="all-p excellence__desc report-container itsm-p">This ITSM software will convert your present ways of working into up-to-the-minute workflows, and intuitive workflows. 
             If you are doing any business, you need good helpdesk software which is suitable and supportable for all of your needs. Then, InnvoDesk is a one-stop software for you.</p>
-        <p class="excellence__desc report-container itsm-p"> InnvoDesk comes with the ITSM framework, ITSM tool, and ITSM process. It provides valuable analytics. It helps you to concentrate on the resources, talent, and processes for delivering valuable services.  Hence, you can suit your IT delivery to the actual requirements of your business, current and future use. 
+        <p class="all-p excellence__desc report-container itsm-p"> InnvoDesk comes with the ITSM framework, ITSM tool, and ITSM process. It provides valuable analytics. It helps you to concentrate on the resources, talent, and processes for delivering valuable services.  Hence, you can suit your IT delivery to the actual requirements of your business, current and future use. 
             </p>
     </div>
     <div>
       <img src="https://cdni.iconscout.com/illustration/premium/thumb/meeting-room-5309235-4440012.png" alt="">
+        <!-- <video src="./assets/knw4.mp4"></video> -->
     </div>
     </div>
   </section>
-  <section class="testimonials">
+  <section class="testimonials itsm-subtasks">
     <h2 class="itsm-center unt">How InnvoDesk ITSM meet your needs?</h2>
-    <div class="itsm-title">Here, you can know about InnvoDesk IT service management benefits your business directly and indirectly.</div>
-    
-    <div class="wrapper">
+    <div class="all-p itsm-title">Here, you can know about InnvoDesk IT service management benefits your business directly and indirectly.</div>
+<!--     
+    <div class="all-p wrapper">
       <input checked type=radio name="slider" id="slide1" />
       <input type=radio name="slider" id="slide2" />
       <input type=radio name="slider" id="slide3" />
       <input type=radio name="slider" id="slide4" />
       <input type=radio name="slider" id="slide5" />
     
-      <div class="slider-wrapper">
+      <div class="all-p slider-wrapper">
         <div class=inner>
          
     
           <article>
-            <div class="info top-left">
+            <div class="all-p info top-left">
               <h3>Recover Innovation</h3>
-              <p class="p_z"> InnvoDesk ITSM helps you document, store, handle, and draw from your knowledge assets. Therefore, you can use this information to manage your innovative ventures. For example, suppose, if your company is filled with more employee insights with knowledge, and great ideas.</p>
-              <p class="p_z"> This intelligence is very specific to your organization and can be a source of information. Unluckily, this knowledge was not documented. As a result, it can be difficult for another employee in your company to recognize and implement them. Anyhow, you can use this certain asset via knowledge management with the support of InnvoDesk ITSM.</p>
+              <p class="all-p p_z"> InnvoDesk ITSM helps you document, store, handle, and draw from your knowledge assets. Therefore, you can use this information to manage your innovative ventures. For example, suppose, if your company is filled with more employee insights with knowledge, and great ideas.</p>
+              <p class="all-p p_z"> This intelligence is very specific to your organization and can be a source of information. Unluckily, this knowledge was not documented. As a result, it can be difficult for another employee in your company to recognize and implement them. Anyhow, you can use this certain asset via knowledge management with the support of InnvoDesk ITSM.</p>
 
             </div>
-            <img class="img_blur" src="https://images.unsplash.com/photo-1496065187959-7f07b8353c55?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8SW5ub3ZhdGlvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" />
+            <img class="img_blur" src="https://images.unsplash.com/photo-1617791160536-598cf32026fb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fElubm92YXRpb258ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" />
           </article>
     
           <article>
-            <div class="info top-left">
+            <div class="all-p info top-left">
               <h3>Minimizes Risk Factors</h3>
-              <p class="p_z"> Bad IT asset visibility can leave your organization in danger of cyber threats. Whether you are not aware of some assets in your network, you may not be able to fix the vulnerabilities that happen. Fundamentally, ITSM eliminates all the risks by increasing visibility in your IT atmosphere.</p>
-              <p class="p_z"> Here comes, InnvoDesk ITSM applies IT asset management to improvise visibility in your company. This process allows you to locate and monitor hardware, software, and all other IT assets. Consequently, you can handle and protect all those assets.</p>
+              <p class="all-p p_z"> Bad IT asset visibility can leave your organization in danger of cyber threats. Whether you are not aware of some assets in your network, you may not be able to fix the vulnerabilities that happen. Fundamentally, ITSM eliminates all the risks by increasing visibility in your IT atmosphere.</p>
+              <p class="all-p p_z"> Here comes, InnvoDesk ITSM applies IT asset management to improvise visibility in your company. This process allows you to locate and monitor hardware, software, and all other IT assets. Consequently, you can handle and protect all those assets.</p>
 
             </div>
             <img class="img_blur" src="https://media.istockphoto.com/id/1315206936/photo/satisfaction-survey-concept-hand-choose-a-smiley-face-on-wood-block.jpg?b=1&s=170667a&w=0&k=20&c=DN_yd8cqTBZdOm8CePGYyWeT_PAYt0Ao2CsxC4yLjlM=" />
           </article>
           <article>
-            <div class="info top-left">
+            <div class="all-p info top-left">
               <h3>Enhances Employee and Customer Satisfaction</h3>
                 
-              <p class="p_z">InnvoDesk ITSM satisfies both the customers and employees by reducing downtimes.</p>   
-              <p class="p_z">Moreover, this applies to incident management. Significantly, this process makes sure incidents are dealt with rapidly and protects against critical downtimes.</p>
+              <p class="all-p p_z">InnvoDesk ITSM satisfies both the customers and employees by reducing downtimes.</p>   
+              <p class="all-p p_z">Moreover, this applies to incident management. Significantly, this process makes sure incidents are dealt with rapidly and protects against critical downtimes.</p>
               </div>
             <img class="img_blur" src="https://media.istockphoto.com/id/1329608378/photo/customer-service-and-satisfaction-concept-business-people-are-touching-the-virtual-screen-on.jpg?b=1&s=170667a&w=0&k=20&c=dfnpLpfjpH7CaIQe7du2aHUbLzSacfzJnWuRRJi3r6Q=" />
           </article>
           <article>
-            <div class="info top-left">
+            <div class="all-p info top-left">
               <h3>Inexpensive</h3>
-              <p class="p_z"> Most of the IT industries are spending a lot of money on unwanted things due to the lack of proper support and the right planning. InnvoDesk ITSM reduces expenditure by guaranteeing the efforts to get the actual assets and benefits to the business under your tight budget. </p>
-              <p class="p_z"> Our software uses project management to avoid all useless expenses. This process specifies the scope of your project, the needs of resources, and the estimated amount. Moreover, you can also apply it throughout implementation to make sure you are following all those variants. All of these practices will ultimately help you to cut down on unexpected expenses.</p>
+              <p class="all-p p_z"> Most of the IT industries are spending a lot of money on unwanted things due to the lack of proper support and the right planning. InnvoDesk ITSM reduces expenditure by guaranteeing the efforts to get the actual assets and benefits to the business under your tight budget. </p>
+              <p class="all-p p_z"> Our software uses project management to avoid all useless expenses. This process specifies the scope of your project, the needs of resources, and the estimated amount. Moreover, you can also apply it throughout implementation to make sure you are following all those variants. All of these practices will ultimately help you to cut down on unexpected expenses.</p>
 
             </div> 
             <img class="img_blur" src="https://media.istockphoto.com/id/1353595066/photo/high-price-low-value-scale-business-concept.jpg?b=1&s=170667a&w=0&k=20&c=kocI6z0T_1gl507MMA3JYgBSKBF-wxZX5v6-AqkmflY=" />
@@ -144,7 +160,7 @@
       </div>
       
     
-      <div class="slider-prev-next-control">
+      <div class="all-p slider-prev-next-control">
         <label for=slide1></label>
         <label for=slide2></label>
         <label for=slide3></label>
@@ -153,7 +169,7 @@
       </div>
       
     
-      <div class="slider-dot-control">
+      <div class="all-p slider-dot-control">
         <label for=slide1></label>
         <label for=slide2></label>
         <label for=slide3></label>
@@ -161,27 +177,90 @@
         
       </div>
       
+    </div> -->
+    <div class="all-p slider__warpper">
+      <div class="all-p flex__container flex--pikachu flex--active" data-slide="1">
+        <div class="all-p flex__item flex__item--left">
+          <div class="all-p flex__content">
+            <!-- <p class="all-p text--sub">Pokemon Gen I</p> -->
+            <h1 class="text--big">Recover Innovation</h1>
+            <p class="all-p p_z"> InnvoDesk ITSM helps you document, store, handle, and draw from your knowledge assets. Therefore, you can use this information to manage your innovative ventures. For example, suppose, if your company is filled with more employee insights with knowledge, and great ideas.</p>
+            <p class="all-p p_z"> This intelligence is very specific to your organization and can be a source of information. Unluckily, this knowledge was not documented. As a result, it can be difficult for another employee in your company to recognize and implement them. Anyhow, you can use this certain asset via knowledge management with the support of InnvoDesk ITSM.</p>
+
+          </div>
+          <p class="all-p text__background">Innovation</p>
+        </div>
+        <div class="all-p flex__item flex__item--right"></div>
+        <!-- <img class="pokemon__img" src="https://s4.postimg.org/fucnrdeq5/pikachu.png" /> -->
+      </div>
+      <div class="all-p flex__container flex--piplup animate--start" data-slide="2">
+        <div class="all-p flex__item flex__item--left">
+          <div class="all-p flex__content">
+            <!-- <p class="all-p text--sub">Pokemon Gen IV</p> -->
+            <h1 class="text--big">Minimizes Risk Factors</h1>
+            <p class="all-p p_z"> Bad IT asset visibility can leave your organization in danger of cyber threats. Whether you are not aware of some assets in your network, you may not be able to fix the vulnerabilities that happen. Fundamentally, ITSM eliminates all the risks by increasing visibility in your IT atmosphere.</p>
+            <p class="all-p p_z"> Here comes, InnvoDesk ITSM applies IT asset management to improvise visibility in your company. This process allows you to locate and monitor hardware, software, and all other IT assets. Consequently, you can handle and protect all those assets.</p>
+
+          </div>
+          <p class="all-p text__background">Risk</p>
+        </div>
+        <div class="all-p flex__item flex__item--right"></div>
+        <!-- <img class="pokemon__img" src="https://s4.postimg.org/sa9dl4825/pilup.png" /> -->
+      </div>
+      <div class="all-p flex__container flex--blaziken animate--start" data-slide="3">
+        <div class="all-p flex__item flex__item--left">
+          <div class="all-p flex__content">
+            <!-- <p class="all-p text--sub">Pokemon Gen III</p> -->
+            <h1 class="text--big">Enhances Employee and Customer Satisfaction</h1>
+            <p class="all-p p_z">InnvoDesk ITSM satisfies both the customers and employees by reducing downtimes.</p>   
+            <p class="all-p p_z">Moreover, this applies to incident management. Significantly, this process makes sure incidents are dealt with rapidly and protects against critical downtimes.</p>
+            </div>
+          <p class="all-p text__background">Satisfaction</p>
+        </div>
+        <div class="all-p flex__item flex__item--right"></div>
+        <!-- <img class="pokemon__img" src="https://s4.postimg.org/6795hnlql/blaziken.png" /> -->
+      </div>
+      <div class="all-p flex__container flex--dialga animate--start" data-slide="4">
+        <div class="all-p flex__item flex__item--left">
+          <div class="all-p flex__content">
+            <!-- <p class="all-p text--sub">Pokemon Gen IV</p> -->
+            <h1 class="text--big">Inexpensive</h1>
+            <p class="all-p p_z"> Most of the IT industries are spending a lot of money on unwanted things due to the lack of proper support and the right planning. InnvoDesk ITSM reduces expenditure by guaranteeing the efforts to get the actual assets and benefits to the business under your tight budget. </p>
+            <p class="all-p p_z"> Our software uses project management to avoid all useless expenses. This process specifies the scope of your project, the needs of resources, and the estimated amount. Moreover, you can also apply it throughout implementation to make sure you are following all those variants. All of these practices will ultimately help you to cut down on unexpected expenses.</p>
+
+          </div>
+          <p class="all-p text__background">Inexpensive</p>
+        </div>
+        <div class="all-p flex__item flex__item--right"></div>
+        <!-- <img class="pokemon__img" src="https://s4.postimg.org/43yq9zlxp/dialga.png" /> -->
+      </div>
     </div>
-  
+    
+    <div class="all-p slider__navi">
+      <a href="#" class="slide-nav active" data-slide="1">Innovation</a>
+      <a href="#" class="slide-nav" data-slide="2">Risk</a>
+      <a href="#" class="slide-nav" data-slide="3">Satisfaction</a>
+      <a href="#" class="slide-nav" data-slide="4">Inexpensive</a>
+    </div> 
   </section>
-      
+  
   <footer class="footer">
     <div class="flex flex-columns">
       <img class="logo" src="./assets/innvocore.svg" alt="">
-      <small class="mb-6">An web-based Enterprise Help Desk with CRM & IT Service Desk software, which can fit into any IT
+      <div class="">An web-based Enterprise Help Desk with CRM & IT Service Desk software, which can fit into any IT
         & non-IT organisations to manage their customer communication problems and provide faster solutions
-        by improving customer satisfaction & revenue.</small>
+        by improving customer satisfaction & revenue.</div>
       
     </div>
     <div class="flex flex-columns">
-      <p>ABOUT</p>
+      <p class="footer-p"> ABOUT</p>
       <a href="https://innvocoretech.com/company-overview/" target="_blank" rel="noopener noreferrer">Company Overview
       </a>
       <a href="https://innvocoretech.com/contact-us/" target="_blank" rel="noopener noreferrer">Contact Us
       </a>
     </div>
     <div class="flex flex-columns">
-      <p> SERVICES 
+      <p class="footer-p"> SERVICES 
       </p>
       <a href="https://innvocoretech.com/application-services/" target="_blank" rel="noopener noreferrer">Application Services
       </a>
@@ -199,7 +278,7 @@
       </a>
     </div>
     <div class="flex flex-columns">
-      <p> SOLUTIONS 
+      <p class="footer-p"> SOLUTIONS 
       </p>
       <a href="https://innvocoretech.com/automation-digitization/" target="_blank" rel="noopener noreferrer">Automation & Digitization</a>
   
@@ -217,7 +296,7 @@
   
     </div>
     <div class="flex flex-columns">
-      <p> INDUSTRY 
+      <p class="footer-p"> INDUSTRY 
       </p>
       <a href="https://innvocoretech.com/finance-insurance/" target="_blank" rel="noopener noreferrer">Finance & Insurance
       </a>
@@ -229,7 +308,7 @@
   
     </div>
     <div class="flex flex-columns">
-      <p> CAREERS 
+      <p class="footer-p"> CAREERS 
       </p>
       <a href="https://innvocoretech.com/careers/" target="_blank" rel="noopener noreferrer">Current Openings
       </a>
@@ -243,6 +322,9 @@
 <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
 <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.min.js"></script>
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script> -->
   <script src="./itsm.js"></script>
 
 

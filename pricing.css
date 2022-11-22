@@ -13,6 +13,13 @@
   align-items: center;
 }
 
+.pricing-container{
+  background-color: #30336b;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
 .pricing-card {
   display: flex;
   flex-direction: column;
@@ -22,7 +29,7 @@
   border-radius: 5px;
   box-shadow: 0 8px 16px 0px rgba(0, 0, 0, 0.1);
   margin-left: 50px;
-  height: 400px;
+  /* height: 400px; */
 }
 
 .pricing-card-heading {
@@ -157,7 +164,105 @@
 }
 
 .pricing-p{
-  font-size: 1rem;
-  line-height: 2rem;
+  font-size: 1.2rem;
+  padding: 0.25rem 0;
+  color: var(--light-black);
+  margin-left: 1rem;
+}
 
+
+.pricing-table{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: min(1600px, 100%);
+  margin: auto;
+}
+
+.pricing-card{
+  flex: 1;
+  max-width: 360px;
+  background-color: #fff;
+  margin: 20px 10px;
+  text-align: left;
+  cursor: pointer;
+  overflow: hidden;
+  color: #2d2d2d;
+  transition: .3s linear;
+  border: 1px solid var(--lighter-purple);
+
+}
+
+.pricing-card-header{
+  background-color: var(--purple);
+  display: inline-block;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 10px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: .4s linear;
+  text-align: center;
+
+}
+
+.pricing-card:hover .pricing-card-header{
+  box-shadow: 0 0 0 21em var(--purple);
+}
+
+.price{
+  font-size: 40px;
+  color: var(--purple);
+  margin: 40px 0;
+  transition: .2s linear;
+  text-align: center;
+
+}
+
+.price sup, .price span{
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.pricing-card:hover ,.pricing-card:hover .price{
+  color: #fff;
+}
+.pricing-card:hover ,.pricing-card:hover .pricing-p{
+  color: #fff;
+}
+
+.pricing-card li{
+  font-size: 20px;
+  padding: 10px 0;
+  text-transform: capitalize;
+}
+
+.order-btn{
+  display: inline-block;
+  margin-bottom: 40px;
+  margin-top: 60px;
+  border: 2px solid var(--purple);
+  color: var(--purple);
+  padding: 15px 40px;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 500;
+  transition: .3s linear;
+}
+
+.order-btn:hover{
+  background-color: var(--purple);
+  color: #fff;
+}
+
+.bg{
+  color: var(--dark-purple);
+}
+
+@media screen and (max-width:1100px){
+  .pricing-card{
+    flex: 50%;
+  }
 }

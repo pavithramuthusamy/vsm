@@ -4,9 +4,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
+
   <title>InnvoDesk</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="ticketmanage.css">
 </head>
 <body style="overflow-x: hidden;">
   <nav class="header_sticky">
@@ -24,11 +27,10 @@
                 <input type="checkbox" id="drop-1"/>
                 <ul>
                   <li><a href="./ticketmanagement.html">Ticket Management</a></li>
-                  <li><a href="CRM.html">CRM</a></li>
                   <li><a href="changemanagement.html">Change Management</a></li>
                   <li><a href="incident.html">SLA Management</a></li>
-                  <li><a href="report.html">Reporting & Analytics</a></li>
-                   <li><a href="itsm.html">IT Service Management</a></li>
+                  <li><a href="CRM.html">CRM</a></li>
+
                   
                   </ul> 
 
@@ -40,13 +42,25 @@
             <a href="#">Products  </a>
             <input type="checkbox" id="drop-2"/>
             <ul>
+              <li><a href="itsm.html">IT Service Management</a></li>
               <li><a href="./knowledge.html">Knowledge Management</a></li>
+              <li><a href="report.html">Reporting & Analytics</a></li>
                 
             </ul>
             </li>
-            <li><a href="./pricing.html">Pricing</a></li>
-      <li><a href="./solutions.html">Solutions</a></li>
-      <li style="    margin: auto;padding: 0 1rem"><button class="button button-primary-outlined rounded" ><a class="main__a" href="./assets/White Paper - innvoDesk.pdf" download="InnvoDesk">Get Demo</a></button></li>
+            
+      <li>
+        <label for="drop-2" class="toggle">Solutions  +</label>
+        <a href="solutions.html">Solutions  </a>
+        <input type="checkbox" id="drop-3"/>
+        <ul>
+          <li><a href="solutions.html#solution-industry">By Industry</a></li>
+          <li><a href="./solutions.html#solution-size">By Size</a></li>
+        </ul>
+      </li>
+      <li><a href="./pricing.html">Pricing</a></li>
+      <li><a href="./pricing.html#sign-up">Contact Us</a></li>
+      <li style="    margin: auto;padding: 0 1rem"><button class="button button-primary rounded purple-button" ><a class="main__a purple-button-content" href="./assets/White Paper - innvoDesk.pdf" download="InnvoDesk">Download Free</a></button></li>
     </ul>
     </nav>
     <section class="main main_dummy" >
@@ -56,7 +70,7 @@
       <h1>Delivering enhanced Customer Support & IT Service
         Management solutions</h1>
       
-      <p>Get automated workflows, in-depth reporting, automated ticket routing, multi-channel helpdesk support, SLA management, self-help knowledge base options, and data protection.</p>
+      <p class="all-p">Get automated workflows, in-depth reporting, automated ticket routing, multi-channel helpdesk support, SLA management, self-help knowledge base options, and data protection.</p>
       <button class="button button-primary rounded"><a class="trial" href="#sign-up">Start free trial</a></button>
       
     </div>
@@ -73,41 +87,44 @@
     </p>
     <h2>The Best Helpdesk With CRM And IT Service Desk Software For All Of Your Management Needs.
     </h2>
-    <p class="excellence__desc">InnvoDesk helps you simplify customer communication and give them quicker
+    <p class="all-p excellence__desc">InnvoDesk helps you simplify customer communication and give them quicker
       solutions by enhancing customer satisfaction and good returns.
     </p>
-    <div class="excellence__items">
-      <div class="excellence__item">
-        <div class="background-success excellence__icon flex items-center justify-center">
+    <div class="all-p excellence__items">
+      <div class="all-p excellence__item">
+        <div class="all-p background-success excellence__icon flex items-center justify-center">
           <img class="excellence__img" src="./assets/headset.png" alt="">
         </div>
         <h3>Great Customer Services
         </h3>
-        <p>Aiming to keep customers satisfied and happy with a delightful customer
+        <p class="all-p">Aiming to keep customers satisfied and happy with a delightful customer
           experience based on their choice.</p>
+        <a class="learn_more" href="./ticketmanagement.html"> Explore Ticket Management </a>
       </div>
-      <div class="excellence__item">
-        <div class="background-info excellence__icon flex items-center justify-center">
+      <div class="all-p excellence__item">
+        <div class="all-p background-info excellence__icon flex items-center justify-center">
           <img class="excellence__img" src="https://cdn-icons-png.flaticon.com/128/1379/1379505.png" alt="">
         </div>
         <h3>Customized Customer Experience
         </h3>
-        <p>Allow one-on-one and team up conversations or join other teams via
+        <p class="all-p">Allow one-on-one and team up conversations or join other teams via
           InnvoDesk.</p>
+          <a class="learn_more" href="./CRM.html"> Learn more about CRM </a>
       </div>
-      <div class="excellence__item">
-        <div class="background-danger excellence__icon flex items-center justify-center">
+      <div class="all-p excellence__item">
+        <div class="all-p background-danger excellence__icon flex items-center justify-center">
           <img class="excellence__img" src="./assets/icons8-brand-64.png" alt="">
         </div>
         <h3>Brand Credential
         </h3>
-        <p>Offering top-notch services &amp; developing a positive customer experience will
+        <p class="all-p">Offering top-notch services &amp; developing a positive customer experience will
           improve customer retention, and bring more value to your business.</p>
+          <a class="learn_more" href="./itsm.html">Know more about ITSM</a>
       </div>
     </div>
   </section>
   <div style="display: contents;">
-    <p class="trusted_by_customers_title_tag tag rounded">
+    <p class=" trusted_by_customers_title_tag tag rounded">
       Trusted by Customers
     </p>
     <h2 class="trusted_by_customers_title">What Makes Customers to Choose InnvoDesk?
@@ -115,99 +132,98 @@
   </div>
   
   <section class="services circle_layout">
-    <div class="circle--slider">
-      <div class="rotate--circle">
+    <div class="all-p circle--slider">
+      <div class="all-p rotate--circle">
         <ul class="circle--rotate" id="circle--rotate">
           <li class="block">
-            <div class="icon" style="background-color: #654BE4;"><i class="fa fa-line-chart"></i><span> </span><p class="circle-heading"><b>Constant Update</b></p></div>
+            <div class="all-p icon" style="background-color: #654BE4;"><i class="fa fa-line-chart"></i><span> </span><p class="all-p circle-heading"><b>Constant Update</b></p></div>
           </li>
           <li class="block">
-            <div class="icon" style="background: #c62828;"><i class="fa fa-user"></i><span> </span><p class="circle-heading"><b>Satisfied Customer</b></p></div>
+            <div class="all-p icon" style="background: #c62828;"><i class="fa fa-user"></i><span> </span><p class="all-p circle-heading"><b>Satisfied Customer</b></p></div>
           </li>
           <li class="block">
-            <div class="icon" style="background-color: #00695c;"><i class="fa fa-vcard"></i><span> </span><p class="circle-heading"><b>Strengthens Business</b></p></div>
+            <div class="all-p icon" style="background-color: #00695c;"><i class="fa fa-vcard"></i><span> </span><p class="all-p circle-heading"><b>Strengthens Business</b></p></div>
           </li>
           <li class="block">
-            <div class="icon" style="    background-color: #6a1b9a;"><i class="fa fa-shield"></i><span> </span><p class="circle-heading"><b>Business Improvement</b></p></div>
+            <div class="all-p icon" style="    background-color: #d81b60;"><i class="fa fa-shield"></i><span> </span><p class="all-p circle-heading"><b>Business Improvement</b></p></div>
           </li>
           <li class="block">
-            <div class="icon" style="    background-color: #f9a825;"><i class="fa fa-desktop"></i><span> </span><p class="circle-heading"><b>Maintain IT Infrastructure</b></p></div>
+            <div class="all-p icon" style="    background-color: #f9a825;"><i class="fa fa-desktop"></i><span> </span><p class="all-p circle-heading"><b>Maintain IT Infrastructure</b></p></div>
           </li>
           <li class="block">
-            <div class="icon" style="background-color: #00aeff;"><i class="fa fa-usd"></i><span> </span><p class="circle-heading"><b>Budget Friendly</b></p></div>
+            <div class="all-p icon" style="background-color: #00aeff;"><i class="fa fa-usd"></i><span> </span><p class="all-p circle-heading"><b>Budget Friendly</b></p></div>
           </li>
           
         </ul>
-        <div class="animate-wrapper">
-          <div class="animate">
-            <div class="animate-img">
-              <div class="animate-img__in" >
-                <div class="animate-more">
-                  <div class="animate-title">
+        <div class="all-p animate-wrapper">
+          <div class="all-p animate">
+            <div class="all-p animate-img">
+              <div class="all-p animate-img__in" >
+                <div class="all-p animate-more">
+                  <div class="all-p animate-title">
                     <h2 class="services__item__h2">Constant Update</h2>
-                    <p class="services__item__p">Innvodesk delivers continuous innovation every time. Our platform is powered by new-age abilities such as social sensing, RPA, analytics, and mobility. It helps you stay up-to-date with the current, and competitive updates daily.</p>
-                    
-        
+                    <p class="all-p services__item__p">Innvodesk delivers continuous innovation every time. Our platform is powered by new-age abilities such as social sensing, RPA, analytics, and mobility. It helps you stay up-to-date with the current, and competitive updates daily.</p>
+                   
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="animate">
-            <div class="animate-img">
-              <div class="animate-img__in" >
-                <div class="animate-more">
-                  <div class="animate-title">
+          <div class="all-p animate">
+            <div class="all-p animate-img">
+              <div class="all-p animate-img__in" >
+                <div class="all-p animate-more">
+                  <div class="all-p animate-title">
                     <h2 class="services__item__h2">Satisfied Customer</h2>
-                    <p class="services__item__p">Innvodesk keeps your customers more occupied in all of your social media platforms like websites, mobile apps, or emails. It will make your customer get quicker Sresolutions, and easily accessible. Overall, we assure you that customers will have a delightful experience with us. </p>
+                    <p class="all-p services__item__p">Innvodesk keeps your customers more occupied in all of your social media platforms like websites, mobile apps, or emails. It will make your customer get quicker resolutions, and easily accessible. Overall, we assure you that customers will have a delightful experience with us. </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="animate">
-            <div class="animate-img">
-              <div class="animate-img__in" >
-                <div class="animate-more">
-                  <div class="animate-title">
+          <div class="all-p animate">
+            <div class="all-p animate-img">
+              <div class="all-p animate-img__in" >
+                <div class="all-p animate-more">
+                  <div class="all-p animate-title">
                     <h2 class="services__item__h2">Strengthens Business</h2>
-                    <p class="services__item__p">Receive updates about every business interaction and activity. Our low code automation platform connects your systems, people, workflows, and data. Therefore, you can build a business with easy processes, and uninterrupted information flow. </p>
+                    <p class="all-p services__item__p">Receive updates about every business interaction and activity. Our low code automation platform connects your systems, people, workflows, and data. Therefore, you can build a business with easy processes, and uninterrupted information flow. </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="animate">
-            <div class="animate-img">
-              <div class="animate-img__in" >
-                <div class="animate-more">
-                  <div class="animate-title">
+          <div class="all-p animate">
+            <div class="all-p animate-img">
+              <div class="all-p animate-img__in" >
+                <div class="all-p animate-more">
+                  <div class="all-p animate-title">
                     <h2 class="services__item__h2">Business Improvement</h2>
-                    <p class="services__item__p">Innvodesk mainly concentrates on improving your customers, and users. Our professionals work on our behalf to satisfy the needs of customers easily. So, our software will take your business ahead. </p>
+                    <p class="all-p services__item__p">Innvodesk mainly concentrates on improving your customers, and users. Our professionals work on our behalf to satisfy the needs of customers easily. So, our software will take your business ahead. </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="animate">
-            <div class="animate-img">
-              <div class="animate-img__in" >
-                <div class="animate-more">
-                  <div class="animate-title">
+          <div class="all-p animate">
+            <div class="all-p animate-img">
+              <div class="all-p animate-img__in" >
+                <div class="all-p animate-more">
+                  <div class="all-p animate-title">
                     <h2 class="services__item__h2">Maintain IT Infrastructure</h2>
-                    <p class="services__item__p">InnvoDesk will improvise the current IT investments of your business. With our cloud, SaaS, and on-premise deployment models, you can able to develop your business and integrate your existing operational and IT environments.</p>
+                    <p class="all-p services__item__p">InnvoDesk will improvise the current IT investments of your business. With our cloud, SaaS, and on-premise deployment models, you can able to develop your business and integrate your existing operational and IT environments.</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="animate">
-            <div class="animate-img">
-              <div class="animate-img__in" >
-                <div class="animate-more">
-                  <div class="animate-title">
+          <div class="all-p animate">
+            <div class="all-p animate-img">
+              <div class="all-p animate-img__in" >
+                <div class="all-p animate-more">
+                  <div class="all-p animate-title">
                     <h2 class="services__item__h2">Budget Friendly</h2>
-                    <p class="services__item__p">Marketing Time is important for everyone. InnvoDesk’s professionals have plenty of practical experience with knowledge. Based on it, they have derived proven methodologies to get you updates and operate your business successfully.</p>
+                    <p class="all-p services__item__p">Marketing Time is important for everyone. InnvoDesk’s professionals have plenty of practical experience with knowledge. Based on it, they have derived proven methodologies to get you updates and operate your business successfully.</p>
                   </div>
                 </div>
               </div>
@@ -221,18 +237,18 @@
 
   </section>
   
-  <section class="engineering-team">
+  <section class="engineering-team multi-channel">
     
        
-    <div class="engineering-team__desc">
+    <div class="all-p engineering-team__desc">
         
         <h2>Multi-Channel Support</h2>
-        <p class="p__black">Innvodesk provides variety of communication channels, from traditional phone support to email, social media, and more.</p>
+        <p class="all-p p__black multi-channel-container">Innvodesk provides variety of communication channels, from traditional phone support to email, social media, and more.</p>
         <br>
-        <p class="p__black">Customers can contact innvodesk from any type of social channels.</p>
+        <p class="all-p p__black multi-channel-container">Customers can contact innvodesk from any type of social channels.</p>
         <br>
-        <p class="p__black">Therefore, Customers have the option to communicate Innvodesk in a most convenient and comfortable way.</p>
-  
+        <p class="all-p p__black multi-channel-container">Therefore, Customers have the option to communicate Innvodesk in a most convenient and comfortable way.</p>
+        <a class="learn_more" href="./incident.html"> Learn more </a>
     </div>
 
     <video class="engineering-team__image" style="transform: scale(0.8);" autoplay loop muted>
@@ -250,36 +266,37 @@
     
     
     <hr>
-    <div class="testimony__companies">
+    <div class="all-p testimony__companies">
         
         <div>
-            <h3 class="testimony__name testimony__heading"><b>Customer Delight</b></h3>
+            <h3 class="testimony__name testimony__heading"><b><a class="learn_more learn-more-circle" href="knowledge.html">Customer Delight</a></b></h3>
             <img class="testimony__image" src="https://cdn-icons-png.flaticon.com/128/2673/2673061.png" alt="">
         </div>
         <div>
-            <h3 class="testimony__name testimony__heading"><b>Collaboration</b></h3>
+            <h3 class="testimony__name testimony__heading"><b><a class="learn_more learn-more-circle" href="incident.html">Collaboration</a></b></h3>
             <img class="testimony__image" src="https://cdn-icons-png.flaticon.com/128/4474/4474452.png" alt="">
         </div>
         <div>
-            <h3 class="testimony__name testimony__heading"><b>Revenue Growth</b></h3>
+            <h3 class="testimony__name testimony__heading"><b><a class="learn_more learn-more-circle" href="solutions.html">Revenue Growth</a></b></h3>
             <img class="testimony__image" src="https://cdn-icons-png.flaticon.com/128/2553/2553139.png" alt="">
         </div>
         <div>
-            <h3 class="testimony__name testimony__heading"><b>Budget Friendly</b></h3>
+            <h3 class="testimony__name testimony__heading"><b><a class="learn_more learn-more-circle" href="pricing.html">Budget Friendly</a></b></h3>
             <img class="testimony__image" src="https://cdn-icons-png.flaticon.com/128/1761/1761422.png" alt="">
+            
         </div>
         <div>
-            <h3 class="testimony__name testimony__heading"><b>Dashboard & Reports </b></h3>
+            <h3 class="testimony__name testimony__heading"><b><a class="learn_more learn-more-circle" href="report.html">Dashboard & Reports</a></b></h3>
             <img class="testimony__image" src="https://cdn-icons-png.flaticon.com/128/610/610106.png" alt="">
         </div>
         
     </div>
   </section>
   <section id="sign-up" class="sign-up">
-    <div class="sign-up__text">
+    <div class="all-p sign-up__text">
       <h2>Try InnvoDesk For Free</h2>
-      <p class="sign-up__desc">No credit card required</p>
-      <div class="sign-up__companies">
+      <p class="all-p sign-up__desc">No credit card required</p>
+      <div class="all-p sign-up__companies">
         <h3>Why innvodesk is best helpdesk-service?</h3>
         <ul>
           <li class="services-list">Intelligent ticket management platform</li>
@@ -297,76 +314,75 @@
       <button class="button button-primary mb-6">Start your free trial</button>
       
       <hr>
-      <p>Already have an account? <a href="#">Login</a></p>
     </form>
   </section>
   <footer class="footer">
     <div class="flex flex-columns">
       <img class="logo" src="./assets/innvocore.svg" alt="">
-      <small class="mb-6">An web-based Enterprise Help Desk with CRM & IT Service Desk software, which can fit into any IT
+      <div class="">An web-based Enterprise Help Desk with CRM & IT Service Desk software, which can fit into any IT
         & non-IT organisations to manage their customer communication problems and provide faster solutions
-        by improving customer satisfaction & revenue.</small>
+        by improving customer satisfaction & revenue.</div>
       
     </div>
     <div class="flex flex-columns">
-      <p>ABOUT</p>
-      <a href="https://innvocoretech.com/company-overview/" target="_blank" rel="noopener noreferrer">Company Overview
+      <p class="footer-p"> ABOUT</p>
+      <a class="footer-links" href="https://innvocoretech.com/company-overview/" target="_blank" rel="noopener noreferrer">Company Overview
       </a>
-      <a href="https://innvocoretech.com/contact-us/" target="_blank" rel="noopener noreferrer">Contact Us
-      </a>
-    </div>
-    <div class="flex flex-columns">
-      <p> SERVICES 
-      </p>
-      <a href="https://innvocoretech.com/application-services/" target="_blank" rel="noopener noreferrer">Application Services
-      </a>
-      <a href="https://innvocoretech.com/human-capital-augmentation/" target="_blank" rel="noopener noreferrer">Human Capital Augmentation
-  
-      </a>
-      <a href="https://innvocoretech.com/process-consultancy/" target="_blank" rel="noopener noreferrer">Process Consultancy
-  
-      </a>
-      <a href="https://innvocoretech.com/re-engineering/" target="_blank" rel="noopener noreferrer">Re-engineering
-  
-      </a>
-      <a href="https://innvocoretech.com/technologies/" target="_blank" rel="noopener noreferrer">Technologies
-  
+      <a class="footer-links" href="https://innvocoretech.com/contact-us/" target="_blank" rel="noopener noreferrer">Contact Us
       </a>
     </div>
     <div class="flex flex-columns">
-      <p> SOLUTIONS 
+      <p class="footer-p"> SERVICES 
       </p>
-      <a href="https://innvocoretech.com/automation-digitization/" target="_blank" rel="noopener noreferrer">Automation & Digitization</a>
+      <a class="footer-links" href="https://innvocoretech.com/application-services/" target="_blank" rel="noopener noreferrer">Application Services
+      </a>
+      <a class="footer-links" href="https://innvocoretech.com/human-capital-augmentation/" target="_blank" rel="noopener noreferrer">Human Capital Augmentation
   
-      <a href="https://innvocoretech.com/business-analytics/" target="_blank" rel="noopener noreferrer">Business Analytics</a>
+      </a>
+      <a class="footer-links" href="https://innvocoretech.com/process-consultancy/" target="_blank" rel="noopener noreferrer">Process Consultancy
   
-      <a href="https://innvocoretech.com/cloud-technology/" target="_blank" rel="noopener noreferrer">Cloud Technology</a>
+      </a>
+      <a class="footer-links" href="https://innvocoretech.com/re-engineering/" target="_blank" rel="noopener noreferrer">Re-engineering
   
-      <a href="https://innvocoretech.com/helpdesk-services/" target="_blank" rel="noopener noreferrer">Helpdesk Services</a>
+      </a>
+      <a class="footer-links" href="https://innvocoretech.com/technologies/" target="_blank" rel="noopener noreferrer">Technologies
   
-      <a href="https://innvocoretech.com/mobility/" target="_blank" rel="noopener noreferrer">Mobility</a>
+      </a>
+    </div>
+    <div class="flex flex-columns">
+      <p class="footer-p"> SOLUTIONS 
+      </p>
+      <a class="footer-links" href="https://innvocoretech.com/automation-digitization/" target="_blank" rel="noopener noreferrer">Automation & Digitization</a>
   
-      <a href="https://innvocoretech.com/automation-digitization/" target="_blank" rel="noopener noreferrer">Robotic Process Automation (RPA)</a>
+      <a class="footer-links" href="https://innvocoretech.com/business-analytics/" target="_blank" rel="noopener noreferrer">Business Analytics</a>
   
-      <a href="https://innvocoretech.com/workflow-solutions/" target="_blank" rel="noopener noreferrer">Workflow Solutions</a>
+      <a class="footer-links" href="https://innvocoretech.com/cloud-technology/" target="_blank" rel="noopener noreferrer">Cloud Technology</a>
+  
+      <a class="footer-links" href="https://innvocoretech.com/helpdesk-services/" target="_blank" rel="noopener noreferrer">Helpdesk Services</a>
+  
+      <a class="footer-links" href="https://innvocoretech.com/mobility/" target="_blank" rel="noopener noreferrer">Mobility</a>
+  
+      <a class="footer-links" href="https://innvocoretech.com/automation-digitization/" target="_blank" rel="noopener noreferrer">Robotic Process Automation (RPA)</a>
+  
+      <a class="footer-links" href="https://innvocoretech.com/workflow-solutions/" target="_blank" rel="noopener noreferrer">Workflow Solutions</a>
   
     </div>
     <div class="flex flex-columns">
-      <p> INDUSTRY 
+      <p class="footer-p"> INDUSTRY 
       </p>
-      <a href="https://innvocoretech.com/finance-insurance/" target="_blank" rel="noopener noreferrer">Finance & Insurance
+      <a class="footer-links" href="https://innvocoretech.com/finance-insurance/" target="_blank" rel="noopener noreferrer">Finance & Insurance
       </a>
   
-      <a href="https://innvocoretech.com/manufacturing-logistics/" target="_blank" rel="noopener noreferrer">Finance & Insurance
+      <a class="footer-links" href="https://innvocoretech.com/manufacturing-logistics/" target="_blank" rel="noopener noreferrer">Finance & Insurance
       </a>
   
-      <a href="https://innvocoretech.com/retail-ecommerce/" target="_blank" rel="noopener noreferrer">Retail & eCommerce</a>
+      <a class="footer-links" href="https://innvocoretech.com/retail-ecommerce/" target="_blank" rel="noopener noreferrer">Retail & eCommerce</a>
   
     </div>
     <div class="flex flex-columns">
-      <p> CAREERS 
+      <p class="footer-p"> CAREERS 
       </p>
-      <a href="https://innvocoretech.com/careers/" target="_blank" rel="noopener noreferrer">Current Openings
+      <a class="footer-links" href="https://innvocoretech.com/careers/" target="_blank" rel="noopener noreferrer">Current Openings
       </a>
     </div>
   </footer>
