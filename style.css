@@ -89,7 +89,7 @@ a {
 }
 
 .logo{
-  width: 100px;
+  width: 125px;
  
   text-decoration: none;
   font-size: inherit;
@@ -400,8 +400,7 @@ a {
 }
 
 .knowledge__background {
- 
-  background: #ffffff url(./assets/knw2.png) no-repeat right top;
+  background: #ffffff url(./assets/knowmanage.png) no-repeat right top;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-size: 60% auto;
@@ -409,8 +408,6 @@ a {
   height: calc( 100vh - 70px);
   padding: 0rem !important;
   background-position: left top;
- 
-
 }
 
 
@@ -571,7 +568,7 @@ a {
 }
 
 .testimony__image {
-  width: 100px;
+  width: 200px;
   display: flex;
   justify-content: center;
   margin: auto;
@@ -671,7 +668,7 @@ a {
   justify-content: center;
   padding: 2rem;
   border-radius: 4px;
-  border: 1px solid var(--light-pink-purple);
+  border: 1px solid var(--light-purple);
   box-shadow: 0px 10px 20px rgba(116, 116, 116, .16);
   position: relative;
   background-color: var(--white);
@@ -837,6 +834,10 @@ a {
       order: 1;
       right: 20%;
       transform: scale(0.8) translate(35%, 0%) !important;
+  }
+
+  .eng_correction{
+      transform: scale(0.8) translate(25%, 0%) !important;
   }
 
   .trusted_by_customers__image,
@@ -1869,7 +1870,7 @@ body {
 }
 
 .knowledge__background {
-  background: #ffffff url(./assets/knw2.png) no-repeat right top;
+  background: #ffffff url(./assets/knowmanage.png) no-repeat right top;
 
   /* background: #ffffff url(./assets/knowmanag.jpg) no-repeat right top; */
     background-size: 100% 100%;
@@ -2022,4 +2023,45 @@ body {
 } 
 ::-webkit-scrollbar-thumb {
   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+}
+
+.home__carousel__image {
+  height: auto;
+  width: 20rem;
+  border-radius: 0.8rem;
+  transform: scale(1.5);
+  box-shadow: 0 12px 24px rgb(0 0 0 / 25%);
+  background: white;
+  color: black;
+  padding-right: 2rem;
+}
+
+.home_imgText {
+  padding: 2rem 0;
+  /* text-align: center; */
+  /* font-weight: 700; */
+  color: white;
+  /* position: absolute; */
+}
+
+.logo_bigger{
+  width: 200px;
+}
+
+.text_align{
+  text-align: justify !important;
+  text-justify: inter-word !important;
+}
+
+.footer-copyright{
+  /* position: relative;
+  left: 50%;
+  transform: translate(-50%, 50%); */
+  font-size: 1rem;
+  background: #f9f0ff;
+  text-align: center;
+}
+.footer-icon{
+  width: 1rem !important;;
+  height: 1rem !important;;
 }

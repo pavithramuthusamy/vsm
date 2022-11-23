@@ -27,7 +27,7 @@ ul {
   top: 50%;
   transform: translate(-50%, -50%);
   width: 600px;
-  height: 550px;
+  height: 600px;
   background-color: #722ED1;
   display: flex;
   clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
@@ -107,9 +107,9 @@ input[type="text"],
 input[type="email"],
 input[type="password"] {
   outline: none;
-  font-size: 13px;
+  font-size: 15px;
   border-radius: 4px;
-  font-family: "Open Sans", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
   padding: 12px 10px;
   font-weight: 400;
   width: 100%;
@@ -126,7 +126,7 @@ input:focus {
 button {
   border: none;
   box-shadow: none;
-  font-family: "Open Sans", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
   background-color: #f3f3f3;
   padding: 10px 20px;
   border-radius: 4px;
@@ -171,7 +171,7 @@ button {
     top: 50%;
     transform: translate(0%, 0%);
     width: auto;
-    height: 550px;
+    height: 600px;
     background-color: #722ED1;
     display: flex;
     clip-path: none;

@@ -139,3 +139,91 @@ $(window).resize(function () {
     autoHeightCircle();
 });
 });
+
+
+const reviews = [
+    {
+        id: 1,
+        name: "@darryncodes",
+        title: "Constant Update",
+        job: "Front-end developer",
+        
+        width: '200px', height: '200px', padding: '1rem',
+        text:
+            'Innvodesk delivers continuous innovation every time. Our platform is powered by new-age abilities such as social sensing, RPA, analytics, and mobility. It helps you stay up-to-date with the current, and competitive updates daily.'
+    },
+    {
+        id: 2,
+        title: "Satisfied Customer",
+        width: '175px', height: '200px',
+        text:
+            'Innvodesk keeps your customers more occupied in all of your social media platforms like websites, mobile apps, or emails. It will make your customer get quicker resolutions, and easily accessible. Overall, we assure you that customers will have a delightful experience with us. '
+   },
+    {
+        id: 3,
+        title: "Strengthens Business",
+        width: '200px', height: '200px',
+        text:
+        `Receive updates about every business interaction and activity. Our low code automation platform connects your systems, people, workflows, and data. Therefore, you can build a business with easy processes, and uninterrupted information flow.`
+    }, 
+    {
+        id: 4,
+        title: "Business Improvement",
+        width: '175px', height: '200px',
+        text:
+            'Innvodesk mainly concentrates on improving your customers, and users. Our professionals work on our behalf to satisfy the needs of customers easily. So, our software will take your business ahead.'
+   },
+    {
+        id: 5,
+        title: "Maintain IT Infrastructure",
+        width: '200px', height: '200px',
+        text:
+        `InnvoDesk will improvise the current IT investments of your business. With our cloud, SaaS, and on-premise deployment models, you can able to develop your business and integrate your existing operational and IT environments.`
+    }, 
+    {
+        id: 6,
+        title: "Budget Friendly",
+        width: '175px', height: '200px',
+        text:
+            'Marketing Time is important for everyone. InnvoDesk’s professionals have plenty of practical experience with knowledge. Based on it, they have derived proven methodologies to get you updates and operate your business successfully.'
+   } 
+];
+
+const imgText = document.getElementById("imgText");
+const testimonial = document.getElementById("testimonial");
+const name = document.getElementById("name");
+const job = document.getElementById("job");
+
+const leftBtn = document.querySelector(".carousel__btn--left");
+const rightBtn = document.querySelector(".carousel__btn--right");
+
+let currentItem = 0;
+
+window.addEventListener("DOMContentLoaded", function () {
+    showPerson();
+});
+
+function showPerson() {
+    const item = reviews[currentItem];
+    img.style.padding = item.padding ? item.padding : '1rem';
+    imgText.textContent = item.title;
+    testimonial.textContent = item.text;
+    
+    
+}
+
+rightBtn.addEventListener("click", function () {
+    currentItem++;
+    if (currentItem > reviews.length - 1) {
+        currentItem = 0;
+    }
+    showPerson();
+});
+
+leftBtn.addEventListener("click", function () {
+    currentItem--;
+    if (currentItem < 0) {
+        currentItem = reviews.length - 1;
+    }
+    showPerson();
+});

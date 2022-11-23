@@ -214,7 +214,7 @@ td{
   clear: left;
   text-align: center;
   font-size: 10px;
-  font-family: arial;
+  /* font-family: arial; */
   color: #000;
 }
 .made-with-love i {
@@ -236,7 +236,7 @@ td{
 
 
 *, *:before, *:after {
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 
 
@@ -323,7 +323,8 @@ td{
   font-weight: 600;
   color: #fff;
   overflow: hidden;
-  font-family: Poppins, sans-serif;
+  /* font-family: Poppins, sans-serif; */
+  box-sizing: border-box;
 }
 .front:before {
   position: absolute;
