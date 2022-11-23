@@ -242,7 +242,7 @@ td{
 
 
 .content {
-  display: flex;
+  display: grid;
   margin: 0 auto;
   justify-content: center;
   align-items: center;
@@ -294,7 +294,7 @@ td{
 }
 @media screen and (max-width: 500px) {
   .card {
-    width: 100%;
+    width: 95%;
   }
 }
 
@@ -325,6 +325,7 @@ td{
   overflow: hidden;
   /* font-family: Poppins, sans-serif; */
   box-sizing: border-box;
+  width: 100%;
 }
 .front:before {
   position: absolute;
@@ -435,6 +436,11 @@ td{
 
 
 
+@media (min-width: 510px){
+  .solution-subtitle{
+    width: 500px;
+  }
+}
 @media (min-width: 1024px) and (max-width: 1300px){
 
   .content {
@@ -448,4 +454,13 @@ td{
   left: 0;
   transform: translate(0%,40%);
 }
+}
+
+@media (min-width: 320px) and (max-width: 426px){
+  .front{
+    width: 85%;
+  }
+  .back{
+    width: 60%;
+  }
 }

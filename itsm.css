@@ -150,7 +150,7 @@
     -ms-justify-content: flex-start;
     -o-justify-content: flex-start;
     justify-content: flex-start;
-    height: 125vh !important;
+    height: 150vh !important;
     width: 85%;
     z-index: 1;
     transform: translate(10%, 5%);
@@ -755,6 +755,16 @@ opacity: 0;
 @media (max-width: 423px){
   .flex__container{
     height: 170vh !important;
+  }
+
+}
+.itsm-img-container{
+  width: 100%;
+}
+@media (min-width: 800px){
+  .itsm-img-container{
+    width: 50%;
+    transform: translate(50%,25%);
   }
 
 }

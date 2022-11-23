@@ -65,12 +65,12 @@ body {
 .carousel__btn--left {
   left: 0;
   top: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(5%, -50%);
 }
 .carousel__btn--right {
   right: 0;
   top: 50%;
-  transform: translate(50%, -50%);
+  transform: translate(-5%, -50%);
 }
 
 ion-icon {
@@ -159,6 +159,28 @@ body {
   .title-subcontainer{
     color: #3b3a3e;width: 60%;
   }
+@media (min-width: 320px) and (max-width: 426px){
+  .carousel__image {
+    height: 20rem;
+    width: 18rem;
+    border-radius: 0.8rem;
+    transform: scale(1.5);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+    background: white;
+    color: black;
+  }
+  .carousel {
+    width: 100vw;
+  }
+  .accordion {
+    padding: 0rem;
+    width: 100%;
+  }
+  details p {
+    margin: 1rem auto;
+    translate: 0rem 0;
+   }
+}
 @media (min-width: 320px) and (max-width: 600px){
   .carousel__image{
     transform: scale(1);

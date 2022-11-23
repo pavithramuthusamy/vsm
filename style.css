@@ -717,7 +717,7 @@ a {
 
 .footer>div {
   flex: .15;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .newsletter__form {
@@ -1820,7 +1820,7 @@ body {
     padding: 8rem 0 !important;
     transform: scale(1) translate(10px, 0%);
     width: 95vw;
-    height: 90vh;
+    height: 100vh;
     margin: 0;
 
 }
@@ -2038,7 +2038,7 @@ body {
 
 .home_imgText {
   padding: 2rem 0;
-  /* text-align: center; */
+  text-align: center;
   /* font-weight: 700; */
   color: white;
   /* position: absolute; */
@@ -2064,4 +2064,28 @@ body {
 .footer-icon{
   width: 1rem !important;;
   height: 1rem !important;;
+}
+
+@media (min-width: 320px) and (max-width: 426px){
+  h1, .info h1,h2{
+    font-size: 2rem;
+  }
+  .info__home,  .crm__home, .incident__home, .crm__home, .incident__home, .info__home{
+    padding: 0 !important;
+  }
+  /* #ticket{
+    padding: 0 !important;
+  } */
+}
+@media (min-width: 320px) and (max-width: 426px){
+  .trusted_by_customers#whatmakes,
+  .trusted_by_customers#report-catousel,
+  .trusted_by_customers#crm-carousel{
+    padding: 2rem 0;
+  }
+  .itsm__home{
+    width: 85%;
+    float: right;
+    padding: 2rem;
+  }
 }
