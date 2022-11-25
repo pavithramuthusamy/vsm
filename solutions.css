@@ -240,9 +240,8 @@ td{
 }
 
 
-
 .content {
-  display: grid;
+  display: flex;
   margin: 0 auto;
   justify-content: center;
   align-items: center;
@@ -309,7 +308,7 @@ td{
   align-items: center;
   position: absolute;
   height: 100%;
-  width: 100%;
+  width: auto;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   transform-style: preserve-3d;

@@ -105,18 +105,22 @@ ul {
 
 input[type="text"],
 input[type="email"],
-input[type="password"] {
+input[type="tel"],
+input[type="password"],
+option, select {
   outline: none;
   font-size: 15px;
   border-radius: 4px;
   /* font-family: "Open Sans", sans-serif; */
-  padding: 12px 10px;
+  padding: 1rem 1.25rem;
   font-weight: 400;
   width: 100%;
   box-sizing: border-box;
-  background: #110e1b;
-  color: #f3f3f3;
+  /* background: #110e1b; */
+  /* color: #f3f3f3; */
   border: 1px solid #7c162e;
+  /* color: black; */
+
 }
 
 input:focus {

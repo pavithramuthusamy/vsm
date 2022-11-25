@@ -6,7 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>InnvoDesk</title>
-    <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="header.css">
   <link rel="stylesheet" href="ticketmanage.css">
   <link rel="stylesheet" href="changemanagement.css">
   <link rel="stylesheet" href="rescard.css">
@@ -15,69 +17,59 @@
 
 <body>
  
-  <nav class="header_sticky">
-    <div id="logo"><a class="logo nav_logo" href="index.html">
+  <div class="topnav" id="myTopnav">
+    <div id="logo"><a id="logo-container" class="logo nav_logo" href="index.html">
       <img class="logo" src="./assets/innvocore_logo.png" alt="" />
     </a> </div>
-    <label for="drop" class="toggle">Menu</label>
-    <input type="checkbox" id="drop" />
-        <ul class="menu">
-            
-            <li>
-
-            
-            <label for="drop-2" class="toggle">Products  +</label>
-<a href="#">Products  </a>
-            <input type="checkbox" id="drop-2"/>
-            <ul>
-              <li><a href="itsm.html">IT Service Management</a></li>
-              <li><a href="./knowledge.html">Knowledge Management</a></li>
-              <li><a href="report.html">Reporting & Analytics</a></li>
-                
-            </ul>
-            </li>
-            <li>
-               
-              <label for="drop-1" class="toggle">Features +</label>
-              <a href="#">Features</a>
-              <input type="checkbox" id="drop-1"/>
-              <ul>
-                <li><a href="./ticketmanagement.html">Ticket Management</a></li>
-                <li><a href="changemanagement.html">Change Management</a></li>
-                <li><a href="incident.html">SLA Management</a></li>
-                <li><a href="CRM.html">CRM</a></li>
-
-                
-                </ul> 
-
-          </li>
-            
-            <li>
-        <label for="drop-2" class="toggle">Solutions  +</label>
-        <a href="solutions.html">Solutions  </a>
-        <input type="checkbox" id="drop-3"/>
-        <ul>
-          <li><a href="solutions.html#solution-industry">By Industry</a></li>
-          <li><a href="./solutions.html#solution-size">By Size</a></li>
-        </ul>
-      </li>
-      <li><a href="./pricing.html">Pricing</a></li>
-      <li><a href="./pricing.html#sign-up">Contact Us</a></li>
-      <li style="    margin: auto;padding: 0 1rem"><button class="button button-primary rounded purple-button" ><a class="main__a purple-button-content" href="./assets/White Paper - innvoDesk.pdf" download="InnvoDesk">Download WhitePage</a></button></li>
-    </ul>
-    </nav>
-  <section id="change-manage" class="main main_dummy" style="width: 100vw;">
-    <div class="all-p cm__background"></div>
+    <div class="topnav-container">
+    <a href="index.html">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn">Products 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="CRM.html">CRM</a>
+        <a href="report.html">Reporting & Analytics</a>
+      </div>
+    </div> 
+    <div class="dropdown">
+      <button class="dropbtn">Features 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="./ticketmanagement.html">Ticket Management</a>
+        <a href="changemanagement.html">Change Management</a>
+        <a href="incident.html">SLA Management</a>
+        <a href="itsm.html">IT Service Management</a>
+        <a href="./knowledge.html">Knowledge Management</a>
+      </div>
+    </div> 
+    <div class="dropdown">
+      <button class="dropbtn">Solutions 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="solutions.html#solution-industry">By Industry</a>
+        <a href="./solutions.html#solution-size">By Size</a>
+      </div>
+    </div> 
+    <a href="./pricing.html">Pricing</a>
+    <a href="./pricing.html#sign-up">Contact</a>
+    <button class="button button-primary rounded purple-button download-container" ><a class="main__a purple-button-content" href="./assets/White Paper - innvoDesk.pdf" download="InnvoDesk">Download WhitePage</a></button>
+    <a href="javascript:void(0);" style="font-size:22px;" class="icon" onclick="headerClick()">&#9776;</a>
+    </div>
+  </div>
+  <section id="change-manage" class="main main_dummy cm__background" style="width: 100vw;">
     <div class="all-p main__desc cm__home">
-      <h1>Change Management</h1>
-      <p class="all-p" style="color: #3b3a3e;">Are you ever struggling with inefficiencies in your IT departments and businesses due to the lack of a productive change management system? Automate, track, manage, and report to IT Change management with InnvoDesk.</p>
+      <h1 class="itsm-title-container">Change Management</h1>
+      <p class="all-p itsm-title-subcontainer" >Are you ever struggling with inefficiencies in your IT departments and businesses due to the lack of a productive change management system? Automate, track, manage, and report to IT Change management with InnvoDesk.</p>
       <button class="button button-primary rounded"><a class="trial" href="#sign-up">Start free trial</a></button>
     </div>
     
   </section>
 
   <section class="excellence">
-    <h2>Leading-edge Change Management Software that eliminates Missed Information, Bottlenecks, and Other Barriers.
+    <h2 class="leading-edge">Leading-edge Change Management Software that eliminates Missed Information, Bottlenecks, and Other Barriers.
     </h2>
     <div>
         <p class="all-p excellence__desc cm">It will improve your business's complete performance. It assists you to organize, analyze, arrange, the resource allocation, and in addition, monitor every activity done to implement the change. Our change management software helps you to understand completely and reduces the risks when adapting to the changes. 
@@ -134,7 +126,7 @@
       <p class="footer-p"> ABOUT</p>
       <a class="footer-links" href="https://innvocoretech.com/company-overview/" target="_blank" rel="noopener noreferrer">Company Overview
       </a>
-      <a class="footer-links" href="https://innvocoretech.com/contact-us/" target="_blank" rel="noopener noreferrer">Contact Us
+      <a class="footer-links" href="https://innvocoretech.com/contact-us/" target="_blank" rel="noopener noreferrer">Contact
       </a>
     </div>
     <div class="flex flex-columns">
@@ -192,7 +184,7 @@
       </a>
     </div>
   </footer>
-  <p class="footer-copyright">Copyright <ion-icon class="footer-icon" name="at-circle-outline"></ion-icon> Innvodesk </p>
+  <p class="footer-copyright">Innvodesk <i class="fa fa-copyright"></i></i> 2022 All rights reserved </p>
 
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>

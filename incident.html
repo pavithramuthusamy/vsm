@@ -6,65 +6,57 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>InnvoDesk</title>
-    <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="header.css">
   <link rel="stylesheet" href="ticketmanage.css">
   <link rel="stylesheet" href="incident.css">
 </head>
 
 <body>
-  <nav class="header_sticky">
-    <div id="logo"><a class="logo nav_logo" href="index.html">
+  <div class="topnav" id="myTopnav">
+    <div id="logo"><a id="logo-container" class="logo nav_logo" href="index.html">
       <img class="logo" src="./assets/innvocore_logo.png" alt="" />
     </a> </div>
-    <label for="drop" class="toggle">Menu</label>
-    <input type="checkbox" id="drop" />
-        <ul class="menu">
-            
-            <li>
-
-            
-            <label for="drop-2" class="toggle">Products  +</label>
-<a href="#">Products  </a>
-            <input type="checkbox" id="drop-2"/>
-            <ul>
-              <li><a href="itsm.html">IT Service Management</a></li>
-              <li><a href="./knowledge.html">Knowledge Management</a></li>
-              <li><a href="report.html">Reporting & Analytics</a></li>
-                
-            </ul>
-            </li>
-            <li>
-               
-              <label for="drop-1" class="toggle">Features +</label>
-              <a href="#">Features</a>
-              <input type="checkbox" id="drop-1"/>
-              <ul>
-                <li><a href="./ticketmanagement.html">Ticket Management</a></li>
-                <li><a href="changemanagement.html">Change Management</a></li>
-                <li><a href="incident.html">SLA Management</a></li>
-                <li><a href="CRM.html">CRM</a></li>
-
-                
-                </ul> 
-
-          </li>
-            
-            <li>
-        <label for="drop-2" class="toggle">Solutions  +</label>
-        <a href="solutions.html">Solutions  </a>
-        <input type="checkbox" id="drop-3"/>
-        <ul>
-          <li><a href="solutions.html#solution-industry">By Industry</a></li>
-          <li><a href="./solutions.html#solution-size">By Size</a></li>
-        </ul>
-      </li>
-      <li><a href="./pricing.html">Pricing</a></li>
-      <li><a href="./pricing.html#sign-up">Contact Us</a></li>
-      <li style="    margin: auto;padding: 0 1rem"><button class="button button-primary rounded purple-button" ><a class="main__a purple-button-content" href="./assets/White Paper - innvoDesk.pdf" download="InnvoDesk">Download WhitePage</a></button></li>
-    </ul>
-    </nav>                                  
-  <section class="main main_dummy">
-      <div class="incident__background"></div>
+    <div class="topnav-container">
+    <a href="index.html">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn">Products 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="CRM.html">CRM</a>
+        <a href="report.html">Reporting & Analytics</a>
+      </div>
+    </div> 
+    <div class="dropdown">
+      <button class="dropbtn">Features 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="./ticketmanagement.html">Ticket Management</a>
+        <a href="changemanagement.html">Change Management</a>
+        <a href="incident.html">SLA Management</a>
+        <a href="itsm.html">IT Service Management</a>
+        <a href="./knowledge.html">Knowledge Management</a>
+      </div>
+    </div> 
+    <div class="dropdown">
+      <button class="dropbtn">Solutions 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="solutions.html#solution-industry">By Industry</a>
+        <a href="./solutions.html#solution-size">By Size</a>
+      </div>
+    </div> 
+    <a href="./pricing.html">Pricing</a>
+    <a href="./pricing.html#sign-up">Contact</a>
+    <button class="button button-primary rounded purple-button download-container" ><a class="main__a purple-button-content" href="./assets/White Paper - innvoDesk.pdf" download="InnvoDesk">Download WhitePage</a></button>
+    <a href="javascript:void(0);" style="font-size:22px;" class="icon" onclick="headerClick()">&#9776;</a>
+    </div>
+  </div>                                  
+  <section class="main main_dummy incident__background">
     <div class="main__desc incident__home">
       <h1>SLA Management and Escalation</h1>
       <p class="all-p" style="color: #3b3a3e;">With InnvoDesk SLA Management and Escalation, keep a check on the staff’s ability to resolve issues and timely responses to customers.</p>
@@ -194,7 +186,7 @@
       <p class="footer-p"> ABOUT</p>
       <a class="footer-links" href="https://innvocoretech.com/company-overview/" target="_blank" rel="noopener noreferrer">Company Overview
       </a>
-      <a class="footer-links" href="https://innvocoretech.com/contact-us/" target="_blank" rel="noopener noreferrer">Contact Us
+      <a class="footer-links" href="https://innvocoretech.com/contact-us/" target="_blank" rel="noopener noreferrer">Contact
       </a>
     </div>
     <div class="flex flex-columns">
@@ -252,7 +244,7 @@
       </a>
     </div>
   </footer>
-  <p class="footer-copyright">Copyright <ion-icon class="footer-icon" name="at-circle-outline"></ion-icon> Innvodesk </p>
+  <p class="footer-copyright">Innvodesk <i class="fa fa-copyright"></i></i> 2022 All rights reserved </p>
 
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>

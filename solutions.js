@@ -60,10 +60,19 @@ switchAccordion = function(e) {
   }
 })();
 
-$(document).on('resize, ready', function() {
-    if($(window).width() > 1300) {
-        $('.solution__background').remove();
-        $('.main').addClass('solution__background');
+function headerClick() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
     }
-    console.log("sdfgd");
-});
+  }
+
+// $(document).on('resize, ready', function() {
+//     if($(window).width() > 1300) {
+//         $('.solution__background').remove();
+//         $('.main').addClass('solution__background');
+//     }
+//     console.log("sdfgd");
+// });

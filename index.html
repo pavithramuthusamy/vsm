@@ -9,73 +9,65 @@
   <title>InnvoDesk</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="header.css">
   <link rel="stylesheet" href="ticketmanage.css">
   <link rel="stylesheet" href="crm.css">
 
 </head>
 <body style="overflow-x: hidden;">
-  <nav class="header_sticky">
-    <div id="logo"><a class="logo nav_logo" href="index.html">
+  <div class="topnav" id="myTopnav">
+    <div id="logo"><a id="logo-container" class="logo nav_logo" href="index.html">
       <img class="logo" src="./assets/innvocore_logo.png" alt="" />
     </a> </div>
-    <label for="drop" class="toggle">Menu</label>
-    <input type="checkbox" id="drop" />
-        <ul class="menu">
-            
-            <li>
-
-            
-            <label for="drop-2" class="toggle">Products  +</label>
-            <a href="#">Products  </a>
-            <input type="checkbox" id="drop-2"/>
-            <ul>
-              <li><a href="itsm.html">IT Service Management</a></li>
-              <li><a href="./knowledge.html">Knowledge Management</a></li>
-              <li><a href="report.html">Reporting & Analytics</a></li>
-                
-            </ul>
-            </li>
-            <li>
-               
-                <label for="drop-1" class="toggle">Features +</label>
-                <a href="#">Features</a>
-                <input type="checkbox" id="drop-1"/>
-                <ul>
-                  <li><a href="./ticketmanagement.html">Ticket Management</a></li>
-                  <li><a href="changemanagement.html">Change Management</a></li>
-                  <li><a href="incident.html">SLA Management</a></li>
-                  <li><a href="CRM.html">CRM</a></li>
-
-                  
-                  </ul> 
-
-            </li>
-            
-      <li>
-        <label for="drop-2" class="toggle">Solutions  +</label>
-        <a href="solutions.html">Solutions  </a>
-        <input type="checkbox" id="drop-3"/>
-        <ul>
-          <li><a href="solutions.html#solution-industry">By Industry</a></li>
-          <li><a href="./solutions.html#solution-size">By Size</a></li>
-        </ul>
-      </li>
-      <li><a href="./pricing.html">Pricing</a></li>
-      <li><a href="./pricing.html#sign-up">Contact Us</a></li>
-      <li style="    margin: auto;padding: 0 1rem"><button class="button button-primary rounded purple-button" ><a class="main__a purple-button-content" href="./assets/White Paper - innvoDesk.pdf" download="InnvoDesk">Download WhitePage</a></button></li>
-    </ul>
-    </nav>
-    <section class="main main_dummy" >
-      <div class="main__background"></div>
+    <div class="topnav-container">
+    <a href="index.html">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn">Products 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="CRM.html">CRM</a>
+        <a href="report.html">Reporting & Analytics</a>
+      </div>
+    </div> 
+    <div class="dropdown">
+      <button class="dropbtn">Features 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="./ticketmanagement.html">Ticket Management</a>
+        <a href="changemanagement.html">Change Management</a>
+        <a href="incident.html">SLA Management</a>
+        <a href="itsm.html">IT Service Management</a>
+        <a href="./knowledge.html">Knowledge Management</a>
+      </div>
+    </div> 
+    <div class="dropdown">
+      <button class="dropbtn">Solutions 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="solutions.html#solution-industry">By Industry</a>
+        <a href="./solutions.html#solution-size">By Size</a>
+      </div>
+    </div> 
+    <a href="./pricing.html">Pricing</a>
+    <a href="./pricing.html#sign-up">Contact</a>
+    <button class="button button-primary rounded purple-button download-container" ><a class="main__a purple-button-content" href="./assets/White Paper - innvoDesk.pdf" download="InnvoDesk">Download WhitePage</a></button>
+    <a href="javascript:void(0);" style="font-size:22px;" class="icon" onclick="headerClick()">&#9776;</a>
+    </div>
+  </div>
+    <section class="main main_dummy main__background" >
+      <!-- <div class=""></div> -->
     
-    <div class="main__desc info__home" style="display: none;">
+    <div id="home-top" class="main__desc info__home" >
       <p class="tag rounded" style="font-size: 2rem;">
        InnvoDesk
       </p>
-      <h1>Delivering enhanced Customer Support & IT Service
-        Management solutions</h1>
+      <h1 class="itsm-title-container">Delivering Enhanced Customer Support & IT Service
+        Management Solutions</h1>
       
-      <p class="all-p">Get automated workflows, in-depth reporting, automated ticket routing, multi-channel helpdesk support, SLA management, self-help knowledge base options, and data protection.</p>
+      <p class="all-p itsm-title-subcontainer">Get automated workflows, in-depth reporting, automated ticket routing, multi-channel helpdesk support, SLA management, self-help knowledge base options, and data protection.</p>
       <button class="button button-primary rounded"><a class="trial" href="#sign-up">Start free trial</a></button>
       
     </div>
@@ -269,10 +261,18 @@
     </div>
     <form class="sign-up__form">
       <h3>Sign Up</h3>
-      <input class="input" type="email" placeholder="Your primary email">
-      <input class="input" type="password" placeholder="Password">
-      <input class="input" type="password" placeholder="Re-type password">
-      <button class="button button-primary mb-6">Start your free trial</button>
+      <input
+          class="input"
+          type="text"
+          name="first_name"
+          placeholder="First name"
+        required />
+        <input class="input" type="email" name="mail" placeholder="Business email" required />
+        <input class="input" id="phone" name="phone" type="tel" placeholder="Business phone" required />
+        
+      <button class="button button-primary mb-6" type="button" value="Submit" onclick="submitForm()">
+        Start your free trial
+      </button>
       
       <hr>
     </form>
@@ -289,7 +289,7 @@
       <p class="footer-p"> ABOUT</p>
       <a class="footer-links" href="https://innvocoretech.com/company-overview/" target="_blank" rel="noopener noreferrer">Company Overview
       </a>
-      <a class="footer-links" href="https://innvocoretech.com/contact-us/" target="_blank" rel="noopener noreferrer">Contact Us
+      <a class="footer-links" href="https://innvocoretech.com/contact-us/" target="_blank" rel="noopener noreferrer">Contact
       </a>
     </div>
     <div class="flex flex-columns">
@@ -347,7 +347,8 @@
       </a>
     </div>
   </footer>
-  <p class="footer-copyright">Copyright <ion-icon class="footer-icon" name="at-circle-outline"></ion-icon> Innvodesk </p>
+  <p class="footer-copyright">Innvodesk <i class="fa fa-copyright"></i></i> 2022 All rights reserved </p>
+  <!-- <p class="footer-copyright">Innvodesk <i class="fa fa-copyright"></i></i> 2022 All rights reserved </p> -->
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
   <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>

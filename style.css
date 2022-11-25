@@ -21,7 +21,10 @@
 
 body,
 button,
-input {
+input,
+select,
+textarea,
+option {
   font-family:  "Avenir next", Helvetica, sans-serif;
   ;
 }
@@ -64,7 +67,7 @@ p {
 
 .footer-p{
   font-size: 1.3rem !important;
-  font-weight: 500 !important;
+  /* font-weight: 500 !important; */
   color: var(--light-black) !important;
 }
 
@@ -106,7 +109,7 @@ a {
   border-radius: 100px !important;
 }
 .purple-button-content{
-  color: #fff;
+  color: #fff !important;
 }
 .button {
   color: var(--black);
@@ -205,7 +208,9 @@ a {
 .flex-columns {
   flex-direction: column; 
 }
-
+#logo-container:hover {
+  background: white;
+}
 .input {
   padding: 1rem 1.25rem;
   border: 1px solid var(--gray-purple);
@@ -213,6 +218,7 @@ a {
   margin-bottom: 1rem;
   background: white !important;
   border: 1px solid #000000 !important;
+  color: #757575;
 }
 
 .mb-6 {
@@ -710,7 +716,7 @@ a {
 }
 
 .footer p {
-  font-weight: 700;
+  font-weight: 900;
   color: var(--dark-purple);
   margin-bottom: 0.65rem;
 }
@@ -997,6 +1003,7 @@ body {
   color: var(--light-black);
   font-size: 1rem;
   text-decoration: unset;
+  /* font-weight: bold; */
 }
 
 .learn-more-circle {
@@ -1023,6 +1030,9 @@ body {
 }
 .button a:hover {
   background: #722ED1;
+}
+.download-container a:hover {
+  background-color: #722ED1 !important;
 }
 .menu a:hover .icon {
   fill: #fff;
@@ -1789,21 +1799,21 @@ body {
 
 @media (min-width: 320px) and (max-width: 1023px){
   .crm__background, .cm__background, .incident__background, .report__background, .knowledge__background, .solution__background, .itsm__background {
-    background: none;
+    /* background: none;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-size: 90% auto;
     padding: 15px;
-    height: auto;
+    height: auto; */
    
 }
 .main__background{
-    background: none;
+    /* background: none;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-size: 90% auto;
     padding: 15px;
-    height: auto;
+    height: auto; */
    
 }
 
@@ -1812,6 +1822,7 @@ body {
     float: right;
     text-align: center !important;
     padding: 8rem 0 !important;
+    margin: auto;
 }
 
 .info__home{
@@ -2068,14 +2079,51 @@ body {
 
 @media (min-width: 320px) and (max-width: 426px){
   h1, .info h1,h2{
-    font-size: 2rem;
+    font-size: 1.9rem;
+  }
+  .main p.tag{
+    margin: 1rem 0;
   }
   .info__home,  .crm__home, .incident__home, .crm__home, .incident__home, .info__home{
     padding: 0 !important;
   }
-  /* #ticket{
-    padding: 0 !important;
-  } */
+  .itsm__background, .crm__background, .report__background{
+    background-size: 270% auto;
+
+  }
+  .cm__background{
+    background-size: 280% auto;
+    background-position: bottom;
+  }
+  .knowledge__background{
+    background-size: 260% auto;
+    background-position: center;
+  }
+  .solution__background{
+    background-size: 240% auto;
+    background-position: top;
+  }
+  .incident__background{
+    background-size: 200% auto;
+    background-position: bottom;
+  }
+  .main__background{
+    background: #d0d4d7 url(./assets/final4.jpg) no-repeat; 
+    background-size: 200% auto;
+    background-position: bottom;
+  }
+  .itsm-title-container, .itsm-title-subcontainer{
+    color: #fff !important;
+  }
+  .report-title-container{
+    padding: 8rem 1rem 0rem 1rem;
+  }
+  .report-title-subcontainer{
+    padding: 0 1rem;
+  }
+  .info__home#home-top{
+    transform: scaleX(-1);
+  }
 }
 @media (min-width: 320px) and (max-width: 426px){
   .trusted_by_customers#whatmakes,
@@ -2087,5 +2135,7 @@ body {
     width: 85%;
     float: right;
     padding: 2rem;
+    margin: auto;
+
   }
 }

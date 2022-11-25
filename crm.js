@@ -1,11 +1,20 @@
-$(document).on('resize, ready', function() {
-    if($(window).width() > 1300) {
-        $('.crm__background').remove();
-        $('.main').addClass('crm__background');
+function headerClick() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
     }
-    console.log("sdfgd");
+  }
 
-});
+// $(document).on('resize, ready', function() {
+//     if($(window).width() > 1300) {
+//         $('.crm__background').remove();
+//         $('.main').addClass('crm__background');
+//     }
+//     console.log("sdfgd");
+
+// });
 
 
 const reviews = [
@@ -18,7 +27,7 @@ const reviews = [
         
         width: '250px', height: '250px', padding: '0',
         text:
-            'InnvoDesk is best for Start-ups, Small teams, Individual users, Marketing, CMS, workflow automation, Service, lead capture, Sales process tracking, opportunity management, and eCommerce. It allows you to track all of your communication with every customer. It makes you handle all your leads and ongoing deals.'
+            'InnvoDesk is best for Start-ups, Small teams, Individual Enterpreuners, Marketing, CMS, workflow automation, Service, lead capture, Sales process tracking, opportunity management, and eCommerce. It allows you to track all of your communication with every customer. It makes you handle all your leads and ongoing deals.'
     },
     {
         id: 2,
@@ -43,7 +52,7 @@ const reviews = [
         img: "./assets/Transform Your Customer Experience.png",
         width: '200px', height: '200px',
         text:
-        `At InnovaDesk, you can generate custom layouts, and use APIs to interact with the applications you are using with unlimited personalization options.  
+        `At InnvoDesk, you can generate custom layouts, and use APIs to interact with the applications you are using with unlimited personalization options.  
             InnvoDesk is a cloud-based SaaS service that is fast, mobile-ready, and easy to use. You don’t require any technical professionals to use this software`
     },
     

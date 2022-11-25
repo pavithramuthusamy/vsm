@@ -98,14 +98,23 @@
     }
 }(jQuery));
 
-$(document).on('resize, ready', function() {
-    $('.main__desc').css('display', 'block');
-    if($(window).width() > 1300) {
-        $('.main__background').remove();
-        $('.main').addClass('main__background');
+function headerClick() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
     }
-    console.log("sdfgd");
-});
+  }
+
+// $(document).on('resize, ready', function() {
+//     $('.main__desc').css('display', 'block');
+//     if($(window).width() > 1300) {
+//         $('.main__background').remove();
+//         $('.main').addClass('main__background');
+//     }
+//     console.log("sdfgd");
+// });
 
 $(function () {
 
@@ -227,3 +236,37 @@ leftBtn.addEventListener("click", function () {
     }
     showPerson();
 });
+
+
+function headerClick() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+
+  function submitForm(){
+    let data = $('form').serializeArray()
+    let obj = {}
+    data.forEach(element => {
+        console.log(element);
+        obj[element['name']] = element['value'];
+    });
+    console.log(obj);
+    $.ajax({
+        type: "POST",
+        url: "http://localhost:5000/signup",
+        data: {
+             json: JSON.stringify(obj)
+        },
+        // contentType: "application/json; charset=utf-8",
+        success: function (response) {
+            console.log(response);
+            alert("Successfully Registered");
+            window.location.reload();
+
+        }
+    });
+}

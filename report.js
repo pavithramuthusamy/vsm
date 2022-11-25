@@ -1,10 +1,19 @@
-$(document).on('resize, ready', function() {
-    if($(window).width() > 1300) {
-        $('.report__background').remove();
-        $('.main').addClass('report__background');
+function headerClick() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
     }
-    console.log("sdfgd");
-});
+  }
+
+// $(document).on('resize, ready', function() {
+//     if($(window).width() > 1300) {
+//         $('.report__background').remove();
+//         $('.main').addClass('report__background');
+//     }
+//     console.log("sdfgd");
+// });
 
 const reviews = [
     {
@@ -16,7 +25,7 @@ const reviews = [
         
         width: '200px', height: '200px', padding: '1rem',
         text:
-            'InnvoDesk reporting allows you to monitor your ticket inflow appropriately. Then, your staff can easily handle their work perfectly.The ticket volume reports will guide you to check past trends and assist your representatives to create future reports.'
+            'InnvoDesk reporting allows you to monitor your ticket inflow appropriately. Then, your staff can easily handle their work perfectly. The ticket volume reports will guide you to check past trends and assist your representatives to create future reports.'
     },
     {
         id: 2,
