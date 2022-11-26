@@ -171,8 +171,8 @@ a {
   position: absolute;
   top: auto !important;
   right: 0;
-  width: 40%;
-  padding: 0rem !important;
+  width: 30%;
+  padding: 1rem !important;
 }
 
 .info h1 {
@@ -405,7 +405,7 @@ a {
   background: #ffffff url(./assets/knowmanage.png) no-repeat right top;
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  background-size: 60% auto;
+  background-size: 69% auto;
   padding: 15px;
   height: calc( 100vh - 70px);
   padding: 0rem !important;
@@ -2091,6 +2091,13 @@ body {
   .info__home,  .crm__home, .incident__home, .crm__home, .info__home{
     padding: 0 !important;
   }
+
+  .crm__home{
+    width: 100%;
+    float: right;
+    text-align: center !important;
+    padding: 24rem 0 !important;
+  }
   .crm__background{
     background: url(./assets/crm-home-copy-final.jpg) no-repeat;
     }
@@ -2101,6 +2108,10 @@ body {
     height: calc( 150vh - 70px);
 
   }
+  .report__background{
+    height: calc( 140vh - 70px);
+  }
+  
   .itsm__background{
     height: calc( 125vh - 70px);
   }
