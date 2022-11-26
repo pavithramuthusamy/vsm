@@ -15,7 +15,12 @@ function submitForm(){
         // contentType: "application/json; charset=utf-8",
         success: function (response) {
             console.log(response);
-            alert("Successfully Registered");
+            if(response.status === 200) {
+            alert("Thank you for your interest. We received your information");
+            }
+            else{
+            alert("Some error occurred!!! Please try again later");
+            }
             window.location.reload();
         }
     });

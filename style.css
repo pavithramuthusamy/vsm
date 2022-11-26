@@ -291,14 +291,10 @@ a {
 }
 
 .main__background {
-  background: #dbe0e6 url(./assets/final4.jpg); 
- 
+  background: #dbe0e6 url(./assets/final4.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
- 
   background-size: 65% auto;
- 
- 
   padding: 15px;
   height: calc( 100vh - 70px);
   padding: 0rem !important;
@@ -839,7 +835,7 @@ a {
       object-fit: contain;
       order: 1;
       right: 20%;
-      transform: scale(0.8) translate(35%, 0%) !important;
+      /* transform: scale(0.8) translate(35%, 0%) !important; */
   }
 
   .eng_correction{
@@ -1822,18 +1818,21 @@ body {
     float: right;
     text-align: center !important;
     padding: 8rem 0 !important;
-    margin: auto;
+    /* margin: auto; */
+    margin-top: auto;
+
 }
 
 .info__home{
   float: right;
-    text-align: left !important;
-    padding: 8rem 0 !important;
-    transform: scale(1) translate(10px, 0%);
-    width: 95vw;
-    height: 100vh;
-    margin: 0;
-
+  text-align: left !important;
+  padding: 8rem 0 !important;
+  transform: scaleX(-1) translate(10px, 0%);
+  width: 95vw;
+  height: 100vh;
+  margin: 0;
+  TOP: 33%;
+  /* POSITION: ABSOLUTE; */
 }
 }
 
@@ -1847,25 +1846,25 @@ body {
     padding: 15px;
     height: calc( 100vh - 70px);
     padding: 0rem !important;
-    filter: blur(5px);
-    position: absolute;
+  transform: scaleX(-1);
+    /* filter: blur(5px);
+    position: absolute; */
 }
 
   .main__background {
-   
-  background: #dbe0e6 url(./assets/final4.jpg); 
 
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-size: 60% auto;
-    width: 100vw;
-    padding: 15px;
-    height: calc( 100vh - 70px);
-    padding: 0rem !important;
-    filter: blur(5px);
-    position: absolute;
-  transform: scaleX(-1);
+  background: #dbe0e6 url(./assets/final4.jpg);
 
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: 60% auto;
+  width: 100vw;
+  padding: 15px;
+  height: calc(100vh - 70px);
+  padding: 0rem !important;
+  /* filter: blur(5px); */
+  /* position: absolute; */
+  /* transform: scaleX(-1); */
 }
 .incident__background {
   background: #b5babe url(./assets/incident-copy.jpg) no-repeat right top;
@@ -1876,12 +1875,14 @@ body {
     padding: 15px;
     height: calc( 100vh - 70px);
     padding: 0rem !important;
-    filter: blur(5px);
-    position: absolute;
+    /* filter: blur(5px); */
+    /* position: absolute; */
+  transform: scaleX(-1);
+
 }
 
 .knowledge__background {
-  background: #ffffff url(./assets/knowmanage.png) no-repeat right top;
+  background: #ffffff url(./assets/knowmanage.png) no-repeat center;
 
   /* background: #ffffff url(./assets/knowmanag.jpg) no-repeat right top; */
     background-size: 100% 100%;
@@ -1891,9 +1892,9 @@ body {
     padding: 15px;
     height: calc( 100vh - 70px);
     padding: 0rem !important;
-    filter: blur(5px);
-    position: absolute;
-    transform: scaleX(-1);
+    /* filter: blur(5px);
+    position: absolute; */
+    /* transform: scaleX(-1); */
 }
 .report__background {
   background: #ffffff url(./assets/reportmain5.png) no-repeat right top;
@@ -1904,12 +1905,12 @@ body {
     padding: 15px;
     height: calc( 100vh - 70px);
     padding: 0rem !important;
-    filter: blur(5px);
-    position: absolute;
+    /* filter: blur(5px);
+    position: absolute; */
     transform: scaleX(-1);
 }
 .main_dummy{
-  display: contents;
+  /* display: contents; */
 }
 .crm__home, .cm__home, .incident__home, .report__home, .slu__home, .info__home{
   display: block;
@@ -1918,11 +1919,13 @@ body {
   width: auto;
   top: 0;
   left: 0;
-  transform: translate(0%, 25%);
+  transform: translate(0%, 25%) scaleX(-1);
 }
 
 .info__home{
   width: 80vw;
+  margin-left: 10%;
+  transform: translate(0%, 15%) scaleX(-1);
 }
 
 .slu__home{
@@ -1970,8 +1973,9 @@ body {
     float: right;
     text-align: right;
     right: 0%;
-    filter: blur(5px);
-    position: absolute;
+  transform: scaleX(-1);
+    /* filter: blur(5px);
+    position: absolute; */
   }
 
   .solution__background {
@@ -1986,7 +1990,7 @@ body {
     float: right;
     text-align: right;
     right: 0%;
-    filter: blur(5px);
+    /* filter: blur(5px); */
     position: absolute;
    
   }
@@ -2082,47 +2086,85 @@ body {
     font-size: 1.9rem;
   }
   .main p.tag{
-    margin: 1rem 0;
+    margin: 1rem;
   }
-  .info__home,  .crm__home, .incident__home, .crm__home, .incident__home, .info__home{
+  .info__home,  .crm__home, .incident__home, .crm__home, .info__home{
     padding: 0 !important;
   }
+  .crm__background{
+    background: url(./assets/crm-home-copy-final.jpg) no-repeat;
+    }
+
   .itsm__background, .crm__background, .report__background{
-    background-size: 270% auto;
+    background-size: 100% auto;
+    background-position: TOP;
+    height: calc( 150vh - 70px);
 
   }
+  .itsm__background{
+    height: calc( 125vh - 70px);
+  }
+
+  .report__background{
+    background-position: TOP left;
+    background-size: 140% auto;
+  }
+
   .cm__background{
-    background-size: 280% auto;
-    background-position: bottom;
+    background-size: 100% auto;
+    background-position: TOP;
+    height: calc( 135vh - 70px);
+  }
+  .cm__home{
+    padding: 22rem 0 !important;
+  }
+  .incident__home{
+    padding: 20rem 0 !important;
   }
   .knowledge__background{
-    background-size: 260% auto;
-    background-position: center;
+    /* background-size: 260% auto;
+    background-position: center; */
+    background-size: 100% auto;
+    background-position: TOP;
+    height: calc( 130vh - 70px);
   }
   .solution__background{
-    background-size: 240% auto;
-    background-position: top;
+    /* background-size: 240% auto;
+    background-position: top; */
+    background-size: 100% auto;
+    background-position: TOP;
+    height: calc( 120vh - 70px);
   }
   .incident__background{
-    background-size: 200% auto;
-    background-position: bottom;
+  background: #b5babe url(./assets/incident-copy.jpg) no-repeat right top;
+    /* background-size: 200% auto;
+    background-position: bottom; */
+    background-size: 100% auto;
+    background-position: TOP;
+    height: calc( 130vh - 70px);
   }
   .main__background{
-    background: #d0d4d7 url(./assets/final4.jpg) no-repeat; 
-    background-size: 200% auto;
-    background-position: bottom;
+    background: url(./assets/final4.jpg) no-repeat;
+    background-size: 100% auto;
+    background-position: TOP;
+    height: calc( 150vh - 70px);
   }
   .itsm-title-container, .itsm-title-subcontainer{
-    color: #fff !important;
+    /* padding: 1rem; */
+    margin: 1rem;
+    width: auto !important;
+
   }
   .report-title-container{
-    padding: 8rem 1rem 0rem 1rem;
+    padding: 14rem 1rem 0rem 1rem;
   }
   .report-title-subcontainer{
     padding: 0 1rem;
   }
   .info__home#home-top{
     transform: scaleX(-1);
+    /* padding: 3rem !important; */
+    position: absolute;
   }
 }
 @media (min-width: 320px) and (max-width: 426px){
@@ -2135,7 +2177,11 @@ body {
     width: 85%;
     float: right;
     padding: 2rem;
-    margin: auto;
+    margin-top: auto;
 
+  }
+
+  .start-trail{
+    margin: 1rem;
   }
 }
