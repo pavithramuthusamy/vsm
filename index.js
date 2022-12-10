@@ -267,12 +267,12 @@ function headerClick() {
             alert("Thank you for your interest. We received your information");
             }
             else{
-            alert("Some error occurred!!! Please try again later");
+            alert("Something went wrong!!! Please try again later");
             }
             window.location.reload();
         },
         error: function (response) {
-            alert("Some error occurred!!! Please try again later");
+            alert("Something went wrong!!! Please try again later");
         }
     });
 });

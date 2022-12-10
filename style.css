@@ -95,7 +95,7 @@ a {
 }
 
 .logo{
-  width: 125px;
+  width: 165px;
  
   text-decoration: none;
   font-size: inherit;
@@ -148,7 +148,7 @@ a {
 }
 
 .info {
-  width: 70%;
+  width: 90%;
   float: left;
   margin-right: 40px;
 }
@@ -156,7 +156,7 @@ a {
 .info__home {
   width: 50%;
   float: right;
-  margin-left: 38%;
+  margin-left: 40%;
   transform: scaleX(-1);
 }
 
@@ -166,16 +166,24 @@ a {
 }
 
 .incident__home {
-  width: 40%;
+  width: 30%;
   float: right;
 }
 
 .report__home {
   position: absolute;
   top: auto !important;
-  right: 0;
-  width: 30%;
-  padding: 1rem !important;
+  right: 8rem;
+  width: 33%;
+  /* padding: 1rem !important; */
+}
+
+#knowledge.report__home {
+  position: absolute;
+  top: auto !important;
+  right: 8rem;
+  width: 21%;
+  /* padding: 1rem !important; */
 }
 
 .info h1 {
@@ -292,6 +300,7 @@ a {
   align-items: center;
   padding: 2rem;
   flex-direction: column;
+  margin-top: 70px;
 }
 
 .main__background {
@@ -300,7 +309,7 @@ a {
   background-repeat: no-repeat;
   background-size: 65% auto;
   padding: 15px;
-  height: calc( 100vh - 70px);
+  height: 100vh;
   padding: 0rem !important;
   transform: scaleX(-1);
 }
@@ -315,13 +324,13 @@ a {
  
  
   padding: 15px;
-  height: calc( 100vh - 70px);
-  padding: 0rem !important;
+  height: 100vh;
+  /* padding: 0rem !important; */
  
 }
 
 .itsm__background {
-  background: #86888a url(./assets/itsm3.jpg) no-repeat right top; 
+  background: #9b9b99  url(./assets/itsm_new.png) no-repeat right top; 
   background-position: right;
  
   background-size: 100% 100%;
@@ -331,8 +340,8 @@ a {
  
  
   padding: 15px;
-  height: calc( 100vh - 70px);
-  padding: 0rem !important;
+  height: 100vh;
+  /* padding: 0rem !important; */
  
 }
 
@@ -347,16 +356,16 @@ a {
  
  
   padding: 15px;
-  height: calc( 100vh - 70px);
-  padding: 0rem !important;
+  height: 100vh;
+  /* padding: 0rem !important;
  
   float: right;
   text-align: right;
-  right: 29%;
+  right: 29%; */
 }
 
 .crm__background {
-  background: #b5babe url(./assets/crm-home-copy-final.jpg) no-repeat right top;
+  background: #bbc0c3  url(./assets/crm-home-copy-final.jpg) no-repeat right top;
  
  
   background-size: 100% 100%;
@@ -366,8 +375,8 @@ a {
  
  
   padding: 15px;
-  height: calc( 100vh - 70px);
-  padding: 0rem !important;
+  height: 100vh;
+  /* padding: 0rem !important; */
  
  
  
@@ -375,7 +384,7 @@ a {
 }
 
 .incident__background {
-  background: #b5babe url(./assets/incident-copy.jpg) no-repeat right top;
+  background: #bbc0c3  url(./assets/slanew2.png) no-repeat right top;
  
  
   background-size: 100% 100%;
@@ -385,8 +394,8 @@ a {
  
  
   padding: 15px;
-  height: calc( 100vh - 70px);
-  padding: 0rem !important;
+  height: 100vh;
+  /* padding: 0rem !important; */
  
  
  
@@ -400,8 +409,8 @@ a {
   background-repeat: no-repeat;
   background-size: 69% auto;
   padding: 15px;
-  height: calc( 100vh - 70px);
-  padding: 0rem !important;
+  height: 100vh;
+  /* padding: 0rem !important; */
   background-position: left top;
 }
 
@@ -411,7 +420,7 @@ a {
   background-repeat: no-repeat;
   background-size: 69% auto;
   padding: 15px;
-  height: calc( 100vh - 70px);
+  height: 100vh;
   padding: 0rem !important;
   background-position: left top;
 }
@@ -464,13 +473,13 @@ a {
 .excellence h2, .trusted_by_customers_title {
   margin-bottom: 1.25rem;
  
-  padding: 0 2rem;
+  /* padding: 0 2rem; */
   text-align: center;
 }
 
 .excellence__desc {
  
-  padding: 0 2rem;
+  /* padding: 0 2rem; */
   text-align: center;
 }
 
@@ -486,7 +495,7 @@ a {
   flex-direction: column;
   align-items: center;
   margin-bottom: 1.5rem;
-  padding: 0.75rem;
+  /* padding: 0.75rem; */
 }
 
 .excellence__icon {
@@ -550,7 +559,7 @@ a {
 .p__black{
   color: #3b3a3e;
   margin-bottom: 0.5rem;
-  width: 500px;
+  width: 600px;
 }
 
 
@@ -783,10 +792,21 @@ a {
       padding: 4rem;
   }
 
+  #ticket-description.main {
+      flex-direction: row;
+      height: 100vh;
+  }
+
   .main__desc {
       order: 0;
       text-align: left;
-      padding: 0 4rem;
+      /* padding: 0 4rem; */
+  }
+
+  #home-top.main__desc {
+      order: 0;
+      text-align: left;
+      padding: 0 1rem;
   }
 
   .main__image {
@@ -805,7 +825,8 @@ a {
   .excellence__items {
       flex-direction: row;
       align-items: flex-start;
-      justify-content: space-evenly;
+      justify-content: space-between;
+      /* justify-content: space-evenly; */
   }
 
   .excellence__item {
@@ -823,7 +844,8 @@ a {
       padding: 4rem;
       flex-direction: row;
       align-items: center;
-      justify-content: space-evenly;
+      justify-content: space-between;
+      /* justify-content: space-evenly; */
   }
 
   .circle_layout {
@@ -832,7 +854,8 @@ a {
 
   .trusted_by_customers__image {
       margin-right: 2rem;
-      max-height: 436px;
+      max-height: 395px;
+      /* max-height: 436px; */
       width: 100%;
       object-fit: contain;
   }
@@ -864,7 +887,7 @@ a {
   .engineering-team__desc {
       order: 0;
       /* padding-left: 0rem; */
-      transform: translate(10%, 0%) !important;
+      /* transform: translate(10%, 0%) !important; */
   }
 
   .trusted_by_customers__desc .tag,
@@ -906,7 +929,7 @@ a {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
   .nav {
       padding: 1rem 6rem;
   }
@@ -925,7 +948,11 @@ a {
 
   .trusted_by_customers,
   .engineering-team {
-      padding: 6rem;
+      padding: 3rem 6rem;
+  }
+
+  #crm-carousel.trusted_by_customers{
+    padding: 12rem 6rem;
   }
 
   .circle_layout {
@@ -951,16 +978,16 @@ a {
   }
 
   .main {
-      padding: 8rem;
+      padding: 0 8rem;
   }
 
   .excellence {
-      padding: 8rem;
+      padding: 4rem 8rem;
   }
 
   .trusted_by_customers,
   .engineering-team {
-      padding: 8rem ;
+      padding: 4rem 8rem ;
   }
 
   .circle_layout {
@@ -968,7 +995,7 @@ a {
   }
 
   .testimony {
-      padding: 8rem;
+      padding: 4rem 8rem;
   }
 
   .sign-up {
@@ -1636,6 +1663,7 @@ body {
     padding: 2rem 4rem 0 4rem;
 }
 }
+
 @media (min-width:  768px) and (max-width: 1023px){
   .circle--rotate {
     border-radius: 50%;
@@ -1804,6 +1832,11 @@ body {
    min-height: 400px;
   }
 }
+@media (min-width: 1025px) and (max-width: 1440px){
+  #crm-carousel.trusted_by_customers{
+    padding: 0rem 6rem;
+  }
+}
 
 @media (min-width: 320px) and (max-width: 1023px){
   .crm__background, .cm__background, .incident__background, .report__background, .knowledge__background, .solution__background, .itsm__background {
@@ -1850,14 +1883,14 @@ body {
 
 @media (min-width: 1024px) and (max-width: 1300px){
   .crm__background {
-    background: #b5babe url(./assets/crm-home-copy-final.jpg) no-repeat right top;
+    background: #bbc0c3  url(./assets/crm-home-copy-final.jpg) no-repeat right bottom;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-size: 100% auto;
-    width: 100vw;
-    padding: 15px;
-    height: calc( 100vh - 70px);
-    padding: 0rem !important;
+    /* width: 100vw; */
+    /* padding: 15px; */
+    height: calc( 140vh - 70px);
+    /* padding: 0rem !important; */
   transform: scaleX(-1);
     /* filter: blur(5px);
     position: absolute; */
@@ -1888,14 +1921,14 @@ padding: 0rem !important;
 /* transform: scaleX(-1); */
 }
 .incident__background {
-  background: #b5babe url(./assets/incident-copy.jpg) no-repeat right top;
+  background: #dadada  url(./assets/slanew2.png) no-repeat right bottom;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-size: 100% auto;
-    width: 100vw;
-    padding: 15px;
-    height: calc( 100vh - 70px);
-    padding: 0rem !important;
+    /* width: 100vw;
+    padding: 15px; */
+    height: calc( 170vh - 70px);
+    /* padding: 0rem !important; */
     /* filter: blur(5px); */
     /* position: absolute; */
   transform: scaleX(-1);
@@ -1924,10 +1957,10 @@ padding: 0rem !important;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-size: 100% auto;
-  width: 100vw;
-  padding: 15px;
+  /* width: 100vw; */
+  /* padding: 15px; */
   height: calc( 150vh - 70px);
-  padding: 0rem !important;
+  /* padding: 0rem !important; */
   transform: scaleX(-1);
   margin-bottom: 10%;
 }
@@ -1945,26 +1978,35 @@ padding: 0rem !important;
     transform: translate(-40%, 25%) scaleX(-1);
 }
 
+.slu__home{
+  width: auto;
+}
 
-.report__home#knowledge{
+.crm__home{
+  width: 100%;
+  transform: translate(0%, 0%) scaleX(-1);
+}
+
+.report__home#knowledge {
   display: block;
   position: relative;
   height: 100vh;
   text-align: left !important;
-  width: 40vw;
+  width: 80%;
   top: 0;
   left: 0;
-  transform: translate(-54%, 25%) scaleX(1);
-  /* padding: 4rem !important; */
+  transform: translate(0%, 0%) scaleX(1);
+  padding: 3rem 6rem !important;
 }
   .knowledge__background {
-    background: #ffffff url(./assets/knowmanage.png) no-repeat right center;
+    background: #ffffff url(./assets/knowmanage.png) no-repeat right bottom;
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-size: 58% 82%;
+    /* background-size: 58% 82%; */
+    background-size: 100% auto;
     width: 100vw;
     padding: 15px;
-    height: calc( 100vh - 70px);
+    height: calc( 150vh - 70px);
     padding: 0rem !important;
     margin-bottom: 10%;
     /* transform: scaleX(-1); */
@@ -1974,18 +2016,19 @@ padding: 0rem !important;
   display: block;
   position: relative;
   height: 100vh;
-  width: 90vw;
+  width: 100%;
   top: 0;
   left: 0;
   transform: scaleX(-1);
-  padding: 4rem !important;
+  /* padding: 4rem !important; */
 
 }
 .incident__home{
       display: block;
     position: relative;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
+    /* width: 100vw; */
     top: 0;
     left: 0;
     padding: 0 1rem;
@@ -2000,68 +2043,67 @@ padding: 0rem !important;
   width: 60vw;
   text-align: left;
   /* margin-left: 38%; */
+  padding-left: 10rem;
   transform: translate(-2%, 15%) scaleX(-1);
 }
 
 .slu__home{
-  transform: translate(0%, 25%) !important;
-   
-    position: absolute;
+  transform: translate(0%, 0%) !important;
+      position: absolute;
+      padding: 3rem 6rem;
 }
 
-.itsm__home{
+.itsm__home {
   float: none;
   height: 95vh;
-  width: 30vw;
+  width: 60%;
   top: 0;
   left: 0;
-  transform: translate(-110%, 12%);
+  transform: translate(0%, 0%);
   text-align: left;
 }
 
-
   
 .itsm__background {
-  background: #86888a url(./assets/itsm3.jpg) no-repeat right top; 
+  background: #9b9b99  url(./assets/itsm_new.png) no-repeat right top; 
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-size: 75% auto;
     width: 100vw;
-    padding: 15px;
-    height: calc( 100vh - 70px);
-    padding: 0rem !important;
+    /* padding: 15px; */
+    height: 100vh;
+    /* padding: 0rem !important; */
     float: right;
     text-align: right;
     right: 0%;
     /* filter: blur(5px);
     position: absolute; */
   }
-
   .cm__background {
-    background: #d3d3d5 url('./assets/cm-home-copy.jpg') no-repeat right top;
+    background: #d3d3d5 url(./assets/cm-home-copy.jpg) no-repeat right top;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-size: 75% auto;
-    width: 100vw;
-    padding: 15px;
-    height: calc( 100vh - 70px);
-    padding: 0rem !important;
+    width: 90%;
+    /* padding: 15px; */
+    height: 100vh;
+    /* padding: 0rem !important; */
     float: right;
     text-align: right;
     right: 0%;
-  transform: scaleX(-1);
-    /* filter: blur(5px);
+    transform: scaleX(-1);
+        /* filter: blur(5px);
     position: absolute; */
-  }
+}
 
   .solution__background {
-    background: #fffffd url(./assets/solutions.jpg) no-repeat right top; 
+    background: #fffffd url(./assets/solutions.jpg) no-repeat right bottom; 
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-size: 75% auto;
+    background-size: 100% auto;
     width: 100vw;
     padding: 15px;
-    height: calc( 100vh - 70px);
+    height: calc( 160vh - 70px);
     padding: 0rem !important;
     float: right;
     text-align: right;
@@ -2089,7 +2131,7 @@ padding: 0rem !important;
 
   }
   .report__home {
-    position: relative;
+    /* position: relative; */
   }
   .excellence__desc, .excellence__item {
     padding: 0;
@@ -2103,7 +2145,12 @@ padding: 0rem !important;
   text-align: left !important;
 }
 }
-
+@media (min-width:  768px) and (max-width: 1024px){
+  .engineering-team__image{
+    width: 60% !important;
+    margin: auto;
+  }
+}
 
 
 ::-webkit-scrollbar {
@@ -2177,6 +2224,15 @@ padding: 0rem !important;
   .info__home,  .crm__home, .incident__home, .crm__home, .info__home{
     padding: 0 !important;
   }
+  .report__home {
+    position: inherit;
+  }
+
+  #knowledge.report__home{
+    right: inherit;
+    width: 100%;
+    padding: 18rem 0 !important;
+  }
 
   .crm__home{
     width: 100%;
@@ -2238,7 +2294,7 @@ padding: 0rem !important;
     height: calc( 120vh - 70px);
   }
   .incident__background{
-  background: #b5babe url(./assets/incident-copy.jpg) no-repeat right top;
+  background: #bbc0c3  url(./assets/slanew2.png) no-repeat right top;
     /* background-size: 200% auto;
     background-position: bottom; */
     background-size: 100% auto;
@@ -2302,31 +2358,45 @@ padding: 0rem !important;
     position: absolute;
   }
   .crm__background {
-    background: #b5babe url(./assets/crm-home-copy-final.jpg) no-repeat right top;
+    background: #bbc0c3  url(./assets/crm-home-copy-final.jpg) no-repeat right top;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-size: 100% auto;
     padding: 15px;
     height: calc( 166vh - 70px);
-    padding: 0rem !important;
+    padding: 2rem !important;
   }
 
   .itsm__home{
-    width: 50%;
+    width: 100%;
     float: right;
     top: 10%;
     margin-top: auto;
     margin-bottom: 10%;
   }
+
+  .report__home{
+    position: initial;
+  }
+
+  #knowledge.report__home {
+    position: initial;
+    top: auto !important;
+    right: 8rem;
+    width: 90%;
+    padding: 2rem !important;
+
+}
+
   .itsm__background {
-    background: #86888a url(./assets/itsm3.jpg) no-repeat right top;
+    background: #9b9b99  url(./assets/itsm_new.png) no-repeat right top;
     /* background-position: right; */
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-size: 100% auto;
     padding: 15px;
     height: calc( 165vh - 70px);
-    padding: 0rem !important;
+    padding: 2rem !important;
   }
   .cm__background {
     background: #d3d3d5 url(./assets/cm-home-copy.jpg) no-repeat right top;
@@ -2335,28 +2405,28 @@ padding: 0rem !important;
     background-size: 100% auto;
     padding: 15px;
     height: calc( 155vh - 70px);
-    padding: 0rem !important;
+    padding: 2rem !important;
     float: right;
     text-align: right;
     right: 29%;
 }
 .incident__background {
-  background: #b5babe url(./assets/incident-copy.jpg) no-repeat right top;
+  background: #bbc0c3  url(./assets/slanew2.png) no-repeat right top;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-size: 100% auto;
   padding: 15px;
-  height: calc( 150vh - 70px);
-  padding: 0rem !important;
+  height: calc( 170vh - 70px);
+  padding: 2rem !important;
 }
 .report__background {
   background: #ffffff url(./assets/reportmain5.png) no-repeat right top;
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: 115% auto;
   padding: 15px;
   height: calc( 160vh - 70px);
-  padding: 0rem !important;
+  padding: 2rem !important;
   background-position: left top;
 }
 .knowledge__background {
@@ -2365,8 +2435,8 @@ padding: 0rem !important;
   background-repeat: no-repeat;
   background-size: 100% auto;
   padding: 15px;
-  height: calc( 150vh - 70px);
-  padding: 0rem !important;
+  height: calc( 140vh - 70px);
+  /* padding: 2rem !important; */
   background-position: left top;
 }
 
@@ -2377,7 +2447,7 @@ padding: 0rem !important;
   background-size: 100% auto;
   padding: 15px;
   height: calc( 170vh - 70px);
-  padding: 0rem !important;
+  padding: 2rem !important;
 }
 
 .solution-subtitle {

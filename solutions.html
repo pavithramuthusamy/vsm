@@ -7,6 +7,7 @@
   <title>InnvoDesk</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="header.css">
   <link rel="stylesheet" href="ticketmanage.css">
@@ -15,48 +16,53 @@
   <link rel="stylesheet" href="knw.css">
 </head>
 <body style="overflow-x: hidden;">
-  <div class="topnav" id="myTopnav">
-    <div id="logo"><a id="logo-container" class="logo nav_logo" href="index.html">
-      <img class="logo" src="./assets/innvocore_logo.png" alt="" />
-    </a> </div>
-    <div class="topnav-container">
-    <a href="index.html">Home</a>
-    <div class="dropdown">
-      <button class="dropbtn">Products 
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <a href="CRM.html">Helpdesk & CRM</a>
-        <a href="itsm.html">IT Service Management</a>
+  <nav>
+    <div class="navbar">
+      <i class='bx bx-menu'></i>
+      <div class="logo"><img class="logo" src="./assets/innvocore_logo.png" alt="" /></div>
+      <div class="nav-links">
+        <div class="sidebar-logo">
+          <img class="logo" src="./assets/innvocore_logo.png" alt="" />
+          <i class='bx bx-x' ></i>
+        </div>
+        <ul class="links">
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <a class="nav_products" href="#">Products</a>
+            <i class='bx bxs-chevron-down  arrow  product-arrow'></i>
+            <ul class="products-sub-menu sub-menu">
+              <li><a href="CRM.html">Helpdesk & CRM</a></li>
+              <li> <a href="itsm.html">IT Service Management</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="nav_features" href="#">Features</a>
+            <i class='bx bxs-chevron-down feature-arrow arrow '></i>
+            <ul class="feature-sub-menu sub-menu">
+              <li><a href="./ticketmanagement.html">Ticket Management</a></li>
+              <li><a href="changemanagement.html">Change Management</a></li>
+              <li><a href="incident.html">SLA Management</a></li>
+              <li><a href="report.html">Reporting & Analytics</a></li>
+              <li><a href="./knowledge.html">Knowledge Management</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="nav_solutions" href="#">Solutions</a>
+            <i class='bx bxs-chevron-down  arrow  solutions-arrow'></i>
+            <ul class="solutions-sub-menu sub-menu">
+              <li><a href="solutions.html#solution-industry">By Industry</a></li>
+              <li><a href="./solutions.html#solution-size">By Size</a></li>
+            </ul>
+          </li>
+          <li><a href="./pricing.html">Pricing</a></li>
+          <li><a href="./pricing.html#sign-up">Contact</a></li>
+          <li>
+              <button class="button button-primary rounded purple-button download-container" ><a class="main__a purple-button-content" href="./assets/White Paper - innvoDesk.pdf" download="InnvoDesk">Download WhitePage</a></button>
+          </li>
+        </ul>
       </div>
-    </div> 
-    <div class="dropdown">
-      <button class="dropbtn">Features 
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <a href="./ticketmanagement.html">Ticket Management</a>
-        <a href="changemanagement.html">Change Management</a>
-        <a href="incident.html">SLA Management</a>
-        <a href="report.html">Reporting & Analytics</a>
-        <a href="./knowledge.html">Knowledge Management</a>
-      </div>
-    </div> 
-    <div class="dropdown">
-      <button class="dropbtn">Solutions 
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <a href="solutions.html#solution-industry">By Industry</a>
-        <a href="./solutions.html#solution-size">By Size</a>
-      </div>
-    </div> 
-    <a href="./pricing.html">Pricing</a>
-    <a href="./pricing.html#sign-up">Contact</a>
-    <button class="button button-primary rounded purple-button download-container" ><a class="main__a purple-button-content" href="./assets/White Paper - innvoDesk.pdf" download="InnvoDesk">Download WhitePage</a></button>
-    <a href="javascript:void(0);" style="font-size:22px;" class="icon" onclick="headerClick()">&#9776;</a>
     </div>
-  </div>
+  </nav>
  
   <section class="main main_dummy solution__background">
     <div class="all-p main__desc slu__home slu-translate" >
@@ -66,116 +72,118 @@
     </div>
   </section>
 
+ <!-- <section class="excellence"> -->
+  <div class="content" id="solution-industry" style="padding: 8rem 0;">
   
-
-      
-<div class="content" id="solution-industry" style="padding: 8rem 0;">
+    <h1 class="">Solution by Industry</h1>
+    
   
-  <h1 class="">Solution by Industry</h1>
-  
-
-  <p class="all-p description"></p>
-    <a class="card" href="#!">
-    <div class="all-p front" style="background-image: url(./assets/Solutions/Education.jpg)">
-      <p class="slu-p">Education</p>
-    </div>
-    <div class="all-p back">
-      <div>
-        <p class="all-p">InnvoDesk helps the education departments to develop from any location, any browser, and any device. </p>
-        <p class="all-p">When launching enterprise-grade protection, it will make the brands design their communication systems with students.</p>
-        
-      </div>
-    </div></a>
-        
-    <a class="card" href="#!">
-    <div class="all-p front" style="background-image: url(./assets/Solutions/Government.jpg)">
-      <p class="slu-p">Government</p>
-    </div>
-    <div class="all-p back">
-      <div>
-        <p class="all-p">This helpdesk software will enhance digital sales and saves customer data in the government sectors. Moreover, it helps you to handle daily customer queries. </p>
-    
-      </div>
-    </div></a><a class="card" href="#!">
-    <div class="all-p front" style="background-image: url(https://images.pexels.com/photos/317157/pexels-photo-317157.jpeg?auto=compress&cs=tinysrgb&w=600)">
-    
-      <p class="slu-p">Healthcare</p>
-    </div>
-    <div class="all-p back">
-      <div>
-        <p class="all-p">At Healthcare sectors, InnvoDesk improves the call connects rate and makes your customers self-serve when developing the patient journey. </p>
-        <p class="all-p">So, the healthcare industries also maintain good communication with their patients and their family members.</p>
-        
-      </div>
-    </div></a>
-    <a class="card" href="#!">
-    <div class="all-p front" style="background-image: url(https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&w=600)">
-    
-      <p class="slu-p">Hospitality and Travel</p>
-    </div>
-    <div class="all-p back">
-      <div>
-        <p class="all-p">In the Travel and hospitality sectors, InnvoDesk helps you to create customer engagement and makes your customers communicate with you based on the preferred channels. </p>
-    
-      </div>
-    </div></a>
-    <a class="card" href="#!">
-    <div class="all-p front" style="background-image: url(https://images.pexels.com/photos/186461/pexels-photo-186461.jpeg?auto=compress&cs=tinysrgb&w=600)">
-    
-      <p class="slu-p">Financial and Insurance Services</p>
-    </div>
-    <div class="all-p back">
-      <div>
-        <p class="all-p">Our helpdesk software helps the insurance and financial service sectors to make their customer easily process claims. </p>
-        <p class="all-p">It supports your business with multiple channels to visit you and delivers the best customer service experience. </p>
-        
-      </div>
-    </div></a>
-    <a class="card" href="#!">
-    <div class="all-p front" style="background-image: url(./assets/Solutions/telecommunication.jpg)">
-      <p class="slu-p">Tele-Communi<br>cation</p>
-    </div>
-    <div class="all-p back">
-      <div>
-        <p class="all-p">InnvoDesk reduces the operational charges, and upgrades the connection rate in the telecommunication sectors. </p>
-        <p class="all-p">With this helpdesk software, you can easily meet your customer expectations, and get a constant customer experience over all the channels.</p>
-       
-      </div>
-    </div></a>
-    <a class="card" href="#!">
-      <div class="all-p front" style="background-image: url(https://images.pexels.com/photos/1422408/pexels-photo-1422408.jpeg?auto=compress&cs=tinysrgb&w=600)">
-      
-        <p class="slu-p">Banking</p>
+    <p class="all-p description"></p>
+      <a class="card" href="#!">
+      <div class="all-p front" style="background-image: url(./assets/Solutions/Education.jpg)">
+        <p class="slu-p">Education</p>
       </div>
       <div class="all-p back">
         <div>
-          <p class="all-p">Most of the banking sectors are using the InnvoDesk for end-to-end security, omnichannel interactions, remote solutions, unlimited CRM integrations, monitoring and reporting abilities, and relationship management solution. </p>
-          <!-- <p class="all-p">It will determine the customer activity to make for future actions.  </p> -->
+          <p class="all-p">InnvoDesk helps the education departments to develop from any location, any browser, and any device. </p>
+          <p class="all-p">When launching enterprise-grade protection, it will make the brands design their communication systems with students.</p>
           
-        </div>
-      </div></a><a class="card" href="#!">
-      <div class="all-p front" style="background-image: url(https://images.pexels.com/photos/8867429/pexels-photo-8867429.jpeg?auto=compress&cs=tinysrgb&w=600)">
-      
-        <p class="slu-p">BPO</p>
-      </div>
-      <div class="all-p back">
-        <div>
-          <p class="all-p">InnvoDesk offers the best solutions which are suitable for your BPO business requirements. </p>
-          <p class="all-p">As a BPO entrepreneur, you can easily avail on-premise and on-cloud solutions. </p>
-          
-        </div>
-      </div></a><a class="card" href="#!">
-      
-      <div class="all-p front" style="background-image: url(https://images.pexels.com/photos/5632397/pexels-photo-5632397.jpeg?auto=compress&cs=tinysrgb&w=600)">
-        <p class="slu-p">E-Commerce</p>
-      </div>
-      <div class="all-p back">
-        <div>
-          <p class="all-p">InnvoDesk helps you to maintain good customer relations, and better customer engagement by offering a smooth customer experience in the eCommerce industries.</p>
-    
         </div>
       </div></a>
-</div>
+          
+      <a class="card" href="#!">
+      <div class="all-p front" style="background-image: url(./assets/Solutions/Government.jpg)">
+        <p class="slu-p">Government</p>
+      </div>
+      <div class="all-p back">
+        <div>
+          <p class="all-p">This helpdesk software will enhance digital sales and saves customer data in the government sectors. Moreover, it helps you to handle daily customer queries. </p>
+      
+        </div>
+      </div></a><a class="card" href="#!">
+      <div class="all-p front" style="background-image: url(https://images.pexels.com/photos/317157/pexels-photo-317157.jpeg?auto=compress&cs=tinysrgb&w=600)">
+      
+        <p class="slu-p">Healthcare</p>
+      </div>
+      <div class="all-p back">
+        <div>
+          <p class="all-p">At Healthcare sectors, InnvoDesk improves the call connects rate and makes your customers self-serve when developing the patient journey. </p>
+          <p class="all-p">So, the healthcare industries also maintain good communication with their patients and their family members.</p>
+          
+        </div>
+      </div></a>
+      <a class="card" href="#!">
+      <div class="all-p front" style="background-image: url(https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&w=600)">
+      
+        <p class="slu-p">Hospitality and Travel</p>
+      </div>
+      <div class="all-p back">
+        <div>
+          <p class="all-p">In the Travel and hospitality sectors, InnvoDesk helps you to create customer engagement and makes your customers communicate with you based on the preferred channels. </p>
+      
+        </div>
+      </div></a>
+      <a class="card" href="#!">
+      <div class="all-p front" style="background-image: url(https://images.pexels.com/photos/186461/pexels-photo-186461.jpeg?auto=compress&cs=tinysrgb&w=600)">
+      
+        <p class="slu-p">Financial and Insurance Services</p>
+      </div>
+      <div class="all-p back">
+        <div>
+          <p class="all-p">Our helpdesk software helps the insurance and financial service sectors to make their customer easily process claims. </p>
+          <p class="all-p">It supports your business with multiple channels to visit you and delivers the best customer service experience. </p>
+          
+        </div>
+      </div></a>
+      <a class="card" href="#!">
+      <div class="all-p front" style="background-image: url(./assets/Solutions/telecommunication.jpg)">
+        <p class="slu-p">Tele-Communi<br>cation</p>
+      </div>
+      <div class="all-p back">
+        <div>
+          <p class="all-p">InnvoDesk reduces the operational charges, and upgrades the connection rate in the telecommunication sectors. </p>
+          <p class="all-p">With this helpdesk software, you can easily meet your customer expectations, and get a constant customer experience over all the channels.</p>
+         
+        </div>
+      </div></a>
+      <a class="card" href="#!">
+        <div class="all-p front" style="background-image: url(https://images.pexels.com/photos/1422408/pexels-photo-1422408.jpeg?auto=compress&cs=tinysrgb&w=600)">
+        
+          <p class="slu-p">Banking</p>
+        </div>
+        <div class="all-p back">
+          <div>
+            <p class="all-p">Most of the banking sectors are using the InnvoDesk for end-to-end security, omnichannel interactions, remote solutions, unlimited CRM integrations, monitoring and reporting abilities, and relationship management solution. </p>
+            <!-- <p class="all-p">It will determine the customer activity to make for future actions.  </p> -->
+            
+          </div>
+        </div></a><a class="card" href="#!">
+        <div class="all-p front" style="background-image: url(https://images.pexels.com/photos/8867429/pexels-photo-8867429.jpeg?auto=compress&cs=tinysrgb&w=600)">
+        
+          <p class="slu-p">BPO</p>
+        </div>
+        <div class="all-p back">
+          <div>
+            <p class="all-p">InnvoDesk offers the best solutions which are suitable for your BPO business requirements. </p>
+            <p class="all-p">As a BPO entrepreneur, you can easily avail on-premise and on-cloud solutions. </p>
+            
+          </div>
+        </div></a><a class="card" href="#!">
+        
+        <div class="all-p front" style="background-image: url(https://images.pexels.com/photos/5632397/pexels-photo-5632397.jpeg?auto=compress&cs=tinysrgb&w=600)">
+          <p class="slu-p">E-Commerce</p>
+        </div>
+        <div class="all-p back">
+          <div>
+            <p class="all-p">InnvoDesk helps you to maintain good customer relations, and better customer engagement by offering a smooth customer experience in the eCommerce industries.</p>
+      
+          </div>
+        </div></a>
+  </div>
+ <!-- </section>  -->
+
+      
+
 <div class=""   id="solution-size" >
   
   <h1 class="slu-h1">Solution by Size</h1>
@@ -183,28 +191,28 @@
   <section class="trusted_by_customers" style="padding-top: 0;">
     
 
-    <div class="all-p trusted_by_customers__desc slu_size" style="padding: 2rem;">
+    <div class="all-p trusted_by_customers__desc slu_size slu-by-industry1" style="padding: 2rem;">
 
-      <h2>Enterprise Business </h2>
-      <p class="all-p p__black">InnvoDesk is a well-equipped enterprise help desk software that automates most of the tasks manually and repetitively. It also has self-service, omnichannel, and ticketing functionalities. It resolve your issues and improves collaboration quicker. It automate and manage your customer support process in a more efficient manner.
+      <h2 class="slu-color">Enterprise Business </h2>
+      <p class="all-p p__black slu-color">InnvoDesk is a well-equipped enterprise help desk software that automates most of the tasks manually and repetitively. It also has self-service, omnichannel, and ticketing functionalities. It resolve your issues and improves collaboration quicker. It automate and manage your customer support process in a more efficient manner.
       </p>
       <br>
       <ul class="ul_element slu-ul">
-        <li class="app-p one li-element slu-li">
+        <li class="app-p one li-element li-element-purple slu-li" style="color: white !important;">
           Make data-backed decisions
         </li>
-        <li class="app-p one li-element slu-li">
+        <li class="app-p one li-element li-element-purple slu-li" style="color: white !important;">
           Faster resolutions
         </li>
-        <li class="app-p one li-element slu-li">
+        <li class="app-p one li-element li-element-purple slu-li" style="color: white !important;">
           Improves the performance of your team
         </li>
-        <li class="app-p one li-element slu-li">
+        <li class="app-p one li-element li-element-purple slu-li" style="color: white !important;">
           Enhances collaboration for good results
         </li>
       </ul>
     </div>
-    <div class="all-p engineering-team__desc slu_size"  style="padding: 2rem;">
+    <div class="all-p engineering-team__desc slu_size slu-by-industry2"  style="padding: 2rem;">
 
       <h2>Small & Medium Business</h2>
       <p class="all-p p__black">InnvoDesk is the latest and easy-to-use small business ticketing system to assist your support teams to perform well. We help you to get the centralized incoming tickets from several channels such as Live chat, social media, email, etc. For small businesses, it assists your team ace at scheduling tickets and prioritizing immediate problems. </p>
@@ -303,6 +311,7 @@
   <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
   <script src="./solutions.js"></script>
 
+  <script src="header.js"></script>
 
   
 </body>

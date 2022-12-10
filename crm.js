@@ -34,7 +34,7 @@ const reviews = [
         img: "./assets/internet-izzi.png",
         width: '250px', height: '200px',
         text:
-            'InnvoDesk CRM will automate your marketing, sales, and service in a single platform. It allows consistent messaging and avoids data leakage. In sales, it covers contact management, telephone, deals, project management, appointment scheduling, and gamification. '
+            'InnvoDesk CRM will automate your marketing, sales, and service in a single platform which provides ease of access. It allows consistent messaging and avoids data leakage in a efficient way. In sales, it covers contact management, telephone, deals, project management, appointment scheduling, and gamification. '
    },
     {
         id: 3,

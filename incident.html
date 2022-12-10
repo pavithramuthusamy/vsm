@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>InnvoDesk</title>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="header.css">
   <link rel="stylesheet" href="ticketmanage.css">
@@ -14,48 +15,53 @@
 </head>
 
 <body>
-  <div class="topnav" id="myTopnav">
-    <div id="logo"><a id="logo-container" class="logo nav_logo" href="index.html">
-      <img class="logo" src="./assets/innvocore_logo.png" alt="" />
-    </a> </div>
-    <div class="topnav-container">
-    <a href="index.html">Home</a>
-    <div class="dropdown">
-      <button class="dropbtn">Products 
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <a href="CRM.html">Helpdesk & CRM</a>
-        <a href="itsm.html">IT Service Management</a>
+  <nav>
+    <div class="navbar">
+      <i class='bx bx-menu'></i>
+      <div class="logo"><img class="logo" src="./assets/innvocore_logo.png" alt="" /></div>
+      <div class="nav-links">
+        <div class="sidebar-logo">
+          <img class="logo" src="./assets/innvocore_logo.png" alt="" />
+          <i class='bx bx-x' ></i>
+        </div>
+        <ul class="links">
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <a class="nav_products" href="#">Products</a>
+            <i class='bx bxs-chevron-down  arrow  product-arrow'></i>
+            <ul class="products-sub-menu sub-menu">
+              <li><a href="CRM.html">Helpdesk & CRM</a></li>
+              <li> <a href="itsm.html">IT Service Management</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="nav_features" href="#">Features</a>
+            <i class='bx bxs-chevron-down feature-arrow arrow '></i>
+            <ul class="feature-sub-menu sub-menu">
+              <li><a href="./ticketmanagement.html">Ticket Management</a></li>
+              <li><a href="changemanagement.html">Change Management</a></li>
+              <li><a href="incident.html">SLA Management</a></li>
+              <li><a href="report.html">Reporting & Analytics</a></li>
+              <li><a href="./knowledge.html">Knowledge Management</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="nav_solutions" href="#">Solutions</a>
+            <i class='bx bxs-chevron-down  arrow  solutions-arrow'></i>
+            <ul class="solutions-sub-menu sub-menu">
+              <li><a href="solutions.html#solution-industry">By Industry</a></li>
+              <li><a href="./solutions.html#solution-size">By Size</a></li>
+            </ul>
+          </li>
+          <li><a href="./pricing.html">Pricing</a></li>
+          <li><a href="./pricing.html#sign-up">Contact</a></li>
+          <li>
+              <button class="button button-primary rounded purple-button download-container" ><a class="main__a purple-button-content" href="./assets/White Paper - innvoDesk.pdf" download="InnvoDesk">Download WhitePage</a></button>
+          </li>
+        </ul>
       </div>
-    </div> 
-    <div class="dropdown">
-      <button class="dropbtn">Features 
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <a href="./ticketmanagement.html">Ticket Management</a>
-        <a href="changemanagement.html">Change Management</a>
-        <a href="incident.html">SLA Management</a>
-        <a href="report.html">Reporting & Analytics</a>
-        <a href="./knowledge.html">Knowledge Management</a>
-      </div>
-    </div> 
-    <div class="dropdown">
-      <button class="dropbtn">Solutions 
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <a href="solutions.html#solution-industry">By Industry</a>
-        <a href="./solutions.html#solution-size">By Size</a>
-      </div>
-    </div> 
-    <a href="./pricing.html">Pricing</a>
-    <a href="./pricing.html#sign-up">Contact</a>
-    <button class="button button-primary rounded purple-button download-container" ><a class="main__a purple-button-content" href="./assets/White Paper - innvoDesk.pdf" download="InnvoDesk">Download WhitePage</a></button>
-    <a href="javascript:void(0);" style="font-size:22px;" class="icon" onclick="headerClick()">&#9776;</a>
     </div>
-  </div>                                  
+  </nav>                                  
   <section class="main main_dummy incident__background">
     <div class="main__desc incident__home">
       <h1 class="itsm-title-container">SLA Management and Escalation</h1>
@@ -68,7 +74,7 @@
 
   <section class="excellence">
     <div class="all-p excellence__items sla_dummy">
-      <h2 style="padding: 5rem 2rem 0rem 2rem;">Optimize Your Customer Experience with SLA Management and Escalation. 
+      <h2>Optimize Your Customer Experience with SLA Management and Escalation. 
       </h2>
       <p class="all-p excellence__desc">Set appropriate response times and create custom workflows for your representatives. Systematically stack your cases and requests. 
       </p>
@@ -116,7 +122,7 @@
   </section>
 
   <section class="excellence">
-    <div id="sla-container" class="all-p container" style="padding: 6rem;">
+    <div id="sla-container" class="all-p container" style="padding: 3rem 6rem;">
         <h2 style="padding: 0 0 3rem 0;">The Rules of SLA Management and Ticket Escalation</h2>
         
           <ul class="timeline">
@@ -250,6 +256,7 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
   <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
   <script src="incident.js"></script>
+<script src="header.js"></script>
   
   
 </body>

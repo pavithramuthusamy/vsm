@@ -434,16 +434,32 @@ td{
 }
 
 .slu_size{
-  padding: 0 0 3rem 0 !important;
+  /* padding: 0 0 3rem 0 !important; */
 }
 
 .slu-ul{
   margin: 0 !important;
 }
 
+.slu-color{
+  color: white !important;
+}
+
+.slu-by-industry1{
+  padding: 2rem;
+  color: white;
+  background: #722ED1;
+}
+
+.slu-by-industry2{
+  padding: 2rem;
+  color: white;
+  background: #DEC9FA;
+}
+
 @media (min-width: 510px){
   .solution-subtitle{
-    width: 500px;
+    width: 60%;
   }
 }
 @media (min-width: 1024px) and (max-width: 1300px){
@@ -458,7 +474,13 @@ td{
   top: 0;
   left: 0;
   transform: translate(0%,40%);
+  padding: 22rem 0 !important;
 }
+
+.solution-subtitle {
+  width: 90%;
+}
+
 #solution-size{
   padding: 50rem 0 0 0;
 

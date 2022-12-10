@@ -3,7 +3,7 @@
 *::after {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 .carousel {
@@ -19,10 +19,26 @@
   position: relative;
   padding-top: 4rem;
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1025px) {
   .carousel {
     width: auto;
     margin: 10rem auto;
+    gap: 8.6rem;
+    padding: 3.2rem 4.8rem 3.2rem 8.6rem;
+    flex-direction: row;
+    align-items: center;
+  }
+  #home-carousel.carousel {
+    width: auto;
+    margin: 2rem auto;
+    gap: 8.6rem;
+    padding: 3.2rem 4.8rem 3.2rem 8.6rem;
+    flex-direction: row;
+    align-items: center;
+  }
+  #report-catousel-container.carousel {
+    width: auto;
+    margin: 2rem auto;
     gap: 8.6rem;
     padding: 3.2rem 4.8rem 3.2rem 8.6rem;
     flex-direction: row;
@@ -77,7 +93,7 @@ ion-icon {
   padding: 5rem;
   padding-top: 10rem;
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1025px) {
   .testimonial {
     padding: 0;
   }

@@ -25,9 +25,15 @@
     text-align: center !important;
     line-height: 0.8;
     padding-bottom: 50px;
-    padding-top: inherit;
+    padding-top: 4rem;
     padding-left: 2rem;
     padding-right: 2rem;
+}
+
+@media screen and (min-width: 1024px){
+.header {
+    padding: 6rem;
+}
 }
 
 .header p {

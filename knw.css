@@ -21,6 +21,14 @@
 
 }
 
+.li-element-purple:before {
+  font-family: FontAwesome;
+  position: absolute;
+  left: 0;
+  color: #dec9fa;
+  font-size: 1.3rem !important;
+}
+
 li.one:before {
    content:"\f111"; 
 }

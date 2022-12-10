@@ -1,262 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>InnvoDesk</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="ticketmanage.css" />
-  </head>
-  <body>
-    <div class="topnav" id="myTopnav">
-      <div id="logo"><a id="logo-container" class="logo nav_logo" href="index.html">
-        <img class="logo" src="./assets/innvocore_logo.png" alt="" />
-      </a> </div>
-      <div class="topnav-container">
-        <a href="index.html">Home</a>
-        <div class="dropdown">
-          <button class="dropbtn">Products 
-            <i class="fa fa-caret-down"></i>
-          </button> 
-          <div class="dropdown-content">
-            <a href="CRM.html">Helpdesk & CRM</a>
-            <a href="itsm.html">IT Service Management</a>
-          </div>
-        </div> 
-        <div class="dropdown">
-          <button class="dropbtn">Features 
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="./ticketmanagement.html">Ticket Management</a>
-            <a href="changemanagement.html">Change Management</a>
-            <a href="incident.html">SLA Management</a>
-            <a href="report.html">Reporting & Analytics</a>
-            <a href="./knowledge.html">Knowledge Management</a>
-          </div>
-        </div> 
-        <div class="dropdown">
-          <button class="dropbtn">Solutions 
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="solutions.html#solution-industry">By Industry</a>
-            <a href="./solutions.html#solution-size">By Size</a>
-          </div>
-        </div> 
-        <a href="./pricing.html">Pricing</a>
-        <a href="./pricing.html#sign-up">Contact</a>
-        <button class="button button-primary rounded purple-button download-container" ><a class="main__a purple-button-content" href="./assets/White Paper - innvoDesk.pdf" download="InnvoDesk">Download WhitePage</a></button>
-        <a href="javascript:void(0);" style="font-size:22px;" class="icon" onclick="headerClick()">&#9776;</a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>InnvoDesk</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="ticketmanage.css" />
+</head>
+
+<body>
+  <nav>
+    <div class="navbar">
+      <i class='bx bx-menu'></i>
+      <div class="logo"><img class="logo" src="./assets/innvocore_logo.png" alt="" /></div>
+      <div class="nav-links">
+        <div class="sidebar-logo">
+          <img class="logo" src="./assets/innvocore_logo.png" alt="" />
+          <i class='bx bx-x'></i>
         </div>
+        <ul class="links">
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <a class="nav_products" href="#">Products</a>
+            <i class='bx bxs-chevron-down  arrow  product-arrow'></i>
+            <ul class="products-sub-menu sub-menu">
+              <li><a href="CRM.html">Helpdesk & CRM</a></li>
+              <li> <a href="itsm.html">IT Service Management</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="nav_features" href="#">Features</a>
+            <i class='bx bxs-chevron-down feature-arrow arrow '></i>
+            <ul class="feature-sub-menu sub-menu">
+              <li><a href="./ticketmanagement.html">Ticket Management</a></li>
+              <li><a href="changemanagement.html">Change Management</a></li>
+              <li><a href="incident.html">SLA Management</a></li>
+              <li><a href="report.html">Reporting & Analytics</a></li>
+              <li><a href="./knowledge.html">Knowledge Management</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="nav_solutions" href="#">Solutions</a>
+            <i class='bx bxs-chevron-down  arrow  solutions-arrow'></i>
+            <ul class="solutions-sub-menu sub-menu">
+              <li><a href="solutions.html#solution-industry">By Industry</a></li>
+              <li><a href="./solutions.html#solution-size">By Size</a></li>
+            </ul>
+          </li>
+          <li><a href="./pricing.html">Pricing</a></li>
+          <li><a href="./pricing.html#sign-up">Contact</a></li>
+          <li>
+              <button class="button button-primary rounded purple-button download-container" ><a class="main__a purple-button-content" href="./assets/White Paper - innvoDesk.pdf" download="InnvoDesk">Download WhitePage</a></button>
+          </li>
+        </ul>
+      </div>
     </div>
-    <section class="main" id="ticket-description">
-      <div class="all-p main__desc info" id="ticket-title">
-        <h1 id="ticket">Ticket Management</h1>
-        <p class="all-p ticket-p">
-          Automate, arrange, and schedule tickets to the right representative
-          & maximize the power of your whole organization to delight your
-          customers.
-        </p>
-        <button class="button button-primary rounded start-trail">
-          <a class="trial" href="./pricing.html#sign-up">Start free trial</a>
-        </button>
-      </div>
-      <img
-        class="title-container"
-        src="./assets/HRMS-Guide.png"
-        alt=""
-      />
-    </section>
-
-    <section class="trusted_by_customers">
-      <img
-        src="https://img.freepik.com/premium-vector/flat-isometric-illustration-concept-business-continuity-disaster-recovery_18660-2481.jpg?w=2000"
-        class="trusted_by_customers__image"
-      />
-      <div class="all-p trusted_by_customers__desc" >
-        <h2>Intelligent Ticketing System Software</h2>
-        <p class="all-p p__black">
-          In this current developing world of multi-channel customer
-          interactions, businesses are looking for better tools to help
-          coordinate all customer interaction representatives through email,
-          live chat, and social media platforms.
-        </p>
-        <br />
-        <p class="all-p p__black">
-          With our helpdesk ticketing system, businesses will be able to
-          improvise their helpdesk support departments and customer service.
-        </p>
-        <br />
-        <p class="all-p p__black">
-          The capacity to respond faster, and efficiently and deliver customized
-          and well-connected experiences can have a huge impact on how satisfied
-          your customers are.
-        </p>
-      </div>
-    </section>
-    <section class="engineering-team">
-      <div class="all-p engineering-team__desc">
-        <h2>The Power of Ticketing System Software</h2>
-        <p class="all-p p__black">
-          InnvoDesk comes with several features which help your representatives
-          work easier and smarter. It helps to resolve customer issues, queries,
-          and general concerns in a friendly way.
-        </p>
-        <br />
-        <p class="all-p p__black">
-          It makes the users generate service requests, incidents, and change
-          requests.
-        </p>
-        <br />
-        <p class="all-p p__black">
-          InnvoDesk ticketing system software performs various tasks such as
-          escalating, assigning, resending, reassigning, routing, canceling,
-          closing and searching for tickets. It reduces disruptions and improves
-          productivity.
-        </p>
-      </div>
-      <img class="ticket-container" src="./assets/ticketmanage.jpg"
-    class="engineering-team__image">
-    </section>
-
-    <section class="excellence">
-      
-      <h2>Support Your Customers in a personal and connected way</h2>
-      <p class="all-p excellence__desc">
-        InnvoDesk helps you better understand your customers and offer the
-        best-personalized helpdesk support.
+  </nav>
+  <section class="main" id="ticket-description">
+    <div class="all-p main__desc info" id="ticket-title">
+      <h1 id="ticket">Ticket Management</h1>
+      <p class="all-p ticket-p">
+        Automate, arrange, and schedule tickets to the right representative
+        & maximize the power of your whole organization to delight your
+        customers.
       </p>
-      
-    </section>
+      <button class="button button-primary rounded start-trail">
+        <a class="trial" href="./pricing.html#sign-up">Start free trial</a>
+      </button>
+    </div>
+    <img class="title-container" src="./assets/HRMS-Guide.png" alt="" />
+  </section>
 
-    <section id="sign-up" class="sign-up">
-      <div class="all-p container">
-        <div class="all-p front_card">
-          <form class="login_form" action="javascript:void(0);">
-            <h3 style="color: white; text-align: center">
-              An Easy-to-Use, Easy-to-Buy Innvodesk Ticketing System
-            </h3>
-            <p class="all-p" style="color: white !important; padding: 2rem 0">
-              Our helpdesk ticketing system works for all sizes of businesses.
-              You can easily avail of our effortless customer service helpdesk
-              feature which offers easy integrations, excellent customer
-              support, multi-channel support, a self-service knowledge base, and
-              insightful performance reports.
-            </p>
-          </form>
-          <form class="signup_form" action="javascript:void(0);"></form>
-        </div>
-        <div class="all-p back_card">
-          <div class="all-p login_msg">
-            InnvoDesk gets each of your customer interactions with your business
-            into our helpdesk ticketing system. It offers your representatives
-            an easy-to-use visualization and centralized of the whole customer
-            journey.
-          </div>
-          <div class="all-p login_msg">
-            These customer interactions can start with purchases and getting
-            back to resolving queries from our technical support. However, this
-            system allows your customer support team by offering them the
-            context they should have to respond and support customers instantly
-            that’s fast, proper, and personalized way.
-          </div>
-          <ul class="ul_element">
-            <li class="all-p">
-              Enhances the security and standardizes the authentication process.
-            </li>
-            <li class="all-p">
-              It satisfies the audit standards without any additional cost and
-              effort.
-            </li>
-            <li class="all-p">
-              Simple to collaborate with the 3rd party tools or external tools
-              via integration.
-            </li>
-            <li class="all-p">It decreases the operational cost significantly.</li>
-            <li class="all-p">Improves the top quality of service.</li>
-          </ul>
-        </div>
+  <section class="trusted_by_customers">
+    <img
+      src="https://img.freepik.com/premium-vector/flat-isometric-illustration-concept-business-continuity-disaster-recovery_18660-2481.jpg?w=2000"
+      class="trusted_by_customers__image" />
+    <div class="all-p trusted_by_customers__desc">
+      <h2>Intelligent Ticketing System Software</h2>
+      <p class="all-p p__black">
+        In this current developing world of multi-channel customer
+        interactions, businesses are looking for better tools to help
+        coordinate all customer interaction representatives through email,
+        live chat, and social media platforms.
+      </p>
+      <br />
+      <p class="all-p p__black">
+        With our helpdesk ticketing system, businesses will be able to
+        improvise their helpdesk support departments and customer service.
+      </p>
+      <br />
+      <p class="all-p p__black">
+        The capacity to respond faster, and efficiently and deliver customized
+        and well-connected experiences can have a huge impact on how satisfied
+        your customers are.
+      </p>
+    </div>
+  </section>
+  <section class="engineering-team">
+    <div class="all-p engineering-team__desc">
+      <h2>The Power of Ticketing System Software</h2>
+      <p class="all-p p__black">
+        InnvoDesk comes with several features which help your representatives
+        work easier and smarter. It helps to resolve customer issues, queries,
+        and general concerns in a friendly way.
+      </p>
+      <br />
+      <p class="all-p p__black">
+        It makes the users generate service requests, incidents, and change
+        requests.
+      </p>
+      <br />
+      <p class="all-p p__black">
+        InnvoDesk ticketing system software performs various tasks such as
+        escalating, assigning, resending, reassigning, routing, canceling,
+        closing and searching for tickets. It reduces disruptions and improves
+        productivity.
+      </p>
+    </div>
+    <img class="ticket-container" src="./assets/ticketmanage.jpg" class="engineering-team__image">
+  </section>
+
+  <section class="excellence">
+
+    <h2>Support Your Customers in a personal and connected way</h2>
+    <p class="all-p excellence__desc">
+      InnvoDesk helps you better understand your customers and offer the
+      best-personalized helpdesk support.
+    </p>
+
+  </section>
+
+  <section id="sign-up" class="sign-up">
+    <div class="all-p container">
+      <div class="all-p front_card">
+        <form class="login_form" action="javascript:void(0);">
+          <h3 style="color: white; text-align: center">
+            An Easy-to-Use, Easy-to-Buy Innvodesk Ticketing System
+          </h3>
+          <p class="all-p" style="color: white !important; padding: 2rem 0">
+            Our helpdesk ticketing system works for all sizes of businesses.
+            You can easily avail of our effortless customer service helpdesk
+            feature which offers easy integrations, excellent customer
+            support, multi-channel support, a self-service knowledge base, and
+            insightful performance reports.
+          </p>
+        </form>
+        <form class="signup_form" action="javascript:void(0);"></form>
       </div>
-    </section>
+      <div class="all-p back_card">
+        <div class="all-p login_msg">
+          InnvoDesk gets each of your customer interactions with your business
+          into our helpdesk ticketing system. It offers your representatives
+          an easy-to-use visualization and centralized of the whole customer
+          journey.
+        </div>
+        <div class="all-p login_msg">
+          These customer interactions can start with purchases and getting
+          back to resolving queries from our technical support. However, this
+          system allows your customer support team by offering them the
+          context they should have to respond and support customers instantly
+          that’s fast, proper, and personalized way.
+        </div>
+        <ul class="ul_element">
+          <li class="all-p">
+            Enhances the security and standardizes the authentication process.
+          </li>
+          <li class="all-p">
+            It satisfies the audit standards without any additional cost and
+            effort.
+          </li>
+          <li class="all-p">
+            Simple to collaborate with the 3rd party tools or external tools
+            via integration.
+          </li>
+          <li class="all-p">It decreases the operational cost significantly.</li>
+          <li class="all-p">Improves the top quality of service.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
   <footer class="footer">
     <div class="flex flex-columns footer-content">
       <img class="logo logo_bigger" src="./assets/innvocore.svg" alt="">
-      <div class="text_align footer-links" id="footer-description">An web-based Enterprise Help Desk with CRM & IT Service Desk software, which can fit into any IT
+      <div class="text_align footer-links" id="footer-description">An web-based Enterprise Help Desk with CRM & IT
+        Service Desk software, which can fit into any IT
         & non-IT organisations to manage their customer communication problems and provide faster solutions
         by improving customer satisfaction & revenue.</div>
-      
+
     </div>
     <div class="flex flex-columns">
       <p class="footer-p"> ABOUT</p>
-      <a class="footer-links" href="https://innvocoretech.com/company-overview/" target="_blank" rel="noopener noreferrer">Company Overview
+      <a class="footer-links" href="https://innvocoretech.com/company-overview/" target="_blank"
+        rel="noopener noreferrer">Company Overview
       </a>
-      <a class="footer-links" href="https://innvocoretech.com/contact-us/" target="_blank" rel="noopener noreferrer">Contact
-      </a>
-    </div>
-    <div class="flex flex-columns">
-      <p class="footer-p"> SOLUTIONS 
-      </p>
-      <a class="footer-links" href="https://innvocoretech.com/automation-digitization/" target="_blank" rel="noopener noreferrer">Automation & Digitization</a>
-  
-      <a class="footer-links" href="https://innvocoretech.com/business-analytics/" target="_blank" rel="noopener noreferrer">Business Analytics</a>
-  
-      <a class="footer-links" href="https://innvocoretech.com/cloud-technology/" target="_blank" rel="noopener noreferrer">Cloud Technology</a>
-  
-      <a class="footer-links" href="https://innvocoretech.com/helpdesk-services/" target="_blank" rel="noopener noreferrer">Helpdesk Services</a>
-  
-      <a class="footer-links" href="https://innvocoretech.com/mobility/" target="_blank" rel="noopener noreferrer">Mobility</a>
-  
-      <a class="footer-links" href="https://innvocoretech.com/automation-digitization/" target="_blank" rel="noopener noreferrer">Robotic Process Automation (RPA)</a>
-  
-      <a class="footer-links" href="https://innvocoretech.com/workflow-solutions/" target="_blank" rel="noopener noreferrer">Workflow Solutions</a>
-  
-    </div>
-    <div class="flex flex-columns">
-      <p class="footer-p"> SERVICES 
-      </p>
-      <a class="footer-links" href="https://innvocoretech.com/application-services/" target="_blank" rel="noopener noreferrer">Application Services
-      </a>
-      <a class="footer-links" href="https://innvocoretech.com/human-capital-augmentation/" target="_blank" rel="noopener noreferrer">Human Capital Augmentation
-  
-      </a>
-      <a class="footer-links" href="https://innvocoretech.com/process-consultancy/" target="_blank" rel="noopener noreferrer">Process Consultancy
-  
-      </a>
-      <a class="footer-links" href="https://innvocoretech.com/re-engineering/" target="_blank" rel="noopener noreferrer">Re-engineering
-  
-      </a>
-      <a class="footer-links" href="https://innvocoretech.com/technologies/" target="_blank" rel="noopener noreferrer">Technologies
-  
+      <a class="footer-links" href="https://innvocoretech.com/contact-us/" target="_blank"
+        rel="noopener noreferrer">Contact
       </a>
     </div>
     <div class="flex flex-columns">
-      <p class="footer-p"> INDUSTRY 
+      <p class="footer-p"> SOLUTIONS
       </p>
-      <a class="footer-links" href="https://innvocoretech.com/finance-insurance/" target="_blank" rel="noopener noreferrer">Finance & Insurance
-      </a>
-  
-      <a class="footer-links" href="https://innvocoretech.com/manufacturing-logistics/" target="_blank" rel="noopener noreferrer">Manufacturing & Logistics
-      </a>
-  
-      <a class="footer-links" href="https://innvocoretech.com/retail-ecommerce/" target="_blank" rel="noopener noreferrer">Retail & eCommerce</a>
-  
+      <a class="footer-links" href="https://innvocoretech.com/automation-digitization/" target="_blank"
+        rel="noopener noreferrer">Automation & Digitization</a>
+
+      <a class="footer-links" href="https://innvocoretech.com/business-analytics/" target="_blank"
+        rel="noopener noreferrer">Business Analytics</a>
+
+      <a class="footer-links" href="https://innvocoretech.com/cloud-technology/" target="_blank"
+        rel="noopener noreferrer">Cloud Technology</a>
+
+      <a class="footer-links" href="https://innvocoretech.com/helpdesk-services/" target="_blank"
+        rel="noopener noreferrer">Helpdesk Services</a>
+
+      <a class="footer-links" href="https://innvocoretech.com/mobility/" target="_blank"
+        rel="noopener noreferrer">Mobility</a>
+
+      <a class="footer-links" href="https://innvocoretech.com/automation-digitization/" target="_blank"
+        rel="noopener noreferrer">Robotic Process Automation (RPA)</a>
+
+      <a class="footer-links" href="https://innvocoretech.com/workflow-solutions/" target="_blank"
+        rel="noopener noreferrer">Workflow Solutions</a>
+
     </div>
     <div class="flex flex-columns">
-      <p class="footer-p"> CAREERS 
+      <p class="footer-p"> SERVICES
       </p>
-      <a class="footer-links" href="https://innvocoretech.com/careers/" target="_blank" rel="noopener noreferrer">Current Openings
+      <a class="footer-links" href="https://innvocoretech.com/application-services/" target="_blank"
+        rel="noopener noreferrer">Application Services
+      </a>
+      <a class="footer-links" href="https://innvocoretech.com/human-capital-augmentation/" target="_blank"
+        rel="noopener noreferrer">Human Capital Augmentation
+
+      </a>
+      <a class="footer-links" href="https://innvocoretech.com/process-consultancy/" target="_blank"
+        rel="noopener noreferrer">Process Consultancy
+
+      </a>
+      <a class="footer-links" href="https://innvocoretech.com/re-engineering/" target="_blank"
+        rel="noopener noreferrer">Re-engineering
+
+      </a>
+      <a class="footer-links" href="https://innvocoretech.com/technologies/" target="_blank"
+        rel="noopener noreferrer">Technologies
+
+      </a>
+    </div>
+    <div class="flex flex-columns">
+      <p class="footer-p"> INDUSTRY
+      </p>
+      <a class="footer-links" href="https://innvocoretech.com/finance-insurance/" target="_blank"
+        rel="noopener noreferrer">Finance & Insurance
+      </a>
+
+      <a class="footer-links" href="https://innvocoretech.com/manufacturing-logistics/" target="_blank"
+        rel="noopener noreferrer">Manufacturing & Logistics
+      </a>
+
+      <a class="footer-links" href="https://innvocoretech.com/retail-ecommerce/" target="_blank"
+        rel="noopener noreferrer">Retail & eCommerce</a>
+
+    </div>
+    <div class="flex flex-columns">
+      <p class="footer-p"> CAREERS
+      </p>
+      <a class="footer-links" href="https://innvocoretech.com/careers/" target="_blank"
+        rel="noopener noreferrer">Current Openings
       </a>
     </div>
   </footer>
   <p class="footer-copyright">Innvodesk <i class="fa fa-copyright"></i></i> 2022 All rights reserved </p>
 
 
-    <script src="ticketmanage.js"></script>
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-  </body>
+  <script src="ticketmanage.js"></script>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="header.js"></script>
+
+</body>
+
 </html>
