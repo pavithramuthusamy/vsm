@@ -113,7 +113,6 @@ function headerClick() {
 //         $('.main__background').remove();
 //         $('.main').addClass('main__background');
 //     }
-//     console.log("sdfgd");
 // });
 
 $(function () {
@@ -211,10 +210,10 @@ const rightBtn = document.querySelector(".carousel__btn--right");
 let currentItem = 0;
 
 window.addEventListener("DOMContentLoaded", function () {
-    showPerson();
+    showContent();
 });
 
-function showPerson() {
+function showContent() {
     const item = reviews[currentItem];
     img.style.padding = item.padding ? item.padding : '1rem';
     imgText.textContent = item.title;
@@ -228,7 +227,7 @@ rightBtn.addEventListener("click", function () {
     if (currentItem > reviews.length - 1) {
         currentItem = 0;
     }
-    showPerson();
+    showContent();
 });
 
 leftBtn.addEventListener("click", function () {
@@ -236,7 +235,7 @@ leftBtn.addEventListener("click", function () {
     if (currentItem < 0) {
         currentItem = reviews.length - 1;
     }
-    showPerson();
+    showContent();
 });
 
 
@@ -248,25 +247,22 @@ function headerClick() {
       x.className = "topnav";
     }
   }
-
-  function submitForm(){
+  $('#sign-up').on('submit', function(e){
+    e.preventDefault(); 
     let data = $('form').serializeArray()
-    console.log(data);
     let obj = {}
     data.forEach(element => {
-        console.log(element);
         obj[element['name']] = element['value'];
     });
-    console.log(obj);
     $.ajax({
         type: "POST",
-        url: "http://localhost:5000/signup",
+        // url: "http://127.0.0.1:5000/signup",
+        url: "https://innvodesk.com/vsmhomeapi/signup",
         data: {
              json: JSON.stringify(obj)
         },
         // contentType: "application/json; charset=utf-8",
         success: function (response) {
-            console.log(response);
             if(response.status === 200) {
             alert("Thank you for your interest. We received your information");
             }
@@ -274,7 +270,9 @@ function headerClick() {
             alert("Some error occurred!!! Please try again later");
             }
             window.location.reload();
-
+        },
+        error: function (response) {
+            alert("Some error occurred!!! Please try again later");
         }
     });
-}
+});

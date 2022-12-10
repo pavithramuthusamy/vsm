@@ -8,11 +8,6 @@ body, html {
     font-size: 30px;
     margin: 20px 0;
   }
-  @media (min-width: 768px) {
-    .siteTitle {
-      font-size: 60px;
-    }
-  }
   
   header,
   main {
@@ -122,4 +117,20 @@ body, html {
 .ticket-sub-container {
     width: 100% !important;
 }
+}
+
+
+@media (min-width: 768px) {
+  .siteTitle {
+    font-size: 60px;
+  }
+}
+@media (min-width: 320px) and (max-width: 426px){
+  .report-container {
+      font-size: 1.2rem;
+      line-height: 1.8rem;
+      width: 100%;
+      text-align: left;
+      margin-bottom: 1rem;
+  }
 }

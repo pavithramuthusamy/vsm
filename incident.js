@@ -12,5 +12,4 @@ function headerClick() {
 //         $('.incident__background').remove();
 //         $('.main').addClass('incident__background');
 //     }
-//     console.log("sdfgd");
 // });

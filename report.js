@@ -12,7 +12,6 @@ function headerClick() {
 //         $('.report__background').remove();
 //         $('.main').addClass('report__background');
 //     }
-//     console.log("sdfgd");
 // });
 
 const reviews = [
@@ -74,10 +73,10 @@ const rightBtn = document.querySelector(".carousel__btn--right");
 let currentItem = 0;
 
 window.addEventListener("DOMContentLoaded", function () {
-    showPerson();
+    showContent();
 });
 
-function showPerson() {
+function showContent() {
     const item = reviews[currentItem];
     img.src = item.img;
     img.style.width = item.width;
@@ -94,7 +93,7 @@ rightBtn.addEventListener("click", function () {
     if (currentItem > reviews.length - 1) {
         currentItem = 0;
     }
-    showPerson();
+    showContent();
 });
 
 leftBtn.addEventListener("click", function () {
@@ -102,5 +101,5 @@ leftBtn.addEventListener("click", function () {
     if (currentItem < 0) {
         currentItem = reviews.length - 1;
     }
-    showPerson();
+    showContent();
 });

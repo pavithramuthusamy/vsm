@@ -33,7 +33,6 @@
 	};
 
 switchAccordion = function(e) {
-  console.log("triggered");
 	e.preventDefault();
 	var thisAnswer = e.target.parentNode.nextElementSibling;
 	var thisQuestion = e.target;
@@ -74,5 +73,4 @@ function headerClick() {
 //         $('.solution__background').remove();
 //         $('.main').addClass('solution__background');
 //     }
-//     console.log("sdfgd");
 // });

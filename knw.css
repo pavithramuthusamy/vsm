@@ -42,7 +42,7 @@ article {
 }
 
 .articleh1 {
-  font-size: 3rem;
+  /* font-size: 3rem; */
   margin: 0 0 .5em;
   margin-bottom: 2rem;
   text-align: start;
@@ -52,7 +52,7 @@ article {
 .articlep {
   font-size: 1em;
   margin: 0;
-  line-height: 1.5em;
+  line-height: inherit;
   margin-bottom: 2rem;
 
 }
@@ -185,4 +185,24 @@ padding-bottom: 2rem;
   margin-bottom: 20px;
   font-size: 24px;
 }
+}
+
+@media (min-width: 320px) and (max-width: 426px){
+  .li-element:before {
+    font-family: FontAwesome;
+    position: absolute;
+    left: 0px;
+    color: #722ED1;
+    font-size: 1.3rem !important;
+  }
+  .li-element{
+    padding-left: 35px;
+    color: #000;
+    list-style:none;
+    position: relative;
+    line-height: inherit;
+    font-size: 1.3rem !important;
+    font-weight: 500 !important;
+    color: var(--light-black) !important;
+  }
 }

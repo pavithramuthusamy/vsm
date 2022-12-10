@@ -419,21 +419,27 @@ td{
 
 .slu-h1{
   padding-bottom: 4rem;
+  text-align: center;
 }
 
 .slu-p{
   font-size: 3rem;
     color: #fff;
     font-weight: 600;
-   
+    line-height: inherit;
 }
 
 .slu-translate{
   transform: scaleX(1);
 }
 
+.slu_size{
+  padding: 0 0 3rem 0 !important;
+}
 
-
+.slu-ul{
+  margin: 0 !important;
+}
 
 @media (min-width: 510px){
   .solution-subtitle{
@@ -453,6 +459,10 @@ td{
   left: 0;
   transform: translate(0%,40%);
 }
+#solution-size{
+  padding: 50rem 0 0 0;
+
+}
 }
 
 @media (min-width: 320px) and (max-width: 426px){
@@ -462,4 +472,22 @@ td{
   .back{
     width: 60%;
   }
+  .why_innvo{
+    margin-left: 0.5rem;
+  }
 }
+@media screen and (max-width: 500px){
+  .card {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      min-height: 500px;
+  }
+  
+  .slu-p { 
+      font-size: 2rem;
+      color: #fff;
+      text-align: center;
+      font-weight: 600;
+  }
+  }

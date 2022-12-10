@@ -1,20 +1,21 @@
-function submitForm(){
+// function submitForm(){
+$('#sign-up__form').on('submit', function(e){
+    e.preventDefault(); 
     let data = $('form').serializeArray()
     let obj = {}
     data.forEach(element => {
-        console.log(element);
         obj[element['name']] = element['value'];
     });
-    console.log(obj);
     $.ajax({
         type: "POST",
-        url: "http://localhost:5000/signup",
+        // url: "http://127.0.0.1:5000/signup",
+        url: "https://innvodesk.com/vsmhomeapi/signup",
         data: {
              json: JSON.stringify(obj)
         },
         // contentType: "application/json; charset=utf-8",
         success: function (response) {
-            console.log(response);
+            
             if(response.status === 200) {
             alert("Thank you for your interest. We received your information");
             }
@@ -22,6 +23,9 @@ function submitForm(){
             alert("Some error occurred!!! Please try again later");
             }
             window.location.reload();
+        },
+        error: function (response) {
+            alert("Some error occurred!!! Please try again later");
         }
     });
-}
+});

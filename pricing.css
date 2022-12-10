@@ -167,7 +167,7 @@
   font-size: 1.2rem;
   padding: 0.25rem 0;
   color: var(--light-black);
-  margin-left: 1rem;
+  /* margin-left: 1rem; */
 }
 
 
@@ -264,5 +264,10 @@
 @media screen and (max-width:1100px){
   .pricing-card{
     flex: 50%;
+  }
+}
+@media (min-width: 320px) and (max-width: 426px){
+  .pricing-card {
+    margin: 2rem;
   }
 }

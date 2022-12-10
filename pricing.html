@@ -412,9 +412,9 @@
       </select>
         <input class="input" type="number" name="zip" placeholder="ZIP Code" required />
         <input class="input" id="phone" name="phone" type="tel" placeholder="Business phone" required />
-        <textarea class="input"  id="interested" name="interested" placeholder="Which product(s) can we help you with?" rows="4" cols="50"></textarea>
-        <button class="button button-primary mb-6" type="button" value="Submit" onclick="submitForm()">
-          Start your free trial
+        <textarea class="input"  id="interested" name="interested" placeholder="Which product(s) can we help you with?" rows="4" cols="50" required></textarea>
+        <button class="button button-primary mb-6" type="submit" value="Submit">
+          Submit
         </button>
         
         <hr />
@@ -422,9 +422,9 @@
       </form>
     </section>
   <footer class="footer">
-    <div class="flex flex-columns">
+    <div class="flex flex-columns footer-content">
       <img class="logo logo_bigger" src="./assets/innvocore.svg" alt="">
-      <div class="text_align">An web-based Enterprise Help Desk with CRM & IT Service Desk software, which can fit into any IT
+      <div class="text_align footer-links" id="footer-description">An web-based Enterprise Help Desk with CRM & IT Service Desk software, which can fit into any IT
         & non-IT organisations to manage their customer communication problems and provide faster solutions
         by improving customer satisfaction & revenue.</div>
       

@@ -6,12 +6,6 @@
   box-sizing: inherit;
 }
 
-
-
-body {
- 
-}
-
 .carousel {
   width: auto;
   margin: 0 auto;
@@ -186,7 +180,8 @@ body {
     transform: scale(1);
   }
   .testimonial {
-    padding: 5rem 3rem;
+    padding: 5rem 2rem;
+    height: 320px;
   }
 }
 @media (min-width: 320px) and (max-width: 1024px){

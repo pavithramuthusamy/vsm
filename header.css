@@ -87,7 +87,7 @@
   display: block;
 }
 
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 768px) {
   .topnav-container a, .download-container, .dropdown .dropbtn {
     display: none;
   }
@@ -101,7 +101,7 @@
   }
 }
 
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 768px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;

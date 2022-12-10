@@ -13,7 +13,6 @@ function headerClick() {
 //       $('.itsm__background').remove();
 //       $('.main').addClass('itsm__background');
 //   }
-//   console.log("sdfgd");
 // });
 
 $('.slide-nav').on('click', function(e) {

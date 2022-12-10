@@ -14,5 +14,4 @@ function headerClick() {
 //         $('.knowledge__background').remove();
 //         $('.main').addClass('knowledge__background');
 //     }
-//     console.log("sdfgd");
 // });
