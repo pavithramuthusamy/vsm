@@ -1851,7 +1851,7 @@ body {
 .main__background{
     /* background: none;
     background-size: 100% 100%;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;d
     background-size: 90% auto;
     padding: 15px;
     height: auto; */
@@ -1866,6 +1866,10 @@ body {
     /* margin: auto; */
     margin-top: auto;
 
+}
+
+.slu__home{
+  padding: 6rem 0 !important;
 }
 
 .info__home{
@@ -1883,7 +1887,7 @@ body {
 
 @media (min-width: 1024px) and (max-width: 1300px){
   .crm__background {
-    background: #bbc0c3  url(./assets/crm-home-copy-final.jpg) no-repeat right bottom;
+    background: #b8b7be  url(./assets/crm-home-copy-final.jpg) no-repeat right bottom;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-size: 100% auto;
@@ -1927,7 +1931,7 @@ padding: 0rem !important;
     background-size: 100% auto;
     /* width: 100vw;
     padding: 15px; */
-    height: calc( 170vh - 70px);
+    height: calc( 180vh - 70px);
     /* padding: 0rem !important; */
     /* filter: blur(5px); */
     /* position: absolute; */
@@ -1987,6 +1991,11 @@ padding: 0rem !important;
   transform: translate(0%, 0%) scaleX(-1);
 }
 
+.cm__home{
+  width: 50%;
+  transform: translate(0%, 0%) scaleX(-1);
+}
+
 .report__home#knowledge {
   display: block;
   position: relative;
@@ -1999,12 +2008,12 @@ padding: 0rem !important;
   padding: 3rem 6rem !important;
 }
   .knowledge__background {
-    background: #ffffff url(./assets/knowmanage.png) no-repeat right bottom;
+    background: #ededed url(./assets/knowmanage.png) no-repeat right bottom;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     /* background-size: 58% 82%; */
     background-size: 100% auto;
-    width: 100vw;
+    width: 100vw !important;
     padding: 15px;
     height: calc( 150vh - 70px);
     padding: 0rem !important;
@@ -2043,8 +2052,8 @@ padding: 0rem !important;
   width: 60vw;
   text-align: left;
   /* margin-left: 38%; */
-  padding-left: 10rem;
-  transform: translate(-2%, 15%) scaleX(-1);
+  padding-left: 6rem !important;
+  transform: translate(0%, 15%) scaleX(-1);
 }
 
 .slu__home{
@@ -2063,6 +2072,9 @@ padding: 0rem !important;
   text-align: left;
 }
 
+#itsm__background.main, #change-manage.main{
+  align-items: baseline;
+}
   
 .itsm__background {
   background: #9b9b99  url(./assets/itsm_new.png) no-repeat right top; 
@@ -2083,8 +2095,8 @@ padding: 0rem !important;
     background: #d3d3d5 url(./assets/cm-home-copy.jpg) no-repeat right top;
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-size: 75% auto;
-    width: 90%;
+    background-size: 100% auto;
+    width: 100%;
     /* padding: 15px; */
     height: 100vh;
     /* padding: 0rem !important; */
@@ -2308,8 +2320,8 @@ padding: 0rem !important;
     height: calc( 170vh - 70px);
   }
   .itsm-title-container, .itsm-title-subcontainer{
-    /* padding: 1rem; */
-    margin: 2rem;
+    padding: 1rem;
+    /* margin: 2rem; */
     width: auto !important;
 
   }

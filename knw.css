@@ -25,8 +25,12 @@
   font-family: FontAwesome;
   position: absolute;
   left: 0;
-  color: #dec9fa;
+  color: #dec9fa !important;
   font-size: 1.3rem !important;
+}
+
+.li-element-purple:hover:before{
+  color:#722ED1 !important;
 }
 
 li.one:before {
