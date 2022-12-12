@@ -315,7 +315,7 @@ a {
 }
 
 .solution__background {
-  background: #fffffd url(./assets/solutions.jpg) no-repeat right top; 
+  background: #fffffd url(./assets/slanew3.png) no-repeat right top; 
  
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -2109,7 +2109,7 @@ padding: 0rem !important;
 }
 
   .solution__background {
-    background: #fffffd url(./assets/solutions.jpg) no-repeat right bottom; 
+    background: #cfccc7 url(./assets/slanew3.png) no-repeat right bottom; 
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-size: 100% auto;
@@ -2453,7 +2453,7 @@ padding: 0rem !important;
 }
 
 .solution__background {
-  background: #fffffd url(./assets/solutions.jpg) no-repeat right top;
+  background: #fffffd url(./assets/slanew3.png) no-repeat right top;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-size: 100% auto;
