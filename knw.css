@@ -30,7 +30,11 @@
 }
 
 .li-element-purple:hover:before{
-  color:#722ED1 !important;
+  color:#FFF !important;
+}
+
+.li-element-light-purple:hover:before{
+  color:#fff !important;
 }
 
 li.one:before {

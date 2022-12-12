@@ -189,9 +189,9 @@ nav .navbar .links li:hover .solutions-sub-menu{
 
 #button {
   display: inline-block;
-  background-color: #722ed1;
-  width: 50px;
-  height: 50px;
+  background-color: #DEC9FA;
+  width: 40px;
+  height: 40px;
   text-align: center;
   border-radius: 4px;
   position: fixed;
@@ -208,8 +208,8 @@ nav .navbar .links li:hover .solutions-sub-menu{
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
-  font-size: 1.9em;
-  line-height: 50px;
+  font-size: 1.5em;
+  line-height: 40px;
   color: #fff;
 }
 #button:hover {
