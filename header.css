@@ -51,6 +51,7 @@ nav .navbar .links li{
   justify-content: space-between;
   list-style: none;
   padding: 0px 14px;
+  margin: 0;
 }
 nav .navbar .links li a{
   height: 100%;
@@ -97,7 +98,7 @@ nav .navbar .links li:hover .solutions-sub-menu{
 }
 .navbar .links li .sub-menu a{
   color: #000;
-  font-size: 18px;
+  font-size: 19.2px;
   font-weight: 500;
 }
 .navbar .links li .sub-menu .more-arrow{
@@ -175,7 +176,7 @@ nav .navbar .links li:hover .solutions-sub-menu{
   height: 35px;
   width: 280px;
   outline: none;
-  padding: 0 18px;
+  padding: 0 19.2px;
   font-size: 16px;
   border: none;
 }
@@ -223,6 +224,10 @@ nav .navbar .links li:hover .solutions-sub-menu{
   visibility: visible;
 }
 
+.fa-colors{
+  font-size: 20px;
+  color: #6d2cc9;
+}
 
 @media (max-width:920px) {
   nav .navbar{
@@ -238,7 +243,7 @@ nav .navbar .links li:hover .solutions-sub-menu{
     white-space: nowrap;
   }
   nav .navbar .links li a{
-    font-size: 18px;
+    font-size: 19.2px;
   }
 }
 @media (max-width:990px){
