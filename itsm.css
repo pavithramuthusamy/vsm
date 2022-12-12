@@ -837,7 +837,7 @@ opacity: 0;
 
 
 .itsm-subtasks-container{
-  height: 210vh;
+  /* height: 210vh; */
   padding: 2rem;
 }
 
@@ -869,7 +869,7 @@ opacity: 0;
 }
 @media (min-width: 375px) and (max-width: 435px){
   .mySlides {
-  height: 780px;
+  height: 700px;
   }
   
 .itsm-subtasks{
