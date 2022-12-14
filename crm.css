@@ -198,6 +198,11 @@ body {
   .testimonial {
     padding: 5rem 2rem;
     height: 520px;
+    /* padding: 8rem 2rem 2rem 2rem;
+    height: 550px; */
+  }
+  #crm_slider.testimonial__text {
+    margin-top: 2.2rem;
   }
 }
 @media (min-width: 320px) and (max-width: 1024px){
