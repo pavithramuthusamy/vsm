@@ -343,7 +343,7 @@ nav .navbar .links li .sub-menu li{
   .navbar .nav-links.show2 .links .more .more-sub-menu{
       display: block;
     }
-    .navbar .nav-links.show1 .links .products-arrow,
+    .navbar .nav-links.show1 .links .product-arrow,
     .navbar .nav-links.show3 .links .feature-arrow,
     .navbar .nav-links.show4 .links .solutions-arrow{
         transform: rotate(180deg);
