@@ -250,6 +250,7 @@
   text-align: center;
   font-weight: 500;
   transition: .3s linear;
+  text-decoration: none;
 }
 
 .order-btn:hover{

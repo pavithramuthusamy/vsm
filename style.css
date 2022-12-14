@@ -2273,6 +2273,7 @@ padding: 0rem !important;
   
   .itsm__background{
     height: calc( 125vh - 70px);
+    padding-bottom: 5rem;
   }
 
   .report__background{
@@ -2287,9 +2288,11 @@ padding: 0rem !important;
   }
   .cm__home{
     padding: 18rem 0 !important;
+    padding-bottom: 5rem !important;
   }
   .incident__home{
     padding: 20rem 0 !important;
+    padding-bottom: 5rem !important;
   }
   .knowledge__background{
     /* background-size: 260% auto;
@@ -2319,6 +2322,9 @@ padding: 0rem !important;
     background-position: TOP;
     height: calc( 170vh - 70px);
   }
+  .main h1{
+    margin-bottom: 0rem;
+  }
   .itsm-title-container, .itsm-title-subcontainer{
     padding: 1rem;
     /* margin: 2rem; */
@@ -2337,10 +2343,47 @@ padding: 0rem !important;
     position: absolute;
     top: 30%;
   }
+  @media (min-height: 700px) and (max-height: 900px){
+    .main__background{
+      height: calc( 120vh - 70px);
+    }
+    .info__home#home-top{
+        top: 35%;
+      }
+      .knowledge__background, .solution__background {
+        height: calc( 90vh - 70px);
+      }
+    .crm__background, .report__background {
+        height: calc( 110vh - 70px);
+      }
+      .itsm__background, .cm__background, .incident__background {
+        height: calc( 105vh - 70px);
+      }
+      .slu__home{
+        padding: 0rem !important;
+      }
+    @media (min-height: 820px) and (max-height: 900px){
+      .crm__background, .report__background {
+        height: calc( 100vh - 70px);
+      }
+      .itsm__background, .incident__background {
+        height: calc( 98vh - 70px);
+      }
+      .cm__background {
+        height: calc( 95vh - 70px);
+      }
+      .knowledge__background, .solution__background {
+        height: calc( 80vh - 70px);
+      }
+
+    }
+  }
+
   .home_imgText{
     font-weight: 500;
   }
 }
+
 @media (min-width: 427px) and (max-width: 768px){
   .home_imgText{
     font-weight: 500;
@@ -2350,6 +2393,11 @@ padding: 0rem !important;
     background-size: 100% auto;
     background-position: TOP;
     height: calc( 200vh - 70px);
+  }
+  @media (min-height: 700px) and (max-height: 900px){
+    .main__background{
+      height: calc( 150vh - 70px);
+    }
   }
 
   .info__home{
@@ -2483,8 +2531,8 @@ padding: 0rem !important;
     width: 10%;
   }
   .start-trail{
-    /* margin: 1rem; */
-    margin: 0rem 2rem;
+    margin: 0rem 1rem;
+    /* margin: 0rem 2rem; */
   }
   div#footer-description.text_align{
     margin-bottom: 2rem;

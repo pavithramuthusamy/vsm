@@ -7,9 +7,12 @@ function headerClick() {
     }
   }
 
-// $(document).on('resize, ready', function() {
-//     if($(window).width() > 1300) {
-//         $('.cm__background').remove();
-//         $('.main').addClass('cm__background');
-//     }
-// });
+$(document).on('resize, ready', function() {
+  console.log('show');
+    if($(window).width() < 500) {
+        // $('.cm__background').remove();
+        const element = document.createElement("div");
+        element.className = "cm__background";
+        $('.main').prepend(element);
+    }
+});

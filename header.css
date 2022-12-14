@@ -61,9 +61,10 @@ nav .navbar .links li a{
   font-size: 19.2px;
   font-weight: 500;
 }
-.links li:hover .htmlcss-arrow,
-.links li:hover .js-arrow{
-  /* transform: rotate(180deg); */
+.links li:hover .product-arrow,
+.links li:hover .feature-arrow,
+.links li:hover .solutions-arrow{
+  transform: rotate(180deg);
   }
 
 nav .navbar .links li .arrow{
@@ -262,7 +263,7 @@ nav .navbar .links li:hover .solutions-sub-menu{
     width: 100%;
     background:  white;
     line-height: 40px;
-    padding: 20px;
+    padding: initial;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     transition: all 0.5s ease;
     z-index: 1000;
@@ -271,6 +272,7 @@ nav .navbar .links li:hover .solutions-sub-menu{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 20px;
   }
   .sidebar-logo .logo-name{
     font-size: 25px;
@@ -300,7 +302,7 @@ nav .navbar .links li .sub-menu{
 }
 nav .navbar .links li .sub-menu li{
   border-bottom: none;
-  padding: 10px 22px;
+  padding: 10px;
 }
 .navbar .links li .sub-menu .more-sub-menu{
   display: none;
@@ -330,8 +332,9 @@ nav .navbar .links li .sub-menu li{
   .links li .sub-menu .more:hover .more-sub-menu{
     display: none;
   }
-  nav .navbar .links li:hover .htmlCss-sub-menu,
-  nav .navbar .links li:hover .js-sub-menu{
+  nav .navbar .links li:hover .products-sub-menu,
+  nav .navbar .links li:hover .solutions-sub-menu,
+  nav .navbar .links li:hover .feature-sub-menu{
     display: none;
   }
 .navbar .nav-links.show1 .links .products-sub-menu,
@@ -340,7 +343,7 @@ nav .navbar .links li .sub-menu li{
   .navbar .nav-links.show2 .links .more .more-sub-menu{
       display: block;
     }
-    .navbar .nav-links.show1 .links .products-arrow,
+    .navbar .nav-links.show1 .links .product-arrow,
     .navbar .nav-links.show3 .links .feature-arrow,
     .navbar .nav-links.show4 .links .solutions-arrow{
         transform: rotate(180deg);
