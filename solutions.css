@@ -418,6 +418,7 @@ td{
 }
 
 .slu-h1{
+  padding-top: 4rem;
   padding-bottom: 4rem;
   text-align: center;
 }
@@ -473,8 +474,8 @@ td{
   max-width: 1000px;
   top: 0;
   left: 0;
-  transform: translate(0%,40%);
-  padding: 22rem 0 !important;
+  /* transform: translate(0%,40%);
+  padding: 22rem 0 !important; */
 }
 
 .solution-subtitle {
@@ -482,7 +483,7 @@ td{
 }
 
 #solution-size{
-  padding: 50rem 0 0 0;
+  /* padding: 50rem 0 0 0; */
 
 }
 }

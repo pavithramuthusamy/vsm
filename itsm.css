@@ -328,7 +328,7 @@ border-color: #777;
 }
 
 
-.info {
+/* .info {
 position: absolute;
 
 line-height: 20px;
@@ -339,7 +339,7 @@ text-align: left;
 -moz-transition: all 1000ms ease-out 600ms;
 transition: all 1000ms ease-out 600ms;
 z-index: 100;
-}
+} */
 .info h3 {
 color: #fcfff4;
 margin: 0 0 5px;

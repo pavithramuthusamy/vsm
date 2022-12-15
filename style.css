@@ -148,9 +148,14 @@ a {
 }
 
 .info {
-  width: 90%;
+  /* width: 90%; */
   float: left;
   margin-right: 40px;
+}
+
+
+.info_exd{
+  margin-right: 0;
 }
 
 .info__home {
@@ -298,9 +303,71 @@ a {
 .main {
   display: flex;
   align-items: center;
-  padding: 2rem;
   flex-direction: column;
   margin-top: 70px;
+}
+
+.main div{
+  padding: 3rem 2rem;
+}
+
+.main_bg{
+  background: #dbe0e6
+}
+
+.main-title-container{
+  width: 50%; -webkit-transform: scaleX(-1); transform: scaleX(-1)
+}
+
+.crm-title-container, .report-title-container, .slu-title-container{
+  width: 65%; -webkit-transform: scaleX(-1); transform: scaleX(-1)
+}
+
+.change-title-container, .knw-title-container{
+  width: 65%;
+}
+
+.its-title-container{
+  width: 57%;
+}
+
+.incident-title-container{
+  width: 52%;
+}
+
+
+@media (max-width: 1024px){
+  .info {
+    margin-right: 0px;
+  }
+  .main-title-container, .crm-title-container, .report-title-container, .slu-title-container, .change-title-container, .knw-title-container, .its-title-container, .incident-title-container{
+    width: 100%;
+  }
+}
+
+.cm_bg{
+  background: #d3d3d5
+}
+
+.solution_bg {
+  background: #fffffd;
+  margin-top: 45px !important;
+}
+
+.itsm_bg {
+  background: #9b9b99
+}
+
+.crm_bg {
+  background: #bbc0c3 
+}
+
+.incident_bg {
+  background: #bbc0c3 
+}
+
+.report_bg, .knowledge_bg {
+  background: #ffffff
 }
 
 .main__background {
@@ -443,10 +510,12 @@ a {
 .main p.tag {
   margin: auto;
   margin-bottom: 2rem;
+  font-size: 2rem;
 }
 
 .main h1 {
   margin-bottom: 1.5rem;
+  text-align: left;
 }
 
 .main h3 {
@@ -454,7 +523,7 @@ a {
 }
 
 .main p {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 
@@ -759,6 +828,50 @@ a {
 }
 
 
+@media screen and (min-width: 1024px) {
+  .nav {
+      padding: 1rem 6rem;
+  }
+
+  .nav ul {
+      flex: 0.45;
+  }
+
+  .main div {
+      padding: 3rem rem 3rem 6rem
+  }
+
+  .excellence {
+      padding: 6rem;
+  }
+
+  .trusted_by_customers,
+  .engineering-team {
+      padding: 3rem 6rem;
+  }
+
+  #crm-carousel.trusted_by_customers{
+    padding: 12rem 6rem;
+  }
+
+  .circle_layout {
+      padding: 6rem 0rem;
+  }
+
+  .testimony {
+      padding: 7rem 6rem;
+  }
+
+  .sign-up {
+      padding: 6rem;
+  }
+
+  .footer {
+      padding: 6rem;
+  }
+}
+
+
 @media screen and (min-width: 1025px) {
   .nav {
       padding: 1rem 4rem;
@@ -789,7 +902,11 @@ a {
 
   .main {
       flex-direction: row;
-      padding: 4rem;
+      overflow: hidden;
+  }
+
+  .main div{
+    padding: 0 0 0 4rem;
   }
 
   #ticket-description.main {
@@ -929,56 +1046,13 @@ a {
   }
 }
 
-@media screen and (min-width: 1024px) {
-  .nav {
-      padding: 1rem 6rem;
-  }
-
-  .nav ul {
-      flex: 0.45;
-  }
-
-  .main {
-      padding: 6rem;
-  }
-
-  .excellence {
-      padding: 6rem;
-  }
-
-  .trusted_by_customers,
-  .engineering-team {
-      padding: 3rem 6rem;
-  }
-
-  #crm-carousel.trusted_by_customers{
-    padding: 12rem 6rem;
-  }
-
-  .circle_layout {
-      padding: 6rem 0rem;
-  }
-
-  .testimony {
-      padding: 7rem 6rem;
-  }
-
-  .sign-up {
-      padding: 6rem;
-  }
-
-  .footer {
-      padding: 6rem;
-  }
-}
-
 @media screen and (min-width: 1400px) {
   .nav {
       padding: 1rem 8rem;
   }
 
-  .main {
-      padding: 0 8rem;
+  .main div{
+      padding: 0 0 0 8rem;
   }
 
   .excellence {
@@ -1885,6 +1959,22 @@ body {
 }
 }
 
+@media (min-width: 1025px) and (max-width: 1300px){
+  .main.main_bg{
+    height: 105vh !important;
+  }
+  #solution-size .trusted_by_customers{
+    display: table;
+    width: auto;
+   }
+
+  #solution-size .p__black{
+    width: auto;
+  }
+  #personalize-sales .p__black{
+    width: 500px;
+  }
+}
 @media (min-width: 1024px) and (max-width: 1300px){
   .crm__background {
     background: #b8b7be  url(./assets/crm-home-copy-final.jpg) no-repeat right bottom;
@@ -2196,7 +2286,7 @@ padding: 0rem !important;
 
 .logo_bigger{
   width: 200px;
-  padding: 0 15px 15px 15px;
+  padding: 0 0 15px 0;
 }
 
 .text_align{
@@ -2234,7 +2324,8 @@ padding: 0rem !important;
     /* padding: 0.5rem 0; */
   }
   .main p.tag{
-    margin: 1rem;
+    margin: 1rem 0;
+    font-size: 1.5rem;
   }
   .info__home,  .crm__home, .incident__home, .crm__home, .info__home{
     padding: 0 !important;
@@ -2326,7 +2417,7 @@ padding: 0rem !important;
     height: calc( 170vh - 70px);
   }
   .main h1{
-    margin-bottom: 0rem;
+    margin-bottom: 1rem;
   }
   .itsm-title-container, .itsm-title-subcontainer{
     padding: 1rem;
@@ -2341,7 +2432,7 @@ padding: 0rem !important;
     margin: 0 2.5rem;
   }
   .report-title-container{
-    padding: 14rem 1rem 0rem 1rem;
+    /* padding: 14rem 1rem 0rem 1rem; */
   }
   /* .report-title-subcontainer{
     padding: 0 1rem;
@@ -2540,7 +2631,7 @@ padding: 0rem !important;
     width: 10%;
   }
   .start-trail{
-    margin: 0rem 1rem;
+    /* margin: 0rem 1rem; */
     /* margin: 0rem 2rem; */
   }
   div#footer-description.text_align{
@@ -2558,7 +2649,7 @@ padding: 0rem !important;
     width: 100%;
     float: left;
     margin-right: 0px;
-    text-align: center !important;
+    /* text-align: center !important; */
 }
 
   #ticket-description.main {
@@ -2567,4 +2658,14 @@ padding: 0rem !important;
     /* padding: 2rem; */
     flex-direction: column;
 }
+}
+@media (min-width: 1300px) {
+  #solution-size .trusted_by_customers{
+    display: table;
+    width: auto;
+   }
+
+  #solution-size .p__black{
+    width: auto;
+  }
 }

@@ -144,7 +144,7 @@ button {
 }
 
 .title-container{
-  width: 50%; -webkit-transform: scaleX(-1); transform: scaleX(-1)
+  width: 62%; -webkit-transform: scaleX(-1); transform: scaleX(-1)
 }
 
 @media (min-width: 320px) and (max-width: 658px){

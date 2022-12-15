@@ -123,6 +123,10 @@ body {
 .row-container {
   height: auto;
 }
+
+.leading-edge{
+  text-align: left !important;
+}
 @media (min-width: 320px) and (max-width: 426px){
 .change-manage{
   width: 80vw;
@@ -138,7 +142,7 @@ body {
 }
 @media (max-width: 1023px){
 .leading-edge{
-  text-align: justify !important;
+  text-align: left !important;
   text-justify: inter-word !important;
   padding: 0 !important;
 }
