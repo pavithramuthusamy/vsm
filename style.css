@@ -2218,6 +2218,9 @@ padding: 0rem !important;
 }
 
 @media (min-width: 320px) and (max-width: 426px){
+  .all-p{
+    text-align: left !important;
+  }
   h1, .info h1,h2{
     font-size: 1.9rem;
   }
@@ -2228,7 +2231,7 @@ padding: 0rem !important;
     margin: auto;
   }
   .footer>div{
-    padding: 0.5rem 0;
+    /* padding: 0.5rem 0; */
   }
   .main p.tag{
     margin: 1rem;
@@ -2330,6 +2333,12 @@ padding: 0rem !important;
     /* margin: 2rem; */
     width: auto !important;
 
+  }
+  .knw-container, .knw-subcontainer{
+    padding: 1rem 2.5rem;
+  }
+  #knw-trail.start-trail{
+    margin: 0 2.5rem;
   }
   .report-title-container{
     padding: 14rem 1rem 0rem 1rem;

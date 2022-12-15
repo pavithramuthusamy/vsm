@@ -237,7 +237,7 @@
 
 .itsm-p{
   line-height: 1.7rem;
-  text-align: left !important;
+  /* text-align: left !important; */
   margin-bottom: 1.5rem;
 }
 
@@ -831,7 +831,7 @@ opacity: 0;
 
 .itsm-p {
   line-height: 1.7rem;
-  text-align: justify !important;
+  /* text-align: justify !important; */
   margin-bottom: 1.5rem;
 }
 
@@ -840,7 +840,6 @@ opacity: 0;
   /* height: 210vh; */
   padding: 2rem;
 }
-
 
 .prev, .next {
   padding: 10px;

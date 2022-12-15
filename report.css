@@ -133,4 +133,17 @@ body, html {
       text-align: left;
       margin-bottom: 1rem;
   }
+  
+#report_testimonial.testimonial__text{
+  margin-top: 3.2rem;
+}
+
+@media (min-width: 375px) and (max-width: 426px){
+  .report_testimonial{
+    height: 430px !important;
+  }
+  .carousel__btn--right, .carousel__btn--left{
+    top: 55% !important;
+  }
+}
 }

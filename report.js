@@ -63,7 +63,7 @@ const reviews = [
 
 const imgText = document.getElementById("imgText");
 const img = document.getElementById("img");
-const testimonial = document.getElementById("testimonial");
+const testimonial = document.getElementById("report_testimonial");
 const name = document.getElementById("name");
 const job = document.getElementById("job");
 

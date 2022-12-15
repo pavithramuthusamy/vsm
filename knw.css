@@ -221,4 +221,10 @@ padding-bottom: 2rem;
     font-weight: 500 !important;
     color: var(--light-black) !important;
   }
+  .image-card-component .content {
+    padding: 1rem;
+  }
+  .articleh1{
+    padding: 2rem;
+  }
 }

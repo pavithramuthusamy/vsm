@@ -155,13 +155,9 @@ button {
 
 @media (min-width: 320px) and (max-width: 1024px){
   .ticket-container{
-   
-
-
     width: 60%;
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
-   
     top: 50%;
     left: 50%;
     transform: translate(-50%, 10%);
@@ -197,6 +193,10 @@ button {
 
   .signup_form{
     display: none !important;
+  }
+
+  .login_msg{
+    padding: 1rem 0;
   }
 }
 
