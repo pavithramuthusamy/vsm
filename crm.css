@@ -170,8 +170,11 @@ body {
     color: #3b3a3e;width: 60%;
   }
 @media (min-width: 320px) and (max-width: 426px){
+.testimonial__job ,.testimonial__text{
+    font-size: 1rem;
+  }
   .carousel__image {
-    height: 20rem;
+    height: 22rem;
     width: 18rem;
     border-radius: 0.8rem;
     transform: scale(1.5);

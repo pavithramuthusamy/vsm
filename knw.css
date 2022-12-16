@@ -66,7 +66,6 @@ article {
 }
 
 .articlep {
-  font-size: 1em;
   margin: 0;
   line-height: inherit;
   margin-bottom: 2rem;
@@ -209,7 +208,7 @@ padding-bottom: 2rem;
     position: absolute;
     left: 0px;
     color: #722ED1;
-    font-size: 1.3rem !important;
+    font-size: 1.1rem !important;
   }
   .li-element{
     padding-left: 35px;
@@ -217,14 +216,21 @@ padding-bottom: 2rem;
     list-style:none;
     position: relative;
     line-height: inherit;
-    font-size: 1.3rem !important;
+    font-size: 1.1rem !important;
     font-weight: 500 !important;
     color: var(--light-black) !important;
+  }
+
+  .li-element-purple, .li-element-purple:before{
+    font-size: 1.1rem !important;
   }
   .image-card-component .content {
     padding: 1rem;
   }
   .articleh1{
     padding: 2rem;
+  }
+  .image-card-component .content p {
+    /* font-size: 1rem !important; */
   }
 }

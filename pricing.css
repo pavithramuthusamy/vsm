@@ -275,4 +275,19 @@
   .pricing-card {
     margin: 2rem;
   }
+  
+.pricing-p{
+  font-size: 1rem;
+}
+.pricing-p{
+  padding: 0px !important;
+}
+
+.price{
+  font-size: 25px;
+}
+
+.order-btn{
+  font-size: 1.2rem;
+}
 }
