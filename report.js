@@ -36,7 +36,7 @@ const reviews = [
    },
     {
         id: 3,
-        title: "Schedule Reports",
+        title: "Schedule Your Reports on Time",
         img: "./assets/Animated/notebook.gif",
         width: '200px', height: '200px',
         text:

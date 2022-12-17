@@ -128,7 +128,7 @@
 }
 @media (max-width: 769px) {
   .itsm-subtasks{
-    height: 160vh;
+    height: 120vh;
   }
   .flex__container {
     position: absolute;
@@ -868,7 +868,7 @@ opacity: 0;
 }
 @media (min-width: 375px) and (max-width: 435px){
   .mySlides {
-  height: 500px;
+  height: 450px;
   }
   
 .itsm-subtasks{
@@ -913,7 +913,7 @@ opacity: 0;
 
 @media (min-width: 320px) and (max-width: 429px){
   .itsm-subtasks{
-    height: 180vh;
+    height: 118vh;
     padding: 0rem;
   }
   .text-rotate{
@@ -939,7 +939,12 @@ opacity: 0;
     height: 100vh;
     right: 0%;
   }
-
+  @media (min-height: 820px) and (max-height: 990px){
+    .itsm-subtasks {
+      height: 95vh !important;
+      padding: 0rem;
+    }
+  }
 }
 .itsm-img-container{
   width: 100%;
