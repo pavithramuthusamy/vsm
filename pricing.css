@@ -266,6 +266,10 @@
   text-align: left !important;
 }
 
+.pricing-show{
+  padding: 30px 0;
+  text-align: center;
+}
 @media screen and (max-width:1100px){
   .pricing-card{
     flex: 50%;
