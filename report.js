@@ -32,7 +32,7 @@ const reviews = [
         img: "./assets/Animated/line-chart.gif",
         width: '175px', height: '200px',
         text:
-            'InnvoDesk reporting features include enhancing sorting, report scheduling, and filtering. You can able to watch your helpdesk analytics on a personalized dashboard and make your team do data-driven decisions to satisfy their support targets. '
+            'InnvoDesk reporting features include enhancing sorting, report scheduling and filtering. You can able to watch your helpdesk analytics on a personalized dashboard and make your team do data-driven decisions to satisfy their support targets. '
    },
     {
         id: 3,
@@ -40,7 +40,7 @@ const reviews = [
         img: "./assets/Animated/notebook.gif",
         width: '200px', height: '200px',
         text:
-        `You can schedule reports with predefined parameters according to the time and date. The innvoDesk reporting feature will help you to schedule monthly, biweekly, weekly, and yearly reports. `
+        `You can schedule reports with predefined parameters according to the time and date. The innvoDesk reporting feature will help you to schedule monthly, biweekly, weekly and yearly reports. `
     },
     
     

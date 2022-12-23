@@ -184,6 +184,7 @@ body {
   }
   .carousel {
     width: 100vw;
+    padding-top: 2rem;
   }
   .accordion {
     padding: 0rem;
@@ -193,6 +194,9 @@ body {
     margin: 1rem auto;
     translate: 0rem 0;
    }
+   .carousel__btn--right, .carousel__btn--left{
+    top: 63%;
+   }
 }
 @media (min-width: 320px) and (max-width: 600px){
   .carousel__image{
@@ -200,12 +204,51 @@ body {
   }
   .testimonial {
     padding: 5rem 2rem;
-    height: 520px;
-    /* padding: 8rem 2rem 2rem 2rem;
-    height: 550px; */
+    height: 310px;
+  }
+  #crm-carousel .testimonial {
+    padding: 3rem 2rem;
+    height: 300px;
+  }
+  #crm-carousel .carousel__btn--right, .carousel__btn--left{
+    top: 60%;
   }
   #crm_slider.testimonial__text {
     margin-top: 2.2rem;
+  }
+  #crm-img-1 {
+    width: 200px !important;
+    height: 200px !important;
+    padding: '0'
+  }
+  .carousel__image {
+    height: 20rem;
+  }
+  summary > * {
+    display: inline;
+    font-size: 1.2rem;
+  }
+  #home-carousel .carousel__btn--right, .carousel__btn--left{
+    top: 60%;
+  }
+  @media (min-width: 400px) and (max-width: 426px){
+    #crm-carousel .testimonial {
+      padding: 3rem 2rem;
+      height: 250px;
+    }
+    #crm-carousel .carousel__btn--right, .carousel__btn--left{
+      top: 63%;
+    }
+
+  }
+  @media (min-width: 426px) and (max-width: 600px){
+    #crm-carousel .testimonial {
+      padding: 3rem 2rem;
+      height: 375px;
+    }
+    #crm-carousel .carousel__btn--right, .carousel__btn--left{
+      top: 57%;
+    }
   }
 }
 @media (min-width: 320px) and (max-width: 1024px){

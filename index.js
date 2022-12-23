@@ -157,14 +157,14 @@ const reviews = [
         
         width: '200px', height: '200px', padding: '1rem',
         text:
-            'Innvodesk delivers continuous innovation every time. Our platform is powered by new-age abilities such as social sensing, RPA, analytics, and mobility. It helps you stay up-to-date with the current, and competitive updates daily.'
+            'Innvodesk delivers continuous innovation every time. Our platform is powered by new-age abilities such as social sensing, RPA, analytics and mobility. It helps you stay up-to-date with the current and competitive updates daily.'
     },    
     {
         id: 3,
         title: "Strengthens Business",
         width: '200px', height: '200px',
         text:
-        `Receive updates about every business interaction and activity. Our low code automation platform connects your systems, people, workflows, and data. Therefore, you can build a business with easy processes, and uninterrupted information flow.`
+        `Receive updates about every business interaction and activity. Our low code automation platform connects your systems, people, workflows and data. Therefore, you can build a business with easy processes and uninterrupted information flow.`
     }, 
     {
         id: 6,
@@ -178,14 +178,14 @@ const reviews = [
         title: "Maintain IT Infrastructure",
         width: '200px', height: '200px',
         text:
-        `InnvoDesk will improvise the current IT investments of your business. With our cloud, SaaS, and on-premise deployment models, you can able to develop your business and integrate your existing operational and IT environments.`
+        `InnvoDesk will improvise the current IT investments of your business. With our cloud, SaaS and on-premise deployment models, you can able to develop your business and integrate your existing operational and IT environments.`
     }, 
     {
         id: 2,
         title: "Satisfied Customer",
         width: '175px', height: '200px',
         text:
-            'Innvodesk keeps your customers more occupied in all of your social media platforms like websites, mobile apps, or emails. It will make your customer get quicker resolutions, and easily accessible. Overall, we assure you that customers will have a delightful experience with us. '
+            'Innvodesk keeps your customers more occupied in all of your social media platforms like websites, mobile apps, or emails. It will make your customer get quicker resolutions and easily accessible. Overall, we assure you that customers will have a delightful experience with us. '
    },
 
     {
@@ -193,7 +193,7 @@ const reviews = [
         title: "Business Improvement",
         width: '175px', height: '200px',
         text:
-            'Innvodesk mainly concentrates on improving your customers, and users. Our professionals work on our behalf to satisfy the needs of customers easily. So, our software will take your business ahead.'
+            'Innvodesk mainly concentrates on improving your customers and users. Our professionals work on our behalf to satisfy the needs of customers easily. So, our software will take your business ahead.'
    },
 
 

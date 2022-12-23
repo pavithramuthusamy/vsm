@@ -55,7 +55,7 @@ p {
   font-size: 1.2rem;
   font-weight: 500;
   color: var(--gray-purple);
-  line-height: 1.7rem;
+  line-height: normal;
 }
 
 .all-p{
@@ -2320,8 +2320,8 @@ padding: 0rem !important;
     font-size: 0.9rem !important;
 
   }
-  h1, .info h1,h2, .excellence h2, .trusted_by_customers_title, .imgText{
-    font-size: 1.5rem;
+  h1, .info h1,h2, .excellence h2, .trusted_by_customers_title, .imgText, h3{
+    font-size: 1.3rem;
     line-height: normal !important;
   }
   .services-list {
@@ -2508,6 +2508,8 @@ padding: 0rem !important;
 
   .home_imgText{
     font-weight: 500;
+    padding: 0;
+    padding-bottom: 1rem;
   }
 }
 
